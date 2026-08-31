@@ -9,3 +9,7 @@ docs/stage-control.md
 CLAUDE.md
 AGENTS.md
 /article
+
+# Generated system and Python cache files
+.DS_Store
+__pycache__/
