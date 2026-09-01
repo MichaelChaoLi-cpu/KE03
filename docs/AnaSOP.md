@@ -5,13 +5,13 @@ Analysis Standard Operating Procedure
 
 ### Central Research Question
 
-- Research question: Which settlements in the Rasuwa-Bhote Koshi-Trishuli mountain corridor face the highest intervention priority because of the joint effects of the 2026 cascading-hazard footprint, population and infrastructure exposure, road-network isolation, and pre-disaster social vulnerability?
+- Research question: Which settlements in the Rasuwa-Bhote Koshi-Trishuli mountain corridor face the highest event-specific intervention priority because of the joint effects of the 2026 cascading-hazard footprint, modeled population exposure, and road-network isolation, and how sensitive are those priorities to district-level pre-disaster social vulnerability context?
 - Why it matters: A physical hazard map alone cannot identify where limited rescue, road-repair, and service-restoration resources will reduce the greatest human hardship in a mountainous transport network.
-- Data support currently visible: Existing household surveys describe poverty, service access, disaster preparedness, historical losses, assistance, and coping. Event-specific hazard, settlement, road, facility, and population layers remain to be acquired.
-- Key readable variables or data scope: Hazard Intensity, Exposed Population, Exposed Infrastructure, Accessibility Loss, Baseline Deprivation, Preparedness Capacity, Coping Stress, and Intervention Priority.
-- What would verify it: A reproducible multi-source analysis identifies settlements or road sections that remain high priority across alternative hazard footprints, road-closure scenarios, vulnerability constructions, and weighting schemes.
+- Data support currently visible: Multi-source event evidence, pre-event settlements and roads, mapped service destinations, modeled population allocation, disruption scenarios, and supported-domain survey estimates are available. Survey vulnerability remains district or broader context and is not a settlement-level primary input.
+- Key readable variables or data scope: Hazard Evidence Class, Estimated Settlement Population, Accessibility Loss, Newly Isolated, Intervention Priority, Structural-Scenario Top-10 Frequency, Allocation-Threshold Top-10 Frequency, Weight-Rule Top-10 Frequency, Family-Balanced Rank Stability, and Settlement Contextual Vulnerability (Sensitivity Only).
+- What would verify it: A reproducible multi-source analysis identifies settlements or road sections that remain high priority within the structural-scenario, population-allocation, and weighting robustness families, while a separately labelled district-context sensitivity analysis shows whether the event-specific ranking materially changes.
 - What would falsify or weaken it: The available event footprint cannot be reconstructed with acceptable agreement across independent sources; road failures produce little measurable accessibility change; or survey geography cannot support even area-level vulnerability context.
-- Required next feasibility check: Verify survey variable coverage now, then verify event imagery, current road and facility topology, population surfaces, and geographic crosswalks before spatial integration.
+- Required next feasibility check: Verify field-operating status and local names for high-priority settlements and road sections, and retain explicit coverage limits for district vulnerability and modeled population allocation.
 
 ### Supporting Research Questions
 
@@ -20,24 +20,24 @@ The final plan should contain 4-5 total research questions: one central question
 #### Supporting Point 1: Cascading-Hazard Footprint
 
 - Role relative to central point: deepen the physical-hazard component.
-- Research question: What was the spatial extent and relative intensity of the ice-rock avalanche, temporary blockage, flood, erosion, and landslide cascade associated with the 2026 event?
+- Research question: What was the spatial extent and relative evidential support for the ice-rock avalanche, temporary blockage, flood, erosion, and landslide cascade associated with the 2026 event?
 - Why it matters: All downstream exposure and network estimates depend on a defensible event footprint rather than a single unvalidated map.
-- Data support currently visible: Local survey data do not measure the event footprint; pre-event and post-event satellite imagery, terrain, rainfall, and independent emergency mapping are required.
-- Key readable variables or data scope: Surface Change, Inundation or Debris Footprint, Terrain Slope, Flow Path, Distance to Channel, and Hazard Intensity Class.
+- Data support currently visible: Pre-event and post-event radar and optical imagery, terrain and channel context, UNOSAT mapping, Copernicus emergency mapping, and an independent source-location assessment are available; field validation and current Flow Path sensitivity evidence remain incomplete.
+- Key readable variables or data scope: Surface Change, Inundation or Debris Footprint, Terrain Slope, Channel Context, Hazard Evidence Class, and Hazard Scenario.
 - What would verify it: Optical, radar, terrain-based, and independent mapped evidence converge on a coherent affected corridor.
 - What would falsify or weaken it: Cloud, snow, radar geometry, timing, or lack of reference observations prevents stable delineation.
-- Required feasibility check: Confirm suitable pre-event and post-event observations and reference products for the affected corridor.
+- Required feasibility check: Complete the optional D8 Flow Path sensitivity layer and seek field or official validation without treating either as required for the primary evidence-confidence footprint.
 
 #### Supporting Point 2: Network Isolation and Service Loss
 
 - Role relative to central point: identify the mechanism translating physical damage into indirect human impact.
-- Research question: Which road and bridge disruptions generated the largest increases in travel time or complete loss of access to health care, markets, and administrative services?
+- Research question: Which road and bridge disruptions generated the largest increases in travel time or complete loss of access to mapped health and emergency services?
 - Why it matters: In mountain corridors, a small number of damaged links can isolate communities well beyond the directly affected footprint.
-- Data support currently visible: Household surveys contain baseline facility-access and travel measures; a current routable road network, bridge inventory, service locations, and disruption evidence are still required.
+- Data support currently visible: A pre-event routable road graph, bridge and facility layers, rapid-mapping damage evidence, modeled closures, and 192 structural scenarios are available; field operating status remains unavailable.
 - Key readable variables or data scope: Baseline Travel Time, Post-Disruption Travel Time, Accessibility Loss, Isolated Population, Critical Road Section, and Restored Access after Repair.
 - What would verify it: Removing or degrading affected links produces plausible and field-consistent changes in shortest paths and service catchments.
 - What would falsify or weaken it: The road graph is not routable, closures cannot be located, or alternative routes make estimated isolation negligible.
-- Required feasibility check: Audit network completeness, bridge representation, facility locations, closure evidence, and travel-time assumptions.
+- Required feasibility check: Retain topology and snap-distance sensitivity checks and obtain field confirmation for road, bridge, and facility operating status when available.
 
 #### Supporting Point 3: Baseline Social Vulnerability
 
@@ -53,11 +53,11 @@ The final plan should contain 4-5 total research questions: one central question
 #### Supporting Point 4: Robust Intervention Priorities
 
 - Role relative to central point: translate evidence into decision support and test robustness.
-- Research question: Which settlements, road sections, and service facilities remain high priority across plausible hazard, network-disruption, vulnerability, and weighting assumptions?
+- Research question: Which settlements and road sections remain high priority across plausible hazard, network-disruption, vulnerability-context, and weighting assumptions?
 - Why it matters: Operational decisions should not depend on one arbitrary composite score or one uncertain hazard boundary.
-- Data support currently visible: Survey data can support candidate vulnerability components; all spatial components and intervention scenarios remain to be constructed.
-- Key readable variables or data scope: Hazard Intensity, Exposed Population, Accessibility Loss, Social Vulnerability, Priority Rank, Rank Stability, and Population Reconnected.
-- What would verify it: Priority ranks are stable under equal weights, policy weights, random-weight simulations, alternative hazard thresholds, and leave-one-component-out checks.
+- Data support currently visible: Event-specific settlement priorities, 192 structural scenarios, four population-allocation-threshold specifications, 10,007 weighting and functional-form specifications, district-context sensitivity ranks, and count-constrained road-repair portfolios are available.
+- Key readable variables or data scope: Hazard Evidence Class, Estimated Settlement Population, Accessibility Loss, Settlement Contextual Vulnerability (Sensitivity Only), Priority Rank, Structural-Scenario Top-10 Frequency, Allocation-Threshold Top-10 Frequency, Weight-Rule Top-10 Frequency, Rank Stability, and Population Reconnected.
+- What would verify it: Priority ranks persist separately within structural-scenario, population-allocation, and weighting families and under a family-balanced summary that does not depend on the number of specifications in any family.
 - What would falsify or weaken it: Rankings reverse under minor assumptions or no intervention consistently restores meaningful access.
 - Required feasibility check: Pre-specify component scaling, scenario ranges, candidate interventions, validation criteria, and rank-stability thresholds.
 
@@ -66,7 +66,7 @@ The final plan should contain 4-5 total research questions: one central question
 - Topics: Cascading hazards, settlement and infrastructure exposure, road-network isolation, social vulnerability, preparedness, coping, and intervention prioritization.
 - Units of analysis: Settlements and road sections for the spatial decision analysis; households, shock episodes, and supported survey domains for the vulnerability evidence. Household survey records will not be assigned to settlements without validated geocodes.
 - Spatial scope: The transboundary event corridor with primary operational focus on Rasuwa and downstream connected communities; broader survey domains provide contextual benchmarks only.
-- Period: Pre-disaster survey evidence from 2016-2023 and the August 2026 event, with satellite windows and road-disruption scenarios to be defined after data acquisition.
+- Period: Pre-disaster survey evidence from 2016-2023, pre-event satellite observations, the August 2026 event window, and the 192 modeled structural disruption scenarios documented below.
 
 ### Study Design Declaration
 
@@ -86,24 +86,26 @@ Section focus: Empirical context, actionable prioritization, and cautious interp
 
 ### Conceptual Framework
 
-- The event cascade creates direct physical exposure and can disrupt a sparse mountain transport network. Network disruption increases travel time or isolates settlements from essential services. Pre-existing deprivation, weak preparedness, and constrained coping capacity can amplify the practical consequences of this isolation.
-- For settlement or road unit \(s\), the baseline additive priority formulation is:
+- The event cascade creates direct physical exposure and can disrupt a sparse mountain transport network. Network disruption increases travel time or isolates settlements from essential services. Pre-existing deprivation, weak preparedness, and constrained coping capacity can amplify the practical consequences of this isolation, but the available survey evidence measures that context only at district or broader supported domains.
+- For settlement \(s\) in structural scenario \(c\), the primary event-specific additive priority formulation is:
 
 \[
-P_s = w_H H_s + w_E E_s + w_A A_s + w_V V_s
+P_{s,c}^{main} = \frac{H_{s,c}^{*}+E_{s,c}^{*}+A_{s,c}^{*}}{3}
 \]
 
-  where \(H_s\) is hazard intensity, \(E_s\) is exposed population and infrastructure, \(A_s\) is modeled accessibility loss, and \(V_s\) is contextual social vulnerability. The study will not treat one weight vector as uniquely correct; it will compare alternative weights, multiplicative formulations, hazard thresholds, and disruption scenarios.
+  where \(H_{s,c}^{*}\) is scaled hazard-evidence confidence, \(E_{s,c}^{*}\) is scaled modeled population exposure, and \(A_{s,c}^{*}\) is the isolation-preserving accessibility component. District vulnerability is excluded from the primary score. A separately labelled sensitivity score adds \(V_s^{sens}\), the shrinkage-adjusted district vulnerability context repeated across settlements, as a fourth equal-weight component. The study will compare structural scenarios, population-allocation thresholds, and alternative weighting rules separately and through a family-balanced summary.
 - Scope boundary: Survey indicators will be reported only at geographic levels supported by their design and identifiers. They will not be downscaled to settlements or pixels without validated geographic linkage or an explicit small-area model with independent validation.
 
 ### Problem Formulation
 
 - Primary decision outcomes are settlement priority rank, road-section criticality, modeled accessibility loss, isolated population, and population reconnected under candidate repairs.
-- Physical explanatory components are event intensity, terrain and flow-path context, and direct exposure. Network components are road or bridge disruption and alternative-route availability. Social components are poverty and service deprivation, preparedness, historical shock loss, assistance, and coping constraints.
+- Physical explanatory components are event intensity, terrain and flow-path context, and direct exposure. Network components are road or bridge disruption and alternative-route availability. Social components are poverty and service deprivation, preparedness, historical shock loss, assistance, and coping constraints reported only as supported-domain context and district-level sensitivity evidence.
 - Survey analysis will use sampling weights and uncertainty estimates. Historical panel associations may clarify coping mechanisms but will remain auxiliary to the event-specific spatial analysis.
 - Interpretation limit: The design supports descriptive comparison, scenario analysis, and decision prioritization. It does not support household-level causal inference for the 2026 disaster and will explicitly propagate spatial, sampling, scenario, and weighting uncertainty.
 
 ## 3. Data Overview
+
+Evaluation dataset sizes are reported below as household, event, feature, pixel, and scenario observations; survey-module row counts are not additive across different units of observation.
 
 ### Data Scope
 
@@ -149,7 +151,7 @@ Time-series visualizations have not been generated pending explicit user confirm
 
 ## 4. Variable Construction  /  Key Variables
 
-The table records the approved survey variables, road-network variables, and confirmed scenario-based hazard-evidence and exposure variables. Survey roles and unresolved formal definitions may be refined during estimation planning. Hazard-evidence classes express confidence in multi-source spatial evidence rather than physical intensity, and every exposure measure remains a scenario estimate rather than confirmed damage, casualties, or displacement.
+All entries below use readable, article-facing variable names; technical source names and raw fields remain outside AnaSOP. The table records the approved survey variables, road-network variables, confirmed scenario-based hazard-evidence and exposure variables, and count-constrained road-repair portfolio variables. Survey roles and unresolved formal definitions may be refined during estimation planning. Hazard-evidence classes express confidence in multi-source spatial evidence rather than physical intensity, and every exposure or repair-benefit measure remains a scenario estimate rather than confirmed damage, casualties, displacement, engineering feasibility, or cost optimality.
 
 | variable_name | full_name | role | formal_definition | construction_or_coding | is_final_variable |
 |---|---|---|---|---|---|
@@ -347,6 +349,30 @@ The table records the approved survey variables, road-network variables, and con
 | Flood/Landslide Risk-Reduction Participation Deficit | Share of households reporting no flood or landslide risk-reduction participation | supported-domain preparedness indicator | \(R_g=\sum_{i\in g}w_i1[Participation_i=No]/\sum_{i\in g}w_i\). | Estimate only for supported Bagmati ecological-belt domains; higher values indicate weaker preparedness context. | yes |
 | Historical Assistance Receipt | Weighted share of recorded historical shock episodes receiving assistance | supported-domain shock-response indicator | \(A_{d,t}^{hist}=\sum_jw_j1[Assistance_j=Yes]/\sum_jw_j\). | Estimate by observed HRVS district and survey year for all recorded shock episodes. Cluster uncertainty by household and do not fill the absent Rasuwa domain. | yes |
 | Historical Food-Consumption Reduction Coping | Weighted share of recorded historical shock episodes involving reduced food consumption or expenditure | supported-domain harmful-coping indicator | \(C_{d,t}^{hist}=\sum_jw_j1[FoodReduction_j=Yes]/\sum_jw_j\). | Estimate by observed HRVS district and survey year for all recorded shock episodes. Treat as contextual historical evidence rather than a 2026 event outcome. | yes |
+| Intervention Priority | Equal-weight event-specific settlement priority score | primary decision outcome | \(\Pi_{s,c}^{main}=(H_{s,c}^{*}+E_{s,c}^{*}+A_{s,c}^{*})/3\). | Average the tied-midrank Hazard and Exposure components with the isolation-preserving Accessibility component for settlements in the scenario-specific ranking set. District vulnerability is excluded. | yes |
+| Priority Rank | Descending primary settlement priority rank | primary decision outcome | \(Rank_{s,c}^{main}=rank^{downarrow}_{competition}(\Pi_{s,c}^{main})\). | Assign the same rank to tied Intervention Priority values and leave settlements outside the scenario-specific ranking set unranked. | yes |
+| Sensitivity Intervention Priority | Equal-weight settlement priority score with district vulnerability context | sensitivity decision outcome | \(\Pi_{s,c}^{V}=(H_{s,c}^{*}+E_{s,c}^{*}+A_{s,c}^{*}+V_s^{*})/4\). | Add the shrinkage-adjusted district vulnerability percentile as a fourth equal-weight sensitivity component. Do not interpret the result as measured settlement vulnerability. | yes |
+| Sensitivity Priority Rank | Descending vulnerability-sensitivity settlement rank | sensitivity decision outcome | \(Rank_{s,c}^{V}=rank^{downarrow}_{competition}(\Pi_{s,c}^{V})\). | Rank only the same scenario-specific settlement set used by the primary score. | yes |
+| Sensitivity Rank Shift | Change in rank after adding district vulnerability context | sensitivity diagnostic | \(D_{s,c}=Rank_{s,c}^{main}-Rank_{s,c}^{V}\). | Positive values indicate movement toward higher priority after district context is added; negative values indicate movement toward lower priority. | yes |
+| Scenario Inclusion Frequency | Share of structural scenarios in which a settlement enters the ranking set | coverage and robustness diagnostic | \(F_s^{inc}=M_C^{-1}\sum_{c=1}^{M_C}1[s\in\mathcal{S}_c]\). | Calculate over all 192 pre-specified hazard, closure, facility, topology, and snap-distance scenarios. Do not treat non-inclusion as a zero priority score. | yes |
+| Allocation-Threshold Inclusion Frequency | Share of population-allocation specifications in which a settlement enters the primary-network ranking set | coverage and robustness diagnostic | \(F_s^{alloc,inc}=M_A^{-1}\sum_{a=1}^{M_A}1[s\in\mathcal{S}_a]\). | Calculate over the four pre-specified population-allocation thresholds of 500, 1000, 2000, and 3000 m while holding the primary hazard and network scenario fixed. Do not confuse population allocation with settlement-to-road snapping. | yes |
+| Structural-Scenario Top-10 Frequency | Top-10 membership frequency within eligible structural scenarios | robustness outcome | \(F_s^{str}=M_{s,str}^{-1}\sum_{m\in\mathcal{M}_{s,str}}1[Rank_{s,m}\leq10]\). | Calculate only from the 192 hazard, closure, facility, topology, and snap-distance scenarios in which the settlement is eligible. Report separately from weighting robustness. | yes |
+| Allocation-Threshold Top-10 Frequency | Top-10 membership frequency within eligible primary-network population-allocation specifications | robustness outcome | \(F_s^{alloc}=M_{s,alloc}^{-1}\sum_{m\in\mathcal{M}_{s,alloc}}1[Rank_{s,m}\leq10]\). | Calculate from the four population-allocation thresholds while holding the primary hazard, closure, facility, topology, and settlement-to-road rules fixed. Report separately from structural and weighting robustness. | yes |
+| Weight-Rule Top-10 Frequency | Top-10 membership frequency within primary-scenario weighting and functional-form specifications | robustness outcome | \(F_s^{wt}=M_{s,wt}^{-1}\sum_{m\in\mathcal{M}_{s,wt}}1[Rank_{s,m}\leq10]\). | Calculate from six deterministic alternatives, one geometric specification, and 10,000 seeded Dirichlet draws for primary-ranking settlements. Monte Carlo draw count controls precision, not robustness-family influence. | yes |
+| Rank Stability | Family-balanced top-10 membership frequency | robustness outcome | \(F_s^{bal}=(F_s^{str}+F_s^{alloc}+F_s^{wt})/3\) when all three families are defined. | Give structural-scenario, population-allocation, and weighting families equal influence regardless of their specification counts. Preserve all family-specific frequencies alongside the balanced summary. | yes |
+| Median Priority Rank | Family-balanced median rank across retained eligible robustness families | robustness outcome | \(\widetilde{Rank}_s^{bal}=Q_{0.5}^{bal}(Rank_{s,m})\). | Compute weighted rank quantiles by assigning total weight one-third to each available family and equal weight within family. Report balanced IQR and P05-P95 intervals and preserve complete family-specific rank surfaces. | yes |
+| Critical Road Section | OSM road-feature repair candidate label | repair-screening identifier | One OSM road feature containing at least one primary-scenario closed graph edge. | Group non-overlapping graph edges by OSM feature. The primary candidate set requires Hazard Evidence Class 3 and CEMS Damage Grade equal to Destroyed. | yes |
+| Is Critical Road Section | Indicator of positive modeled marginal access benefit | repair-screening outcome | \(C_j=1[N_j^{reconnected}>0\ \lor\ W_j^{improved}>0]\). | Restore one candidate section at a time while all other primary closures remain fixed. This is a screening classification, not an engineering repair order. | yes |
+| Repair Section Length (m) | Total modeled length of graph edges reopened for one candidate | repair-screening diagnostic | \(L_j^{repair}=\sum_{e\in E_j^{closed}}\ell_e\). | Sum only primary-scenario closed graph edges belonging to the candidate OSM feature. It is not a field-measured repair length or cost proxy. | yes |
+| Restored Access after Repair | Newly isolated settlement regaining a finite modeled service path after one candidate repair | repair-screening outcome | \(R_{s,j}=1[J_{s,c_0}=1\ \land\ A_{s,j}^{repair}<\infty]\). | Reopen all primary-closed graph edges of candidate section \(j\) and retain every other primary closure. Preserve missing values for baseline-ineligible settlements. | yes |
+| Population Reconnected | Assigned settlement population regaining modeled service access after one candidate repair | repair-screening outcome | \(N_j^{reconnected}=\sum_sP_s(3000)R_{s,j}\). | Sum only population assigned within 3000 m to settlements that were newly isolated in the primary disruption and regain a finite path. Unallocated population is excluded and reported separately. | yes |
+| Post-Repair Travel Time (minutes) | Modeled travel time to the nearest retained health or emergency destination after one candidate repair | repair-screening outcome | \(A_{s,j}^{repair}=\min_{f\in F}\operatorname{dist}_{G_{c_0}^{+j}}(n_s,n_f)\). | Use the primary disrupted graph with candidate section \(j\) reopened. Retain all primary health and emergency destinations and preserve missing values when no finite path exists. | yes |
+| Finite Travel-Time Improvement after Repair (minutes) | Reduction in finite modeled travel time after one candidate repair | repair-screening outcome | \(I_{s,j}=A_{s,c_0}-A_{s,j}^{repair}\) when both paths are finite. | Keep reconnected settlements separate rather than assigning an arbitrary finite improvement to a formerly infinite path. Nonnegative values are required by validation. | yes |
+| Population-Weighted Finite Travel-Time Improvement (person-minutes) | Total finite travel-time improvement weighted by assigned settlement population | repair-screening outcome | \(W_j^{improved}=\sum_{s:I_{s,j}<\infty}P_s(3000)I_{s,j}\). | Sum only positive finite improvements. Interpret jointly with Population Reconnected and do not convert the result into cost-effectiveness without Nepal-specific engineering cost evidence. | yes |
+| Repair Portfolio Size (sections) | Number of road sections in a count-constrained repair-screening portfolio | repair-portfolio scenario parameter | \(K=\lvert\mathcal{J}_K\rvert\), with \(K\in\{1,2,3,5\}\). | Select a nested forward sequence using joint rerouting after every added Critical Road Section. Report the four confirmed section counts without treating a larger portfolio as inherently better. | yes |
+| Portfolio Population Reconnected | Assigned settlement population regaining modeled service access after jointly reopening a road-repair portfolio | repair-portfolio outcome | \(N_{\mathcal{J}_K,c}^{reconnected}=\sum_sP_s(3000)1[J_{s,c}=1\ \land\ A_{s,\mathcal{J}_K,c}^{repair}<\infty]\). | Jointly reopen the primary candidate-edge groups in portfolio \(\mathcal{J}_K\), rerun shortest paths, and sum assigned population at scenario-specific newly isolated settlements that regain a finite path. Do not add single-section marginal benefits. | yes |
+| Portfolio-Weighted Finite Travel-Time Improvement (person-minutes) | Total finite modeled travel-time improvement after jointly reopening a road-repair portfolio | repair-portfolio outcome | \(W_{\mathcal{J}_K,c}^{improved}=\sum_{s:A_{s,c}<\infty,\ A_{s,\mathcal{J}_K,c}^{repair}<\infty}P_s(3000)\max(0,A_{s,c}-A_{s,\mathcal{J}_K,c}^{repair})\). | Multiply each positive finite travel-time improvement by assigned settlement population and sum. Keep reconnected settlements separate instead of assigning an arbitrary finite improvement to a previously infinite path. | yes |
+| Portfolio Structural-Scenario Retention | Share of structural scenarios in which a fixed primary repair portfolio retains any positive modeled access benefit | repair-portfolio robustness outcome | \(R_{\mathcal{J}_K}=M_C^{-1}\sum_{c=1}^{M_C}1[N_{\mathcal{J}_K,c}^{reconnected}>0\ \lor\ W_{\mathcal{J}_K,c}^{improved}>0]\). | Evaluate each fixed primary forward portfolio across all 192 hazard, closure, facility, topology, and snap-distance scenarios. Positive retention means population reconnection or finite person-minute improvement; it does not measure benefit magnitude or engineering robustness. | yes |
 
 ## 5. Identification Strategy
 
@@ -357,7 +383,8 @@ The study uses descriptive triangulation, scenario-based network simulation, and
 ### Units, Eligibility, and Comparisons
 
 - The settlement is the unit for hazard proximity, population allocation, accessibility loss, and intervention-priority ranking.
-- The road edge is the unit for disruption scenarios. Candidate road sections and repair benefits remain a planned extension because Section 4 does not yet contain final variables for Critical Road Section, Population Reconnected, or Restored Access after Repair.
+- The road edge is the unit for disruption scenarios. The road-repair candidate is one non-overlapping OSM road feature containing at least one primary-scenario closed graph edge; every candidate retains a Critical Road Section label, Repair Section Length (m), and its complete set of reopened edges.
+- The repair portfolio is a nested set of Critical Road Section candidates selected by joint rerouting. Repair Portfolio Size (sections) identifies the four reported section counts, while Portfolio Population Reconnected, Portfolio-Weighted Finite Travel-Time Improvement (person-minutes), and Portfolio Structural-Scenario Retention remain modeled screening outcomes rather than engineering performance measures.
 - Households and shock episodes remain the units for survey estimation. Districts and province-by-ecological-belt domains are the supported reporting geographies; survey records are not assigned to settlement locations.
 - The primary settlement-ranking population includes settlements that are baseline eligible, have positive Estimated Settlement Population, and show either scenario-consistent hazard proximity or a modeled accessibility change. Baseline-ineligible settlements are reported as a coverage limitation rather than assigned a zero access-loss score.
 
@@ -375,9 +402,11 @@ Economic Deprivation, Basic Needs Inadequacy, and Essential Public Service Depri
 
 ### Interpretation Limits and Planned Outputs
 
-The framework supports descriptive statements about where evidence converges, which settlements lose modeled road access, how much assigned population is associated with those changes, and whether priority ranks persist across assumptions. It cannot claim realized casualties, displacement, facility failure, household welfare loss, optimal cost effectiveness, or climate attribution. Section 8 can support the central settlement-priority question and the physical, access, vulnerability, and robustness supporting questions after its stale variable names are harmonized. It cannot yet support the road-repair benefit claim because the required repair-section variables are not final in Section 4.
+The framework supports descriptive statements about where evidence converges, which settlements lose modeled road access, how much assigned population is associated with those changes, whether priority ranks persist across assumptions, which single-section restorations produce marginal access gains, and whether fixed count-constrained repair portfolios retain modeled benefit across structural scenarios. It cannot claim realized casualties, displacement, facility failure, household welfare loss, optimal cost effectiveness, engineering feasibility, repair duration, or climate attribution. Section 8 can support the central settlement-priority question and the physical, access, vulnerability, and robustness supporting questions with the current final variables. Road-Repair Screening and Portfolio Benefits and Road-Repair Screening and Portfolio Scenarios are supportable as compact modeled screening outputs, not field-ready repair orders.
 
 ## 6. Main Estimation Framework
+
+Notation is consistent throughout this section: later equations reuse previously defined symbols, and each new symbol is defined when it first appears.
 
 ### 6.1 Scenario Definition
 
@@ -469,27 +498,79 @@ The multiplicative robustness score is
 
 where \(\epsilon=0.01\) prevents a zero component from mechanically setting the full score to zero. This score is a robustness diagnostic, not the primary estimand.
 
-Across \(M\) retained scenario-weight specifications, top-ten selection frequency is
+For settlement \(s\), let \(\mathcal{M}_{s,str}\) contain eligible structural-scenario ranks, \(\mathcal{M}_{s,alloc}\) contain eligible ranks under the four population-allocation thresholds of 500, 1000, 2000, and 3000 m with the primary network scenario held fixed, and \(\mathcal{M}_{s,wt}\) contain primary-scenario weighting and functional-form ranks. Let their respective counts be \(M_{s,str}\), \(M_{s,alloc}\), and \(M_{s,wt}\). The three family-specific top-ten frequencies are
 
 \[
-F_s^{top10}=\frac{1}{M}\sum_{m=1}^{M}1[Rank_{s,m}\leq10].
+F_s^{str}=\frac{1}{M_{s,str}}\sum_{m\in\mathcal{M}_{s,str}}1[Rank_{s,m}\leq10],
+\qquad
+F_s^{alloc}=\frac{1}{M_{s,alloc}}\sum_{m\in\mathcal{M}_{s,alloc}}1[Rank_{s,m}\leq10],
+\qquad
+F_s^{wt}=\frac{1}{M_{s,wt}}\sum_{m\in\mathcal{M}_{s,wt}}1[Rank_{s,m}\leq10].
 \]
 
-Rank Stability is summarized by \(F_s^{top10}\), median rank, interquartile rank range, and the 5th-95th percentile rank interval. The Priority-Rank Robustness Across Assumptions figure reports these distributions rather than one deterministic rank alone.
+Here each family-specific frequency is defined only when its corresponding denominator is positive. For primary-ranking settlements with all three families, Family-Balanced Rank Stability is
+
+\[
+F_s^{bal}=\frac{F_s^{str}+F_s^{alloc}+F_s^{wt}}{3}.
+\]
+
+The balanced rank distribution assigns total probability one-third to each family and equal probability to each eligible rank within that family. Its median, interquartile range, and 5th-95th percentile interval therefore do not change when additional Monte Carlo draws are used only to improve numerical precision. The Priority-Rank Robustness Across Assumptions figure reports the three family frequencies, the balanced summary, and family-balanced rank intervals rather than one specification-count-weighted distribution.
 
 ### 6.6 Population and Access-Loss Estimands
 
-Each scenario reports Newly Isolated Settlements, Newly Isolated Population, Settlements Delayed over 5 Minutes, Population Delayed over 5 Minutes, Population with Positive Accessibility Loss, and Population-Weighted Accessibility Loss (person-minutes). Finite accessibility losses and newly isolated population are reported separately. Unallocated Population, baseline-ineligible settlements, and settlements without positive assigned population remain explicit coverage quantities rather than being silently treated as zero impact.
+Each scenario reports Newly Isolated, Newly Isolated Population, Population Delayed over 5 Minutes, Population with Positive Accessibility Loss, and Population-Weighted Accessibility Loss (person-minutes). Finite accessibility losses and newly isolated population are reported separately. Unallocated Population, baseline-ineligible settlements, and settlements without positive assigned population remain explicit coverage quantities rather than being silently treated as zero impact.
 
-### 6.7 Deferred Road-Repair Framework
+### 6.7 Road-Repair Marginal Benefits and Count-Constrained Portfolios
 
-The Road-Repair Reconnection Benefits figure and Top 10 Priority Road Repairs table are not yet estimable from final Section 4 variables. Before those outputs are generated, data preprocessing must define Critical Road Section, Population Reconnected, Restored Access after Repair, candidate-section construction, and the repair simulation rule. Until then, the framework supports disruption prioritization but not repair-benefit ranking or cost-effectiveness claims.
+Let \(j\) index Critical Road Section candidates and let \(E_j^{closed}\) be the set of primary-scenario closed graph edges belonging to candidate \(j\). The single-section repair graph is
+
+\[
+G_{c_0}^{+j}=\left(V,E_{c_0}\cup E_j^{closed}\right).
+\]
+
+Here \(G_{c_0}^{+j}\) is the primary disrupted graph after reopening only candidate \(j\); \(V\) is the road-node set and \(E_{c_0}\) is the set of edges available under the primary disruption. Every other primary closure remains fixed. Restored Access after Repair, Population Reconnected, Post-Repair Travel Time (minutes), Finite Travel-Time Improvement after Repair (minutes), and Population-Weighted Finite Travel-Time Improvement (person-minutes) are calculated from this graph using their Section 4 definitions.
+
+The primary single-section screening order is the descending lexicographic tuple
+
+\[
+B_j=\left(N_j^{reconnected},W_j^{improved},-L_j^{repair}\right).
+\]
+
+Here \(B_j\) is the repair-benefit screening tuple; \(N_j^{reconnected}\) is Population Reconnected; \(W_j^{improved}\) is Population-Weighted Finite Travel-Time Improvement (person-minutes); and \(L_j^{repair}\) is Repair Section Length (m). Stable candidate identifiers break remaining ties. This ordering prioritizes reconnection before finite travel-time improvement and uses shorter modeled repair length only as a final non-monetary tie-breaker. It is not an engineering, cost-effectiveness, or dispatch-ready repair order.
+
+Single-section marginal benefits are not added to approximate a portfolio because multiple damaged sections may be complements. For a candidate set \(\mathcal{J}\), Portfolio Population Reconnected and Portfolio-Weighted Finite Travel-Time Improvement (person-minutes) are computed by jointly reopening every edge in \(\cup_{j\in\mathcal{J}}E_j^{closed}\) and fully rerouting. The confirmed count-constrained forward sequence is
+
+\[
+\mathcal{J}_0=\varnothing,\qquad
+j_k=\operatorname*{argmax}_{j\notin\mathcal{J}_{k-1}}
+\left(
+N_{\mathcal{J}_{k-1}\cup\{j\},c_0}^{reconnected},
+W_{\mathcal{J}_{k-1}\cup\{j\},c_0}^{improved},
+-L_j^{repair}
+\right),
+\qquad
+\mathcal{J}_k=\mathcal{J}_{k-1}\cup\{j_k\}.
+\]
+
+Here \(\mathcal{J}_k\) is the selected set after \(k\) forward steps and \(j_k\) is the candidate with the largest lexicographic incremental benefit after rerouting the current portfolio. Repair Portfolio Size (sections) reports \(k\in\{1,2,3,5\}\). This is a transparent section-count heuristic necessitated by the absence of Nepal-specific repair cost, duration, crew, structural-condition, and traffic-capacity data; it is not a global or cost-optimal portfolio.
+
+For each reported portfolio size, the displayed primary-scenario marginal changes are
+
+\[
+\Delta N_k=N_{\mathcal{J}_k,c_0}^{reconnected}-N_{\mathcal{J}_{k^-},c_0}^{reconnected},
+\qquad
+\Delta W_k=W_{\mathcal{J}_k,c_0}^{improved}-W_{\mathcal{J}_{k^-},c_0}^{improved}.
+\]
+
+Here \(k^-\) is the preceding reported portfolio size, with the empty portfolio used before \(k=1\); \(\Delta N_k\) is the marginal Portfolio Population Reconnected and \(\Delta W_k\) is the marginal Portfolio-Weighted Finite Travel-Time Improvement (person-minutes). Zero marginal change is retained as substantive evidence of a benefit plateau rather than removed from the output.
+
+The complete primary single-section surface contains all 194 candidates. Each fixed primary portfolio is evaluated unchanged across all 192 structural scenarios, producing 768 portfolio-scenario records. Portfolio Structural-Scenario Retention is the share of scenarios with positive reconnection or finite person-minute improvement; it measures persistence of any modeled benefit, not the retained magnitude or engineering robustness. The current calculations show that \(k=1\) reconnects assigned population, \(k=2\) adds finite travel-time improvement, \(k=3\) and \(k=5\) add no further modeled benefit, and every reported portfolio retains some benefit in two-thirds of structural scenarios. Road-Repair Screening and Portfolio Benefits and Road-Repair Screening and Portfolio Scenarios present these results with explicit evidence and engineering limitations.
 
 ## 7. Analytical Workflow
 
 | step | variables used | formula or model used | generated figure or table title | claim evaluated | planned support status |
 |---|---|---|---|---|---|
-| 1. Audit source evidence and linkage | Surface Change, Terrain Slope, Channel Context, Flow Path, Survey Reliability Category | Evidence availability, validation, linkage, and limitation audit | Evidence Base and Validation Status | Required physical, network, population, and survey evidence is adequate for its stated role. | Partially supportable: Flow Path and road-repair variables remain pending. |
+| 1. Audit source evidence and linkage | Surface Change, Terrain Slope, Channel Context, Flow Path, Survey Reliability Category, Scenario Inclusion Frequency, Repair Section Length (m) | Evidence availability, validation, linkage, eligible-denominator, and limitation audit | Evidence Base and Validation Status | Required physical, network, population, survey, and repair-screening evidence is adequate for its stated role. | Partially supportable: repair variables are available and validated; Flow Path remains pending sensitivity evidence. |
 | 2. Construct nested hazard evidence | Surface Change, Terrain Slope, Channel Context, Hazard Evidence Class, Hazard Scenario | Evidence-class rules and scenario threshold \(h\) in Section 6.1 | Cascading-Hazard Evidence and Consensus Footprint; Hazard and Exposure Key Indicators | Independent mapped, radar, optical, and terrain evidence converges on a coherent event corridor. | Planned descriptive support; no causal or intensity claim. |
 | 3. Measure physical and population exposure | Footprint Area (sq km), Exposed Population, Exposed Road Length (km), Exposed Building Count, Exposed Bridge Count, Directly Exposed Facility Count, Directly Exposed Settlement Count | Scenario overlay and exposure sums defined in Section 4 | Hazard and Exposure Key Indicators | The event corridor intersects population and critical infrastructure under nested evidence thresholds. | Planned descriptive support with exposure-not-damage limit. |
 | 4. Establish baseline and disrupted access | Topology repair threshold (m), Settlement-to-road snap distance (m), Baseline health/emergency accessibility (minutes), Road Closure Rule, Facility Availability Rule, Post-Disruption Travel Time (minutes), Newly Isolated, Accessibility Loss (minutes) | Scenario \(c\) in Section 6.1 and shortest-path definitions in Section 4 | Road Disruption and Service-Access Loss; Accessibility and Isolation Scenarios | Candidate road disruptions generate finite delays or complete modeled service isolation. | Planned model-based support, conditional on topology and closure assumptions. |
@@ -497,8 +578,8 @@ The Road-Repair Reconnection Benefits figure and Top 10 Priority Road Repairs ta
 | 6. Estimate contextual vulnerability | Economic Deprivation, Basic Needs Inadequacy, Essential Public Service Deprivation, Weighted District Vulnerability Domain Estimate, District Vulnerability Domain 95% CI, Survey Reliability Category, Pre-Warning Deficit, Historical Assistance Receipt, Historical Food-Consumption Reduction Coping | Survey-weighted means, PSU-clustered uncertainty, and empirical-Bayes shrinkage from Section 4 | Pre-Disaster Vulnerability Profile by Supported Domain; Pre-Disaster Vulnerability Dimensions | Survey evidence identifies interpretable vulnerability, preparedness, and coping dimensions at supported domains. | Planned partial support; Rasuwa uncertainty and HRVS coverage remain limited. |
 | 7. Rank settlements under the primary framework | Hazard Evidence Class, Estimated Settlement Population, Newly Isolated, Accessibility Loss (minutes) | Ranking set and component scaling in Sections 6.2-6.3; \(\Pi_{s,c}^{main}\) in Section 6.4 | Settlement Exposure, Isolation, and Intervention Priority; Top 10 Priority Settlements | Event-specific evidence identifies settlements with high joint hazard, population, and access-loss priority. | Planned decision-support evidence, not a causal effect or welfare estimate. |
 | 8. Test vulnerability sensitivity | Settlement Contextual Vulnerability (Sensitivity Only), Shrinkage-Adjusted District Vulnerability Percentile, Survey Reliability Category | \(\Pi_{s,c}^{V}\) in Section 6.4 | Settlement Exposure, Isolation, and Intervention Priority; Top 10 Priority Settlements | Priority conclusions are or are not sensitive to district vulnerability context. | Planned sensitivity evidence; cannot establish settlement-level vulnerability. |
-| 9. Test rank robustness | Hazard Scenario, Road Closure Rule, Facility Availability Rule, Topology repair threshold (m), Population Allocation Threshold (m), Domain Shrinkage Weight | Additive, leave-one-out, emphasized, random-weight, multiplicative, and scenario specifications in Section 6.5 | Priority-Rank Robustness Across Assumptions | The same settlements remain high priority across plausible structural and weighting choices. | Planned; stability must be judged from rank distributions and top-ten frequency. |
-| 10. Simulate road repairs | Closed Edge Length (km), Newly Isolated Population, Population-Weighted Accessibility Loss (person-minutes) | Deferred pending final repair-section and restoration variables in Section 6.7 | Road-Repair Reconnection Benefits; Top 10 Priority Road Repairs | Specific road repairs reconnect the most population and restore the most access. | Boundary-limited: return to data-preprocessing before estimation. |
+| 9. Test rank robustness | Hazard Scenario, Road Closure Rule, Facility Availability Rule, Topology repair threshold (m), Population Allocation Threshold (m), Domain Shrinkage Weight, Scenario Inclusion Frequency, Allocation-Threshold Inclusion Frequency, Structural-Scenario Top-10 Frequency, Allocation-Threshold Top-10 Frequency, Weight-Rule Top-10 Frequency, Rank Stability, Median Priority Rank | Family-specific and family-balanced additive, leave-one-out, emphasized, random-weight, multiplicative, allocation-threshold, and structural-scenario specifications in Section 6.5 | Priority-Rank Robustness Across Assumptions; Top 10 Priority Settlements | The same settlements remain high priority within the structural-scenario, population-allocation, and weighting robustness families. | Planned; judge the three family verdicts separately and use the family-balanced frequency and intervals only as an equal-family summary. |
+| 10. Simulate marginal and combined road repairs | Critical Road Section, Is Critical Road Section, Repair Section Length (m), Restored Access after Repair, Population Reconnected, Post-Repair Travel Time (minutes), Finite Travel-Time Improvement after Repair (minutes), Population-Weighted Finite Travel-Time Improvement (person-minutes), Repair Portfolio Size (sections), Portfolio Population Reconnected, Portfolio-Weighted Finite Travel-Time Improvement (person-minutes), Portfolio Structural-Scenario Retention | Single-section repair graph, benefit tuple, joint-rerouting forward sequence, marginal changes \(\Delta N_k\) and \(\Delta W_k\), and structural-scenario retention in Section 6.7 | Road-Repair Screening and Portfolio Benefits; Road-Repair Screening and Portfolio Scenarios | Individual or combined modeled road restorations reconnect assigned population or reduce finite service travel time, and additional sections may exhibit diminishing returns. | Data-supported screening evidence: all 194 primary candidates, four reported portfolios, and 768 portfolio-scenario records are validated. The observed benefit plateaus after \(k=2\), and each portfolio retains some benefit in two-thirds of scenarios. No engineering or cost-optimal claim is supported. |
 
 ### Evidence-Support Checkpoints
 
@@ -506,50 +587,40 @@ The Road-Repair Reconnection Benefits figure and Top 10 Priority Road Repairs ta
 2. Accept the network-mechanism claim only if baseline routing is reproducible, modeled closures create plausible access changes, and results are not driven solely by one topology or snap-distance rule.
 3. Accept the population-impact claim only with explicit reporting of Unallocated Population and baseline-ineligible settlements.
 4. Accept the vulnerability-context claim only at supported survey geographies with uncertainty and reliability labels; do not interpret district context as settlement measurement.
-5. Treat the central priority result as robust only when top-ten selection frequency and rank intervals show persistence across scenario, weight, and functional-form variations.
-6. Treat road-repair prioritization as unsupported until Critical Road Section, Population Reconnected, and Restored Access after Repair are constructed and validated.
+5. Treat the central priority result as robust only when Structural-Scenario Top-10 Frequency, Allocation-Threshold Top-10 Frequency, and Weight-Rule Top-10 Frequency all show persistence; use Family-Balanced Rank Stability and balanced rank intervals as summaries, not as substitutes for the three family verdicts.
+6. Accept a single-section road-repair screening claim only when the primary disrupted graph is exactly reproduced, reopening cannot worsen finite paths, candidate edge groups are non-overlapping, and candidate-level reconnection totals equal settlement-level Restored Access after Repair totals.
+7. Treat a multi-section portfolio as internally valid only when joint rerouting, rather than addition of single-section marginal benefits, produces non-decreasing Portfolio Population Reconnected and Portfolio-Weighted Finite Travel-Time Improvement (person-minutes) across \(k\in\{1,2,3,5\}\). Report zero marginal changes at \(k=3\) and \(k=5\) as a benefit plateau, and interpret the two-thirds Portfolio Structural-Scenario Retention as persistence of any modeled benefit rather than universal or engineering robustness.
+8. Do not translate Critical Road Section, the single-section screening order, or a count-constrained portfolio into an engineering repair order without Nepal-specific structural condition, crew, duration, cost, traffic-capacity, and field-operability evidence.
 
 ## 8. Figure and Table Plan
 
-The confirmed output plan follows the evidence chain from event reconstruction through network disruption and contextual vulnerability to intervention priorities and robustness. Manuscript tables are intentionally compact. Complete settlement and road rankings will be retained as machine-readable supplementary outputs rather than reproduced as oversized tables.
+The confirmed output plan follows the evidence chain from event reconstruction through network disruption and contextual vulnerability to intervention priorities and robustness. Manuscript tables are intentionally compact. Complete settlement, scenario, random-weight, road-candidate, and repair-portfolio surfaces will remain machine-readable supplementary outputs rather than being reproduced as oversized manuscript tables. Road-repair outputs are screening results under modeled closures, not engineering repair orders, cost-effectiveness estimates, or globally optimal portfolios. The portfolio outputs will display the observed benefit plateau after \(K=2\) rather than implying that adding zero-marginal-benefit sections improves the intervention.
 
 ### Figures
 
-| title | what it expresses | figure type | subpanels | key variables | status |
-|---|---|---|---:|---|---|
-| Cascading-Hazard Evidence and Consensus Footprint | Assesses whether satellite, terrain, flow-path, and independent mapped evidence converge on a coherent cascading-hazard footprint. | map | 4 | Surface Change, Terrain Slope, Flow Path, Hazard Intensity Class | pending |
-| Road Disruption and Service-Access Loss | Shows how candidate road disruptions translate the physical footprint into travel-time increases or complete service isolation. | map | 3 | Road edge travel time (minutes), Baseline health/emergency accessibility (minutes), Post-Disruption Travel Time, Accessibility Loss | pending |
-| Settlement Exposure, Isolation, and Intervention Priority | Integrates physical exposure, population, modeled isolation, and contextual vulnerability to identify priority settlements. | map | 4 | Hazard Intensity Class, Exposed Population, Accessibility Loss, Social Vulnerability, Intervention Priority | pending |
-| Pre-Disaster Vulnerability Profile by Supported Domain | Compares poverty, service deprivation, warning, preparedness, historical loss, assistance, and harmful coping only at survey-supported reporting domains. | heatmap and bar | 3 | Poverty Status, Per Capita Expenditure, Distance to nearest health institution (km), Did you receive Pre-Warning information, Preparatory work done to protect from disaster, The monetary value of the loss (in Rupees), Received assistance or help from others, Reduce consumption or expenditure on foods | pending |
-| Road-Repair Reconnection Benefits | Identifies which candidate road repairs restore the most population and essential-service access. | map and bar | 2 | Critical Road Section, Population Reconnected, Restored Access after Repair, Road edge travel time (minutes) | pending |
-| Priority-Rank Robustness Across Assumptions | Tests whether intervention priorities remain stable across topology, hazard, disruption, vulnerability, and weighting assumptions. | heatmap and line | 2 | Topology repair threshold (m), Priority Rank, Rank Stability, Intervention Priority | pending |
+| title | what it expresses | figure type | subpanels | key variables | manuscript placement | status |
+|---|---|---|---:|---|---|---|
+| Cascading-Hazard Evidence and Consensus Footprint | Locates the event within Nepal and shows how event-window sensor change, terrain and channel context, and independent mapped evidence combine into nested hazard-evidence scenarios for the cascading-hazard question. | map | 5 | Surface Change, Terrain Slope, Channel Context, Hazard Evidence Class, Hazard Scenario | Main text | done |
+| Road Disruption and Service-Access Loss | Shows how evidence-linked road closures translate the physical footprint into finite travel-time increases or complete loss of modeled health and emergency access. | map | 3 | Road Closure Rule, Closed Edge Length (km), Baseline health/emergency accessibility (minutes), Post-Disruption Travel Time (minutes), Accessibility Loss (minutes), Newly Isolated | Main text | done |
+| Settlement Exposure, Isolation, and Intervention Priority | Integrates hazard evidence, modeled population, service-access disruption, and sensitivity-only district vulnerability context to identify priority settlements without downscaling household observations. | map | 4 | Hazard Evidence Class, Estimated Settlement Population, Accessibility Status, Accessibility Loss (minutes), Intervention Priority, Sensitivity Intervention Priority | Main text | done |
+| Pre-Disaster Vulnerability Profile by Supported Domain | Compares deprivation, warning, preparedness, assistance, and harmful coping only at survey-supported reporting domains and displays the strength of the underlying survey support. | heatmap and bar | 3 | Economic Deprivation, Basic Needs Inadequacy, Essential Public Service Deprivation, Pre-Warning Deficit, Conditional Preparedness Deficit, Flood/Landslide Risk-Reduction Participation Deficit, Historical Assistance Receipt, Historical Food-Consumption Reduction Coping, Survey Reliability Category | Appendix Figure A1 | done |
+| Road-Repair Screening and Portfolio Benefits | Maps the selected sections, separates population reconnection from finite-delay improvement, and makes the observed zero marginal gain beyond \(K=2\) visible alongside structural-scenario retention. | map and bar | 3 | Critical Road Section, Is Critical Road Section, Repair Section Length (m), Population Reconnected, Restored Access after Repair, Population-Weighted Finite Travel-Time Improvement (person-minutes), Repair Portfolio Size (sections), Portfolio Population Reconnected, Portfolio-Weighted Finite Travel-Time Improvement (person-minutes), Portfolio Structural-Scenario Retention | Main text | done |
+| Priority-Rank Robustness Across Assumptions | Distinguishes frequent eligibility from stable top-priority placement, reports structural-scenario, population-allocation, and weighting robustness separately, and summarizes rank intervals with equal influence for all three robustness families. | heatmap and interval plot | 2 | Scenario Inclusion Frequency, Structural-Scenario Top-10 Frequency, Allocation-Threshold Top-10 Frequency, Weight-Rule Top-10 Frequency, Rank Stability, Median Priority Rank, Priority Rank, Sensitivity Rank Shift, Intervention Priority | Appendix Figure A2 | done |
 
 ### Tables
 
-| title | what it expresses | rows | columns | row meaning | column meaning | status |
-|---|---|---:|---:|---|---|---|
-| Evidence Base and Validation Status | Summarizes whether each required evidence layer is available, validated, linkable, and adequate for its intended research use. | 8 | 7 | One evidence layer or validation domain | Evidence type, period, coverage, linkage, validation status, principal limitation, analytical role | pending |
-| Hazard and Exposure Key Indicators | Reports the compact set of physical-footprint, population, building, road, bridge, and facility exposure indicators needed to characterize the event corridor. | 6 | 7 | One exposure dimension | Footprint or exposed amount, unit, primary estimate, alternative estimate, difference, evidence status, interpretation | pending |
-| Pre-Disaster Vulnerability Dimensions | Reports weighted, domain-supported summaries of the principal deprivation, preparedness, loss, assistance, and coping dimensions. | 8 | 7 | One vulnerability dimension | Indicator, supported domain, estimate, uncertainty interval, sample size, missingness, interpretation | pending |
-| Accessibility and Isolation Scenarios | Compares the primary network-disruption result with the small set of pre-specified topology, snap-distance, and hazard scenarios. | 8 | 8 | One primary or robustness scenario | Scenario, topology rule, snap rule, reachable settlements, isolated settlements, affected population, travel-time change, interpretation | pending |
-| Top 10 Priority Settlements | Presents a readable decision summary for the ten settlements with the strongest combined evidence for intervention. | 10 | 9 | One priority settlement | Settlement, hazard class, exposed population, accessibility loss, vulnerability, priority score, primary rank, rank stability, decision note | pending |
-| Top 10 Priority Road Repairs | Presents a readable decision summary for the ten road repairs with the largest robust reconnection benefits. | 10 | 9 | One candidate road repair | Road section, road class, disruption evidence, repair length, settlements reconnected, population reconnected, time restored, rank stability, decision note | pending |
+| title | what it expresses | rows | columns | row meaning | column meaning | manuscript placement | status |
+|---|---|---:|---:|---|---|---|---|
+| Evidence Base and Validation Status | Summarizes whether each required evidence layer is available, validated, linkable, and adequate for its intended research use through source-backed counts, population-allocation coverage, and metadata checks. | 8 | 7 | One evidence layer or validation domain | Evidence type, period, coverage, linkage, validation status, principal limitation, analytical role | Appendix Table A1 | done |
+| Hazard and Exposure Key Indicators | Reports the compact physical-footprint, modeled population, road, bridge, building, facility, and settlement exposure indicators needed to characterize the event corridor. | 6 | 6 | One exposure dimension | Indicator, unit, primary class 3, alternative class 2, sensitivity class 1, change from primary | Main text | done |
+| Pre-Disaster Vulnerability Dimensions | Reports weighted, domain-supported summaries of deprivation, preparedness, assistance, and harmful coping with their survey support boundaries. | 8 | 7 | One vulnerability or preparedness dimension | Indicator, supported domains, weighted estimate range, 95% CI span, Survey Effective Sample Size range, Survey Reliability Category range, evidence boundary | Appendix Table A2 | done |
+| Accessibility and Isolation Scenarios | Compares the primary network-disruption result with a compact pre-specified subset of topology, snap-distance, hazard, closure, and facility-availability scenarios while explicitly identifying any row that changes more than one assumption. | 8 | 8 | One primary or robustness scenario | Scenario, Hazard Evidence Class, Topology Repair Threshold (m), Settlement-to-Road Snap Distance (m), combined road-closure and facility-availability rule, Newly Isolated Population, Population Delayed over 5 Minutes, Population-Weighted Accessibility Loss (person-minutes) | Appendix Table A3 | done |
+| Top 10 Priority Settlements | Presents a readable decision summary for the ten settlements with the strongest combined event-specific evidence, while reporting eligibility, structural-scenario robustness, population-allocation robustness, weighting robustness, and family-balanced stability without allowing specification counts to dominate. | 10 | 9 | One priority settlement | Settlement label, Hazard Evidence Class within 500 m, Estimated Settlement Population, Accessibility Status, Intervention Priority, Priority Rank, Scenario Inclusion Frequency, combined display of Structural-Scenario Top-10 Frequency / Allocation-Threshold Top-10 Frequency / Weight-Rule Top-10 Frequency / Family-Balanced Rank Stability, Sensitivity Priority Rank | Main text | done |
+| Road-Repair Screening and Portfolio Scenarios | Integrates the two positive single-section candidates with the four jointly rerouted count-constrained portfolios, preserving distinct marginal and cumulative effects and making the zero-gain plateau beyond \(K=2\) explicit. | 6 | 8 | One positive single-section candidate or one pre-specified \(K\in\{1,2,3,5\}\) portfolio scenario | Analysis level, selected Critical Road Section set, Restored Access after Repair count, Population Reconnected, Population-Weighted Finite Travel-Time Improvement (person-minutes), marginal population reconnection, marginal finite travel-time improvement, Portfolio Structural-Scenario Retention | Main text | done |
 
-### Variable Coverage Warnings
+### Coverage and Output Boundaries
 
-⚠️ 警告：以下变量在 AnaSOP Section 4 中不存在或未标记为最终分析变量，建议返回 data-preprocessing 补充：
-
-- Surface Change （用于 Cascading-Hazard Evidence and Consensus Footprint）
-- Terrain Slope （用于 Cascading-Hazard Evidence and Consensus Footprint）
-- Flow Path （用于 Cascading-Hazard Evidence and Consensus Footprint）
-- Hazard Intensity Class （用于 Cascading-Hazard Evidence and Consensus Footprint、Settlement Exposure, Isolation, and Intervention Priority、Hazard and Exposure Key Indicators 及优先级表）
-- Post-Disruption Travel Time （用于 Road Disruption and Service-Access Loss 及 Accessibility and Isolation Scenarios）
-- Accessibility Loss （用于 Road Disruption and Service-Access Loss、Settlement Exposure, Isolation, and Intervention Priority、Accessibility and Isolation Scenarios 及 Top 10 Priority Settlements）
-- Exposed Population （用于 Settlement Exposure, Isolation, and Intervention Priority、Hazard and Exposure Key Indicators 及优先级表）
-- Social Vulnerability （用于 Settlement Exposure, Isolation, and Intervention Priority 及 Top 10 Priority Settlements）
-- Intervention Priority （用于 Settlement Exposure, Isolation, and Intervention Priority、Priority-Rank Robustness Across Assumptions 及优先级表）
-- Critical Road Section （用于 Road-Repair Reconnection Benefits 及 Top 10 Priority Road Repairs）
-- Population Reconnected （用于 Road-Repair Reconnection Benefits 及 Top 10 Priority Road Repairs）
-- Restored Access after Repair （用于 Road-Repair Reconnection Benefits 及 Top 10 Priority Road Repairs）
-- Priority Rank （用于 Priority-Rank Robustness Across Assumptions 及优先级表）
-- Rank Stability （用于 Priority-Rank Robustness Across Assumptions 及优先级表）
+- Flow Path remains a planned sensitivity layer and is not required for the primary hazard figure, which uses Channel Context.
+- All analytical key variables named in the figures and tables are present in Section 4 and marked as final variables; there are no variable-coverage warnings.
+- The full 767-settlement, 192-scenario, 10,000-random-weight, 194-road-candidate, and 768 portfolio-scenario result surfaces remain supplementary machine-readable outputs. A priority-object operational crosswalk retains stable identifiers, coordinates, administrative context, and verified local names when available without inventing missing names.
+- Road-repair portfolios use joint rerouting and forward selection for \(K\in\{1,2,3,5\}\). They are screening scenarios, not globally optimal or cost-optimal repair plans.

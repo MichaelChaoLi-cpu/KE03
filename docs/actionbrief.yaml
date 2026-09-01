@@ -1,0 +1,2625 @@
+doc_type: actionbrief
+version: 0.1.0
+datasetDictionary:
+  S01:
+    datasetSourceName: S01.dta
+    datasetDescription: NCCS 2022 household composition and respondent-context module used for preparedness context.
+    datasetAttribute: table
+    datasetProvider: National Statistics Office Nepal (formerly Central Bureau of Statistics)
+    datasetGenerationInfo: Public NCCS 2022 Stata module processed to nccs_2022_s01_preprocessed.parquet.
+    datasetPeriod: '2022'
+    datasetScale: 6,508 sampled households
+    datasetSpatialResolution: National survey; public district, ward, latitude, and longitude values are masked and cannot
+      support direct settlement linkage
+    datasetTemporalResolution: Cross-sectional household survey
+    datasetPreprocessingInfo: Approved labels were decoded to readable English; identifiers and survey weights were preserved;
+      personal identifiers, unusable public geocodes, and fully missing fields were excluded; no missing values were imputed
+      and no monetary losses were clipped or logged.
+  S04:
+    datasetSourceName: S04.dta
+    datasetDescription: NCCS 2022 household service-access and community-capacity module.
+    datasetAttribute: table
+    datasetProvider: National Statistics Office Nepal (formerly Central Bureau of Statistics)
+    datasetGenerationInfo: Public NCCS 2022 Stata module processed to nccs_2022_s04_preprocessed.parquet.
+    datasetPeriod: '2022'
+    datasetScale: 6,508 sampled households
+    datasetSpatialResolution: National survey; analysis is limited to supported ecological-belt domains because public geocodes
+      are masked
+    datasetTemporalResolution: Cross-sectional household survey
+    datasetPreprocessingInfo: Approved labels were decoded to readable English; identifiers and survey weights were preserved;
+      personal identifiers, unusable public geocodes, and fully missing fields were excluded; no missing values were imputed
+      and no monetary losses were clipped or logged.
+  S06:
+    datasetSourceName: S06.dta
+    datasetDescription: NCCS 2022 pre-warning and household disaster-preparedness module.
+    datasetAttribute: table
+    datasetProvider: National Statistics Office Nepal (formerly Central Bureau of Statistics)
+    datasetGenerationInfo: Public NCCS 2022 Stata module processed to nccs_2022_s06_preprocessed.parquet.
+    datasetPeriod: '2022'
+    datasetScale: 6,508 sampled households
+    datasetSpatialResolution: National survey; Bagmati ecological-belt estimates only, with no settlement downscaling
+    datasetTemporalResolution: Cross-sectional household survey
+    datasetPreprocessingInfo: Approved labels were decoded to readable English; identifiers and survey weights were preserved;
+      personal identifiers, unusable public geocodes, and fully missing fields were excluded; no missing values were imputed
+      and no monetary losses were clipped or logged.
+  S06_3:
+    datasetSourceName: S06_3.dta
+    datasetDescription: NCCS 2022 household-by-disaster-type experience module.
+    datasetAttribute: table
+    datasetProvider: National Statistics Office Nepal (formerly Central Bureau of Statistics)
+    datasetGenerationInfo: Public NCCS 2022 Stata module processed and joined into the disaster-experience analytical table.
+    datasetPeriod: 2022 survey with retrospective disaster experience
+    datasetScale: 123,652 household-disaster-type records
+    datasetSpatialResolution: National survey; public geocodes are masked
+    datasetTemporalResolution: Cross-sectional survey with retrospective event categories
+    datasetPreprocessingInfo: Approved labels were decoded to readable English; identifiers and survey weights were preserved;
+      personal identifiers, unusable public geocodes, and fully missing fields were excluded; no missing values were imputed
+      and no monetary losses were clipped or logged.
+  S07_1:
+    datasetSourceName: S07_1.dta
+    datasetDescription: NCCS 2022 disaster effects, work-loss, mortality, and migration module.
+    datasetAttribute: table
+    datasetProvider: National Statistics Office Nepal (formerly Central Bureau of Statistics)
+    datasetGenerationInfo: Public NCCS 2022 Stata module processed and joined into the disaster-experience analytical table.
+    datasetPeriod: 2022 survey with retrospective disaster effects
+    datasetScale: 123,652 household-disaster-type records after module linkage
+    datasetSpatialResolution: National survey; public geocodes are masked
+    datasetTemporalResolution: Cross-sectional survey with retrospective effects
+    datasetPreprocessingInfo: Approved labels were decoded to readable English; identifiers and survey weights were preserved;
+      personal identifiers, unusable public geocodes, and fully missing fields were excluded; no missing values were imputed
+      and no monetary losses were clipped or logged.
+  S07_2:
+    datasetSourceName: S07_2.dta
+    datasetDescription: NCCS 2022 disaster-loss module containing reported physical and monetary losses.
+    datasetAttribute: table
+    datasetProvider: National Statistics Office Nepal (formerly Central Bureau of Statistics)
+    datasetGenerationInfo: Public NCCS 2022 Stata module processed and joined into the disaster-experience analytical table.
+    datasetPeriod: 2022 survey with retrospective disaster losses
+    datasetScale: 123,652 household-disaster-type records after module linkage
+    datasetSpatialResolution: National survey; public geocodes are masked
+    datasetTemporalResolution: Cross-sectional survey with retrospective losses
+    datasetPreprocessingInfo: Approved labels were decoded to readable English; identifiers and survey weights were preserved;
+      personal identifiers, unusable public geocodes, and fully missing fields were excluded; no missing values were imputed
+      and no monetary losses were clipped or logged.
+  S11:
+    datasetSourceName: S11.dta
+    datasetDescription: NCCS 2022 climate adaptation and risk-reduction action module.
+    datasetAttribute: table
+    datasetProvider: National Statistics Office Nepal (formerly Central Bureau of Statistics)
+    datasetGenerationInfo: Public NCCS 2022 Stata module processed to nccs_2022_s11_preprocessed.parquet.
+    datasetPeriod: '2022'
+    datasetScale: 6,508 sampled households
+    datasetSpatialResolution: National survey; supported ecological-belt reporting only
+    datasetTemporalResolution: Cross-sectional household survey
+    datasetPreprocessingInfo: Approved labels were decoded to readable English; identifiers and survey weights were preserved;
+      personal identifiers, unusable public geocodes, and fully missing fields were excluded; no missing values were imputed
+      and no monetary losses were clipped or logged.
+  Weight:
+    datasetSourceName: Weight.dta
+    datasetDescription: NCCS 2022 survey-weight, ecological-belt, and perceived-risk module.
+    datasetAttribute: table
+    datasetProvider: National Statistics Office Nepal (formerly Central Bureau of Statistics)
+    datasetGenerationInfo: Public NCCS 2022 Stata weight module processed to nccs_2022_weight_preprocessed.parquet.
+    datasetPeriod: '2022'
+    datasetScale: 6,508 sampled households
+    datasetSpatialResolution: National survey with ecological-belt reporting domains; public coordinates are unusable
+    datasetTemporalResolution: Cross-sectional household survey
+    datasetPreprocessingInfo: Approved labels were decoded to readable English; identifiers and survey weights were preserved;
+      personal identifiers, unusable public geocodes, and fully missing fields were excluded; no missing values were imputed
+      and no monetary losses were clipped or logged.
+  S03:
+    datasetSourceName: S03.dta
+    datasetDescription: NLSS IV household-by-facility travel-time and access module.
+    datasetAttribute: table
+    datasetProvider: National Statistics Office Nepal
+    datasetGenerationInfo: Public NLSS IV Stata module processed to nlss_iv_s03_preprocessed.parquet and the facility-access
+      analytical table.
+    datasetPeriod: 2022/23
+    datasetScale: 220,800 household-facility records from 9,600 households
+    datasetSpatialResolution: National survey; district estimates use the validated PSU-to-district crosswalk
+    datasetTemporalResolution: Cross-sectional household-facility survey
+    datasetPreprocessingInfo: Approved labels were decoded to readable English; identifiers and survey weights were preserved;
+      personal identifiers, unusable public geocodes, and fully missing fields were excluded; no missing values were imputed
+      and no monetary losses were clipped or logged.
+  S17:
+    datasetSourceName: S17.dta
+    datasetDescription: NLSS IV household assessment of essential public services and monthly income adequacy.
+    datasetAttribute: table
+    datasetProvider: National Statistics Office Nepal
+    datasetGenerationInfo: Public NLSS IV Stata module processed to nlss_iv_s17_preprocessed.parquet and the household-vulnerability
+      table.
+    datasetPeriod: 2022/23
+    datasetScale: 9,600 sampled households
+    datasetSpatialResolution: National survey; Bagmati district estimates use validated PSU linkage and explicit reliability
+      labels
+    datasetTemporalResolution: Cross-sectional household survey
+    datasetPreprocessingInfo: Approved labels were decoded to readable English; identifiers and survey weights were preserved;
+      personal identifiers, unusable public geocodes, and fully missing fields were excluded; no missing values were imputed
+      and no monetary losses were clipped or logged.
+  poverty:
+    datasetSourceName: poverty.dta
+    datasetDescription: NLSS IV poverty, expenditure, housing, clothing, health-care, and schooling measures.
+    datasetAttribute: table
+    datasetProvider: National Statistics Office Nepal
+    datasetGenerationInfo: Public NLSS IV poverty module processed to nlss_iv_poverty_preprocessed.parquet and the household-vulnerability
+      table.
+    datasetPeriod: 2022/23
+    datasetScale: 9,600 sampled households
+    datasetSpatialResolution: National survey; Bagmati district estimates use validated PSU linkage and survey weights
+    datasetTemporalResolution: Cross-sectional household survey
+    datasetPreprocessingInfo: Approved labels were decoded to readable English; identifiers and survey weights were preserved;
+      personal identifiers, unusable public geocodes, and fully missing fields were excluded; no missing values were imputed
+      and no monetary losses were clipped or logged.
+  Section_0:
+    datasetSourceName: Section_0.dta (HRVS waves 1-3)
+    datasetDescription: HRVS community and household location modules used to retain observed district and panel identifiers.
+    datasetAttribute: table
+    datasetProvider: World Bank Household Risk and Vulnerability Survey team
+    datasetGenerationInfo: Public wave-specific Stata modules were standardized and pooled across three survey waves.
+    datasetPeriod: 2016-2018
+    datasetScale: Three annual waves; 400 community records per wave before linkage
+    datasetSpatialResolution: Observed survey districts; Rasuwa is not sampled and Nuwakot coverage is retained as contextual
+      evidence
+    datasetTemporalResolution: Annual panel waves
+    datasetPreprocessingInfo: Approved labels were decoded to readable English; identifiers and survey weights were preserved;
+      personal identifiers, unusable public geocodes, and fully missing fields were excluded; no missing values were imputed
+      and no monetary losses were clipped or logged.
+  Section_15a:
+    datasetSourceName: Section_15a.dta (HRVS waves 1-3)
+    datasetDescription: HRVS household shock, loss, assistance, and coping module pooled across three waves.
+    datasetAttribute: table
+    datasetProvider: World Bank Household Risk and Vulnerability Survey team
+    datasetGenerationInfo: Public wave-specific Stata modules were standardized and pooled to hrvs_2016_2018_shock_panel_preprocessed.parquet.
+    datasetPeriod: 2016-2018
+    datasetScale: 12,092 household-shock-wave records
+    datasetSpatialResolution: Observed survey districts; event-area evidence is available for Nuwakot but not Rasuwa
+    datasetTemporalResolution: Annual household panel waves with shock episodes
+    datasetPreprocessingInfo: Approved labels were decoded to readable English; identifiers and survey weights were preserved;
+      personal identifiers, unusable public geocodes, and fully missing fields were excluded; no missing values were imputed
+      and no monetary losses were clipped or logged.
+  network_accessibility:
+    datasetSourceName: road_edges_preprocessed.parquet and settlement_baseline_accessibility_preprocessed.parquet
+    datasetDescription: Pre-event routable OSM road graph and baseline settlement access to health or emergency destinations.
+    datasetAttribute: table
+    datasetProvider: OpenStreetMap contributors via Geofabrik; research-team derivatives
+    datasetGenerationInfo: A 2026-08-25 pre-event OSM snapshot was clipped, topology-repaired under four thresholds, assigned
+      class speeds, and linked to settlements and retained facilities.
+    datasetPeriod: Pre-event baseline as of 2026-08-25
+    datasetScale: 751,866 routed edge records and 3,068 settlement-topology records
+    datasetSpatialResolution: Road edges and settlements in the three-district event scope and surrounding routing buffer
+    datasetTemporalResolution: Static pre-event network with four topology scenarios
+    datasetPreprocessingInfo: Geometry and duplicate checks, deterministic topology repair, class-speed travel times, and
+      settlement snap-distance rules were applied.
+  hazard_evidence:
+    datasetSourceName: hazard_evidence_stack_20m.tif and hazard_evidence_class_20m.tif
+    datasetDescription: Aligned multi-source change, mapped-event, channel, and slope evidence summarized as nested hazard-evidence
+      confidence classes.
+    datasetAttribute: raster
+    datasetProvider: EU Copernicus, UNOSAT, HydroSHEDS, and research-team derivatives
+    datasetGenerationInfo: Pre/post Sentinel-1 and Sentinel-2 evidence, independent rapid mapping, HydroRIVERS context, and
+      Copernicus DEM slope were aligned to a 20 m UTM grid and combined by pre-specified rules.
+    datasetPeriod: 2026-08-12 to 2026-08-28 event window
+    datasetScale: 4,983 by 4,781 cells with seven evidence bands and one class raster
+    datasetSpatialResolution: 20 m raster in WGS 84 / UTM zone 45N
+    datasetTemporalResolution: Event-window composite
+    datasetPreprocessingInfo: Source masks, cloud validity, NoData, independent evidence, channel buffers, and nested class
+      logic were retained explicitly.
+  hazard_exposure:
+    datasetSourceName: hazard_scenario_exposure_summary.parquet
+    datasetDescription: Physical footprint and population, road, bridge, building, facility, settlement, and disruption-candidate
+      exposure under three nested evidence thresholds.
+    datasetAttribute: table
+    datasetProvider: Research-team overlay of EU Copernicus, UNOSAT, OpenStreetMap, WorldPop, and census inputs
+    datasetGenerationInfo: The class-3 primary, class-2 alternative, and class-1 sensitivity footprints were overlaid with
+      calibrated population and infrastructure layers.
+    datasetPeriod: August 2026 event window with 2021/2024 population and 2026 pre-event infrastructure baselines
+    datasetScale: Three nested hazard scenarios
+    datasetSpatialResolution: 20 m hazard grid summarized to event-corridor features and population cells
+    datasetTemporalResolution: Three pre-specified evidence thresholds
+    datasetPreprocessingInfo: Exposure was counted as spatial intersection or proximity and was not interpreted as confirmed
+      damage.
+  network_disruption:
+    datasetSourceName: settlement_disruption_accessibility_robustness_preprocessed.parquet
+    datasetDescription: Settlement-level shortest-path outcomes for evidence-linked road closures, facility availability,
+      topology, and snap-distance scenarios.
+    datasetAttribute: table
+    datasetProvider: Research-team network simulation using OpenStreetMap and Copernicus EMSR927 evidence
+    datasetGenerationInfo: Evidence-linked graph edges were closed under 192 structural scenarios and shortest paths to retained
+      health or emergency destinations were recomputed.
+    datasetPeriod: August 2026 disruption on the pre-event road baseline
+    datasetScale: 147,264 settlement-scenario records across 767 settlements and 192 scenarios
+    datasetSpatialResolution: Settlement and road-network scale in the three-district event scope
+    datasetTemporalResolution: Scenario-based static disruption simulations
+    datasetPreprocessingInfo: Baseline eligibility, finite delays, newly isolated settlements, closure lengths, and destination
+      removals were retained separately.
+  population_accessibility:
+    datasetSourceName: settlement_population_allocation_sensitivity_preprocessed.parquet and accessibility_scenario_population_summary_preprocessed.parquet
+    datasetDescription: Census-calibrated population allocation to settlements and population-weighted accessibility outcomes.
+    datasetAttribute: table
+    datasetProvider: WorldPop Research Programme, National Statistics Office Nepal, OpenStreetMap, and research-team derivatives
+    datasetGenerationInfo: WorldPop 2024 distribution was calibrated to 2021 census totals, assigned within local units to
+      nearest settlements under four thresholds, and linked to accessibility outcomes.
+    datasetPeriod: 2021 census totals, 2024 distribution, and August 2026 disruption
+    datasetScale: 767 settlements, 228,289 positive population cells, four allocation thresholds, and scenario summaries
+    datasetSpatialResolution: Approximately 100 m population cells allocated to mapped settlements within local units
+    datasetTemporalResolution: Four allocation-distance specifications with a 3,000 m primary threshold
+    datasetPreprocessingInfo: Allocated and unallocated population were preserved; the primary threshold allocates 573,645
+      people (90.2%) and leaves 62,145 (9.8%) unallocated.
+  vulnerability_estimates:
+    datasetSourceName: nlss_iv_bagmati_district_vulnerability_domains_preprocessed.parquet
+    datasetDescription: Survey-weighted Bagmati district deprivation domains, clustered uncertainty, reliability categories,
+      and shrinkage-adjusted sensitivity context.
+    datasetAttribute: table
+    datasetProvider: National Statistics Office Nepal; research-team estimates
+    datasetGenerationInfo: NLSS IV household measures were combined into three domains, estimated with survey weights and
+      PSU-clustered uncertainty, and shrinkage-adjusted toward Bagmati references.
+    datasetPeriod: 2022/23
+    datasetScale: 39 district-domain records across 13 Bagmati districts
+    datasetSpatialResolution: District-level supported reporting domains; no household value is downscaled to settlements
+    datasetTemporalResolution: Cross-sectional supported-domain estimates
+    datasetPreprocessingInfo: Missing components were not imputed; uncertainty, effective sample size, cluster support, and
+      reliability categories were retained.
+  survey_supported_domains:
+    datasetSourceName: nccs_2022_supported_domain_preparedness_preprocessed.parquet and hrvs_2016_2018_supported_domain_shock_coping_preprocessed.parquet
+    datasetDescription: Supported-domain preparedness, assistance, and harmful-coping estimates with survey uncertainty and
+      coverage boundaries.
+    datasetAttribute: table
+    datasetProvider: National Statistics Office Nepal and World Bank; research-team estimates
+    datasetGenerationInfo: NCCS indicators were estimated for supported Bagmati ecological belts and HRVS indicators by observed
+      district-year with survey weights and clustered uncertainty.
+    datasetPeriod: 2016-2018 and 2022
+    datasetScale: 12 NCCS domain-indicator rows and 24 HRVS district-year-indicator rows
+    datasetSpatialResolution: Survey-supported ecological-belt or observed district-year domains; no settlement downscaling
+    datasetTemporalResolution: Cross-sectional NCCS context and annual HRVS panel context
+    datasetPreprocessingInfo: Eligible denominators, cluster counts, effective sample sizes, missing shares, and reliability
+      labels were retained.
+  settlement_priority_robustness:
+    datasetSourceName: settlement_intervention_priority_preprocessed.parquet and settlement_priority_robustness_preprocessed.parquet
+    datasetDescription: Primary and sensitivity settlement priorities plus structural, allocation, weighting, and family-balanced
+      robustness summaries.
+    datasetAttribute: table
+    datasetProvider: Research-team decision-analysis derivatives
+    datasetGenerationInfo: Hazard, population, and isolation components were scaled within eligible scenario sets; district
+      context was added only in a separately labelled sensitivity score; robustness families were summarized separately and
+      equally balanced.
+    datasetPeriod: August 2026 event analysis
+    datasetScale: 767 settlements; 192 structural, four allocation, and 10,007 weighting or functional-form specifications
+    datasetSpatialResolution: Mapped settlements in the three-district event scope
+    datasetTemporalResolution: Primary scenario plus three robustness families
+    datasetPreprocessingInfo: Tied midranks, isolation-preserving accessibility scoring, explicit eligibility, seeded weight
+      draws, and equal one-third family weights were used.
+  road_repair_benefits:
+    datasetSourceName: road_repair_candidate_benefits_preprocessed.parquet and settlement_road_repair_benefits_preprocessed.parquet
+    datasetDescription: Single-road-section screening results that separate population reconnection from finite travel-time
+      improvement.
+    datasetAttribute: table
+    datasetProvider: Research-team network simulation using OpenStreetMap and Copernicus EMSR927 evidence
+    datasetGenerationInfo: Each primary closed OSM road feature was reopened alone while every other primary closure remained
+      fixed and the network was fully rerouted.
+    datasetPeriod: August 2026 primary disruption scenario
+    datasetScale: 194 road candidates and 148,798 candidate-settlement records
+    datasetSpatialResolution: Road-section and settlement scale in the event-corridor network
+    datasetTemporalResolution: One-at-a-time repair-screening simulations
+    datasetPreprocessingInfo: Non-overlapping edge groups and non-worsening paths were checked; outputs are screening evidence,
+      not engineering repair orders.
+  road_repair_portfolios:
+    datasetSourceName: road_repair_portfolio_scenarios_preprocessed.parquet and road_repair_portfolio_summary_preprocessed.parquet
+    datasetDescription: Jointly rerouted, count-constrained road-repair portfolios and their structural-scenario retention.
+    datasetAttribute: table
+    datasetProvider: Research-team network simulation
+    datasetGenerationInfo: A nested forward sequence selected portfolios of 1, 2, 3, and 5 road sections using lexicographic
+      reconnection and finite-improvement benefits, then evaluated each fixed portfolio across all structural scenarios.
+    datasetPeriod: August 2026 disruption scenarios
+    datasetScale: Four reported portfolios and 768 portfolio-scenario records
+    datasetSpatialResolution: Road-network portfolio and structural-scenario scale
+    datasetTemporalResolution: Four portfolio sizes across 192 structural scenarios
+    datasetPreprocessingInfo: Every portfolio was jointly rerouted; zero marginal gains at sizes 3 and 5 were preserved as
+      a benefit plateau rather than suppressed.
+variableDictionary:
+  sex_of_respondent:
+    variableNameInDataset: respsex
+    variableNameInArticle: Sex of respondent
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Sex of respondent. Analytical role: identifier and household context. Construction and interpretation:
+      Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S01
+    observationNumber: 6508
+  age_of_respondent:
+    variableNameInDataset: respage
+    variableNameInArticle: Age of respondent
+    variableAttribute: continuous
+    variableUnit: years
+    variableDescription: 'Age of respondent. Analytical role: identifier and household context. Construction and interpretation:
+      Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: S01
+    observationNumber: 6508
+  caste_ethnicity_of_respondent:
+    variableNameInDataset: a13
+    variableNameInArticle: Caste/ethnicity of respondent
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Caste/ethnicity of respondent. Analytical role: identifier and household context. Construction and
+      interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S01
+    observationNumber: 6508
+  highest_level_of_edu_of_respondent:
+    variableNameInDataset: a14
+    variableNameInArticle: Highest level of edu. of respondent
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Highest level of edu. of respondent. Analytical role: identifier and household context. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S01
+    observationNumber: 6508
+  years_of_living_this_community:
+    variableNameInDataset: a15
+    variableNameInArticle: Years of living this community
+    variableAttribute: continuous
+    variableUnit: years
+    variableDescription: 'Years of living this community. Analytical role: identifier and household context. Construction
+      and interpretation: Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: S01
+    observationNumber: 6508
+  no_of_member_usually_stay:
+    variableNameInDataset: b01
+    variableNameInArticle: No. of member usually stay
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'No. of member usually stay. Analytical role: identifier and household context. Construction and
+      interpretation: Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: S01
+    observationNumber: 6508
+  have_membership_in_co_operative_saving_groups:
+    variableNameInDataset: d01
+    variableNameInArticle: Have membership in co-operative / saving groups
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Have membership in co-operative / saving groups. Analytical role: financial, social, and service-access
+      capacity. Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S04
+    observationNumber: 6508
+  have_regular_saving_in_cooperatives_saving_groups:
+    variableNameInDataset: d02
+    variableNameInArticle: Have regular saving in cooperatives / saving groups
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Have regular saving in cooperatives / saving groups. Analytical role: financial, social, and service-access
+      capacity. Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S04
+    observationNumber: 6508
+  regular_saving_in_financial_institute_bank:
+    variableNameInDataset: d03
+    variableNameInArticle: Regular saving in financial institute/Bank
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Regular saving in financial institute/Bank. Analytical role: financial, social, and service-access
+      capacity. Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S04
+    observationNumber: 6508
+  loan_taken_from_money_lender_saving_group_co_operatives:
+    variableNameInDataset: d04
+    variableNameInArticle: Loan taken from Money lender/saving group/co-operatives
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Loan taken from Money lender/saving group/co-operatives. Analytical role: financial, social, and
+      service-access capacity. Construction and interpretation: Decoded from approved value labels and stored as a labelled
+      category.'
+    variableSource: S04
+    observationNumber: 6508
+  have_involvement_in_community_organisation:
+    variableNameInDataset: d07
+    variableNameInArticle: Have involvement in community organisation
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Have involvement in community organisation. Analytical role: financial, social, and service-access
+      capacity. Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S04
+    observationNumber: 6508
+  affiliation_in_tole_development_committee:
+    variableNameInDataset: d09
+    variableNameInArticle: Affiliation in Tole Development committee
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Affiliation in Tole Development committee. Analytical role: financial, social, and service-access
+      capacity. Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S04
+    observationNumber: 6508
+  receive_any_service_from_agri_service_center:
+    variableNameInDataset: d10
+    variableNameInArticle: Receive any service from agri. service center
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Receive any service from agri. service center. Analytical role: financial, social, and service-access
+      capacity. Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S04
+    observationNumber: 6508
+  distance_to_ward_office_km:
+    variableNameInDataset: d11
+    variableNameInArticle: Distance to ward office (km)
+    variableAttribute: continuous
+    variableUnit: kilometres
+    variableDescription: 'Distance to ward office (km). Analytical role: financial, social, and service-access capacity. Construction
+      and interpretation: Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: S04
+    observationNumber: 6508
+  distance_to_motorable_road_km:
+    variableNameInDataset: d12
+    variableNameInArticle: Distance to motorable road (km)
+    variableAttribute: continuous
+    variableUnit: kilometres
+    variableDescription: 'Distance to motorable road (km). Analytical role: financial, social, and service-access capacity.
+      Construction and interpretation: Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: S04
+    observationNumber: 6508
+  distance_to_nearest_health_institution_km:
+    variableNameInDataset: d13
+    variableNameInArticle: Distance to nearest health institution (km)
+    variableAttribute: continuous
+    variableUnit: kilometres
+    variableDescription: 'Distance to nearest health institution (km). Analytical role: financial, social, and service-access
+      capacity. Construction and interpretation: Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: S04
+    observationNumber: 6508
+  distance_to_nearest_basic_school_km:
+    variableNameInDataset: d14
+    variableNameInArticle: Distance to nearest basic school (km)
+    variableAttribute: continuous
+    variableUnit: kilometres
+    variableDescription: 'Distance to nearest basic school (km). Analytical role: financial, social, and service-access capacity.
+      Construction and interpretation: Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: S04
+    observationNumber: 6508
+  distance_to_nearest_local_market_km:
+    variableNameInDataset: d15
+    variableNameInArticle: Distance to nearest local market (km)
+    variableAttribute: continuous
+    variableUnit: kilometres
+    variableDescription: 'Distance to nearest local market (km). Analytical role: financial, social, and service-access capacity.
+      Construction and interpretation: Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: S04
+    observationNumber: 6508
+  distance_to_nearest_agr_livestock_service_center_km:
+    variableNameInDataset: d16
+    variableNameInArticle: Distance to nearest Agr/livestock service center (km)
+    variableAttribute: continuous
+    variableUnit: kilometres
+    variableDescription: 'Distance to nearest Agr/livestock service center (km). Analytical role: financial, social, and service-access
+      capacity. Construction and interpretation: Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: S04
+    observationNumber: 6508
+  modern_equip_machine_used_in_agriculture:
+    variableNameInDataset: d17
+    variableNameInArticle: Modern Equip./machine used in agriculture
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Modern Equip./machine used in agriculture. Analytical role: financial, social, and service-access
+      capacity. Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S04
+    observationNumber: 6508
+  heard_about_climate_change:
+    variableNameInDataset: f01
+    variableNameInArticle: Heard about climate change
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Heard about climate change. Analytical role: warning and preparedness. Construction and interpretation:
+      Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S06
+    observationNumber: 6508
+  did_you_receive_pre_warning_information:
+    variableNameInDataset: f06
+    variableNameInArticle: Did you receive Pre-Warning information
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Did you receive Pre-Warning information. Analytical role: warning and preparedness. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S06
+    observationNumber: 6508
+  main_source_of_pre_warning_information:
+    variableNameInDataset: f07
+    variableNameInArticle: Main source of pre-warning information
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Main source of pre-warning information. Analytical role: warning and preparedness. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S06
+    observationNumber: 886
+  preparatory_work_done_to_protect_from_disaster:
+    variableNameInDataset: f08
+    variableNameInArticle: Preparatory work done to protect from disaster
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Preparatory work done to protect from disaster. Analytical role: warning and preparedness. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S06
+    observationNumber: 886
+  type_of_preparatory_work_done_to_protect_1:
+    variableNameInDataset: f09a
+    variableNameInArticle: Type of preparatory work done to protect-1
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Type of preparatory work done to protect-1. Analytical role: warning and preparedness. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S06
+    observationNumber: 309
+  type_of_preparatory_work_done_to_protect_2:
+    variableNameInDataset: f09b
+    variableNameInArticle: Type of preparatory work done to protect-2
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Type of preparatory work done to protect-2. Analytical role: warning and preparedness. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S06
+    observationNumber: 141
+  type_of_preparatory_work_done_to_protect_3:
+    variableNameInDataset: f09c
+    variableNameInArticle: Type of preparatory work done to protect-3
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Type of preparatory work done to protect-3. Analytical role: warning and preparedness. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S06
+    observationNumber: 64
+  type_of_preparatory_work_done_to_protect_4:
+    variableNameInDataset: f09d
+    variableNameInArticle: Type of preparatory work done to protect-4
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Type of preparatory work done to protect-4. Analytical role: warning and preparedness. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S06
+    observationNumber: 15
+  k_01_taking_any_related_agri_adaptation_training:
+    variableNameInDataset: k01
+    variableNameInArticle: K.01 Taking any related agri. adaptation training
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'K.01 Taking any related agri. adaptation training. Analytical role: adaptation and risk reduction.
+      Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S11
+    observationNumber: 6508
+  k_16_insurance_made_for_livestock:
+    variableNameInDataset: k16
+    variableNameInArticle: K.16 Insurance made for livestock
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'K.16 Insurance made for livestock. Analytical role: adaptation and risk reduction. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S11
+    observationNumber: 6508
+  k_19_insurance_made_for_agri_crops:
+    variableNameInDataset: k19
+    variableNameInArticle: K.19 Insurance made for agri. crops
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'K.19 Insurance made for agri. crops. Analytical role: adaptation and risk reduction. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S11
+    observationNumber: 6508
+  k_31_work_on_water_and_land_conservation:
+    variableNameInDataset: k31
+    variableNameInArticle: K.31 Work on water and land conservation
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'K.31 Work on water and land conservation. Analytical role: adaptation and risk reduction. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S11
+    observationNumber: 6508
+  any_agri_services_received_from_the_local_office:
+    variableNameInDataset: k32
+    variableNameInArticle: Any agri. services received from the local office
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Any agri. services received from the local office. Analytical role: adaptation and risk reduction.
+      Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S11
+    observationNumber: 6508
+  k_36_work_to_minimize_climatic_induced_disaster:
+    variableNameInDataset: k36
+    variableNameInArticle: K.36 Work to minimize climatic induced disaster
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'K.36 Work to minimize climatic induced disaster. Analytical role: adaptation and risk reduction.
+      Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S11
+    observationNumber: 6508
+  k_38_behaviour_change_in_food_consumption:
+    variableNameInDataset: k38
+    variableNameInArticle: K.38 Behaviour change in food consumption
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'K.38 Behaviour change in food consumption. Analytical role: adaptation and risk reduction. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S11
+    observationNumber: 6508
+  k_39_increase_non_agri_business_locally:
+    variableNameInDataset: k39
+    variableNameInArticle: K.39 Increase non-agri. business locally
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'K.39 Increase non-agri. business locally. Analytical role: adaptation and risk reduction. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S11
+    observationNumber: 6508
+  k_40_shifted_in_non_agri_employment:
+    variableNameInDataset: k40
+    variableNameInArticle: K.40 Shifted in non-agri. employment
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'K.40 Shifted in non-agri. employment. Analytical role: adaptation and risk reduction. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S11
+    observationNumber: 6508
+  k_41_having_temporary_out_migration:
+    variableNameInDataset: k41
+    variableNameInArticle: K.41 Having temporary out-migration
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'K.41 Having temporary out-migration. Analytical role: adaptation and risk reduction. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S11
+    observationNumber: 6508
+  k_42_participate_in_flood_landslide_risk_reduction_activities:
+    variableNameInDataset: k42
+    variableNameInArticle: K.42 Participate in flood/landslide risk reduction activities
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'K.42 Participate in flood/landslide risk reduction activities. Analytical role: adaptation and risk
+      reduction. Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S11
+    observationNumber: 6508
+  k_43_participate_in_improvement_of_road_infra:
+    variableNameInDataset: k43
+    variableNameInArticle: K.43 Participate in improvement of road infra
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'K.43 Participate in improvement of road infra. Analytical role: adaptation and risk reduction. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S11
+    observationNumber: 6508
+  k_44_participate_in_natural_resource_mgmt:
+    variableNameInDataset: k44
+    variableNameInArticle: K.44 Participate in natural resource mgmt
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'K.44 Participate in natural resource mgmt. Analytical role: adaptation and risk reduction. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S11
+    observationNumber: 6508
+  k_45_participate_in_climate_induced_disaster_risk_reduction_capacity_improvement:
+    variableNameInDataset: k45
+    variableNameInArticle: K.45 Participate in climate induced disaster risk reduction capacity improvement
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'K.45 Participate in climate induced disaster risk reduction capacity improvement. Analytical role:
+      adaptation and risk reduction. Construction and interpretation: Decoded from approved value labels and stored as a labelled
+      category.'
+    variableSource: S11
+    observationNumber: 6508
+  altitude_group:
+    variableNameInDataset: AltGrp
+    variableNameInArticle: Altitude Group
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Altitude Group. Analytical role: survey design, supported geography, and weight. Construction and
+      interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: Weight
+    observationNumber: 6508
+  risk_rating:
+    variableNameInDataset: RiskRating
+    variableNameInArticle: Risk Rating
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Risk Rating. Analytical role: survey design, supported geography, and weight. Construction and interpretation:
+      Decoded from approved value labels and stored as a labelled category.'
+    variableSource: Weight
+    observationNumber: 6508
+  urban_rural_classification:
+    variableNameInDataset: UrbRur
+    variableNameInArticle: Urban Rural Classification
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Urban Rural Classification. Analytical role: survey design, supported geography, and weight. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: Weight
+    observationNumber: 6508
+  ecological_belt:
+    variableNameInDataset: EcoBelt
+    variableNameInArticle: Ecological Belt
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Ecological Belt. Analytical role: survey design, supported geography, and weight. Construction and
+      interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: Weight
+    observationNumber: 6508
+  f_16_type_of_disaster_incidence_due_to_climate_change:
+    variableNameInDataset: f16desc
+    variableNameInArticle: F.16 Type of disaster incidence due to climate change
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'F.16 Type of disaster incidence due to climate change. Analytical role: historical disaster incidence
+      and prevention. Construction and interpretation: Retained as text with leading and trailing whitespace removed.'
+    variableSource: S06_3
+    observationNumber: 123652
+  f_17_effect_household_from_disaster_incidence_during_25_yrs:
+    variableNameInDataset: f17
+    variableNameInArticle: F.17 Effect household from disaster incidence during 25 yrs
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'F.17 Effect household from disaster incidence during 25 yrs. Analytical role: historical disaster
+      incidence and prevention. Construction and interpretation: Decoded from approved value labels and stored as a labelled
+      category.'
+    variableSource: S06_3
+    observationNumber: 123652
+  f_18_how_to_effect_family_from_disaster_incidence:
+    variableNameInDataset: f18
+    variableNameInArticle: F.18 How to effect family from disaster incidence
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'F.18 How to effect family from disaster incidence. Analytical role: historical disaster incidence
+      and prevention. Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S06_3
+    observationNumber: 22539
+  f_19_cause_of_disaster_incidence_1:
+    variableNameInDataset: f19a
+    variableNameInArticle: F.19 Cause of disaster incidence - 1
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'F.19 Cause of disaster incidence - 1. Analytical role: historical disaster incidence and prevention.
+      Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S06_3
+    observationNumber: 22539
+  f_19_cause_of_disaster_incidence_2:
+    variableNameInDataset: f19b
+    variableNameInArticle: F.19 Cause of disaster incidence - 2
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'F.19 Cause of disaster incidence - 2. Analytical role: historical disaster incidence and prevention.
+      Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S06_3
+    observationNumber: 6007
+  f_19_cause_of_disaster_incidence_3:
+    variableNameInDataset: f19c
+    variableNameInArticle: F.19 Cause of disaster incidence - 3
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'F.19 Cause of disaster incidence - 3. Analytical role: historical disaster incidence and prevention.
+      Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S06_3
+    observationNumber: 1881
+  f_20_efforts_made_to_prevent_minimize_disaster_events:
+    variableNameInDataset: f20a
+    variableNameInArticle: F.20 Efforts made to prevent/minimize disaster events
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'F.20 Efforts made to prevent/minimize disaster events. Analytical role: historical disaster incidence
+      and prevention. Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S06_3
+    observationNumber: 22539
+  f_20_efforts_made_to_prevent_minimize_disaster_events_2:
+    variableNameInDataset: f20b
+    variableNameInArticle: F.20 Efforts made to prevent/minimize disaster events-2
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'F.20 Efforts made to prevent/minimize disaster events-2. Analytical role: historical disaster incidence
+      and prevention. Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S06_3
+    observationNumber: 642
+  f_20_efforts_made_to_prevent_minimize_disaster_events_3:
+    variableNameInDataset: f20c
+    variableNameInArticle: F.20 Efforts made to prevent/minimize disaster events-3
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'F.20 Efforts made to prevent/minimize disaster events-3. Analytical role: historical disaster incidence
+      and prevention. Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S06_3
+    observationNumber: 288
+  g_02_type_of_disaster_incidence:
+    variableNameInDataset: g02desc
+    variableNameInArticle: G.02 Type of disaster incidence
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'G.02 Type of disaster incidence. Analytical role: historical human and livelihood effects. Construction
+      and interpretation: Retained as text with leading and trailing whitespace removed.'
+    variableSource: S07_1
+    observationNumber: 123652
+  g_03_years_of_facing_disaster_incidence:
+    variableNameInDataset: g03yr
+    variableNameInArticle: G.03 Years of facing disaster incidence
+    variableAttribute: continuous
+    variableUnit: years
+    variableDescription: 'G.03 Years of facing disaster incidence. Analytical role: historical human and livelihood effects.
+      Construction and interpretation: Decoded from approved value labels and stored as string to preserve mixed labels.'
+    variableSource: S07_1
+    observationNumber: 22539
+  g_04_family_affect_from_disaster_incidence:
+    variableNameInDataset: g04
+    variableNameInArticle: G.04 Family affect from disaster incidence
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'G.04 Family affect from disaster incidence. Analytical role: historical human and livelihood effects.
+      Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S07_1
+    observationNumber: 15509
+  g_05_number_of_days_missed_to_work:
+    variableNameInDataset: g05
+    variableNameInArticle: G.05 Number of days missed to work
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'G.05 Number of days missed to work. Analytical role: historical human and livelihood effects. Construction
+      and interpretation: Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: S07_1
+    observationNumber: 15509
+  g_06_family_faced_food_scarcity:
+    variableNameInDataset: g06
+    variableNameInArticle: G.06 Family faced food scarcity
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'G.06 Family faced food scarcity. Analytical role: historical human and livelihood effects. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S07_1
+    observationNumber: 15509
+  g_07_have_family_member_disable:
+    variableNameInDataset: g07
+    variableNameInArticle: G.07 Have family member disable
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'G.07 Have family member disable. Analytical role: historical human and livelihood effects. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S07_1
+    observationNumber: 15509
+  g_08_have_death_of_family_member:
+    variableNameInDataset: g08
+    variableNameInArticle: G.08 Have death of family member
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'G.08 Have death of family member. Analytical role: historical human and livelihood effects. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S07_1
+    observationNumber: 15509
+  g_16_types_of_disaster_incidence:
+    variableNameInDataset: g16desc
+    variableNameInArticle: G.16 Types of disaster incidence
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'G.16 Types of disaster incidence. Analytical role: historical monetary losses. Construction and
+      interpretation: Retained as text with leading and trailing whitespace removed.'
+    variableSource: S07_2
+    observationNumber: 123652
+  g_17_household_lost_from_disaster_incidence:
+    variableNameInDataset: g17yn
+    variableNameInArticle: G.17 Household lost from disaster incidence
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'G.17 Household lost from disaster incidence. Analytical role: historical monetary losses. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S07_2
+    observationNumber: 22539
+  g_18_loss_in_residential_house_shelter_etc_rs:
+    variableNameInDataset: g18
+    variableNameInArticle: G.18 Loss in residential house/shelter etc. (Rs.)
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'G.18 Loss in residential house/shelter etc. (Rs.). Analytical role: historical monetary losses.
+      Construction and interpretation: Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: S07_2
+    observationNumber: 8495
+  g_19_loss_in_cereal_crops_rs:
+    variableNameInDataset: g19
+    variableNameInArticle: G.19 Loss in cereal crops (Rs.)
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'G.19 Loss in cereal crops (Rs.). Analytical role: historical monetary losses. Construction and interpretation:
+      Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: S07_2
+    observationNumber: 8495
+  g_20_loss_in_vegetable_crops_rs:
+    variableNameInDataset: g20
+    variableNameInArticle: G.20 Loss in vegetable crops (Rs.)
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'G.20 Loss in vegetable crops (Rs.). Analytical role: historical monetary losses. Construction and
+      interpretation: Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: S07_2
+    observationNumber: 8495
+  g_21_loss_in_fruit_crops_rs:
+    variableNameInDataset: g21
+    variableNameInArticle: G.21 Loss in fruit crops (Rs.)
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'G.21 Loss in fruit crops (Rs.). Analytical role: historical monetary losses. Construction and interpretation:
+      Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: S07_2
+    observationNumber: 8495
+  q_22_loss_in_other_crops_rs:
+    variableNameInDataset: g22
+    variableNameInArticle: Q.22 Loss in other crops (Rs.)
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'Q.22 Loss in other crops (Rs.). Analytical role: historical monetary losses. Construction and interpretation:
+      Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: S07_2
+    observationNumber: 8495
+  g_23_loss_in_livestock_poultry_rs:
+    variableNameInDataset: g23
+    variableNameInArticle: G.23 Loss in livestock/poultry (Rs.)
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'G.23 Loss in livestock/poultry (Rs.). Analytical role: historical monetary losses. Construction
+      and interpretation: Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: S07_2
+    observationNumber: 8495
+  g_24_loss_in_garden_nursary_land_rs:
+    variableNameInDataset: g24
+    variableNameInArticle: G.24 Loss in garden/nursary land (Rs.)
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'G.24 Loss in garden/nursary land (Rs.). Analytical role: historical monetary losses. Construction
+      and interpretation: Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: S07_2
+    observationNumber: 8495
+  g_25_loss_in_productive_land_rs:
+    variableNameInDataset: g25
+    variableNameInArticle: G.25 Loss in productive land (Rs.)
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'G.25 Loss in productive land (Rs.). Analytical role: historical monetary losses. Construction and
+      interpretation: Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: S07_2
+    observationNumber: 8495
+  g_26_loss_in_other_non_agri_business_rs:
+    variableNameInDataset: g26
+    variableNameInArticle: G.26 Loss in other non-agri. business (Rs.)
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'G.26 Loss in other non-agri. business (Rs.). Analytical role: historical monetary losses. Construction
+      and interpretation: Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: S07_2
+    observationNumber: 8495
+  analytical_domain:
+    variableNameInDataset: domain
+    variableNameInArticle: Analytical Domain
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Analytical Domain. Analytical role: poverty, expenditure, and survey design. Construction and interpretation:
+      Decoded from approved value labels and stored as a labelled category.'
+    variableSource: poverty
+    observationNumber: 9600
+  household_size:
+    variableNameInDataset: hhsize
+    variableNameInArticle: Household size
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'Household size. Analytical role: poverty, expenditure, and survey design. Construction and interpretation:
+      Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: poverty
+    observationNumber: 9600
+  urban_rural_ktm_urban:
+    variableNameInDataset: ad_4
+    variableNameInArticle: Urban/rural/ktm_urban
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Urban/rural/ktm_urban. Analytical role: poverty, expenditure, and survey design. Construction and
+      interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: poverty
+    observationNumber: 9600
+  paasche_index_food_items:
+    variableNameInDataset: paasche
+    variableNameInArticle: Paasche index -- food items
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'Paasche index -- food items. Analytical role: poverty, expenditure, and survey design. Construction
+      and interpretation: Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: poverty
+    observationNumber: 9600
+  per_capita_food_expenditure:
+    variableNameInDataset: pcep_food
+    variableNameInArticle: Per Capita Food Expenditure
+    variableAttribute: continuous
+    variableUnit: Nepalese rupees in the source reference period
+    variableDescription: 'Per Capita Food Expenditure. Analytical role: poverty, expenditure, and survey design. Construction
+      and interpretation: Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: poverty
+    observationNumber: 9600
+  per_capita_nonfood_expenditure:
+    variableNameInDataset: pcep_nonfood
+    variableNameInArticle: Per Capita Nonfood Expenditure
+    variableAttribute: continuous
+    variableUnit: Nepalese rupees in the source reference period
+    variableDescription: 'Per Capita Nonfood Expenditure. Analytical role: poverty, expenditure, and survey design. Construction
+      and interpretation: Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: poverty
+    observationNumber: 9600
+  per_capita_expenditure:
+    variableNameInDataset: pcep
+    variableNameInArticle: Per Capita Expenditure
+    variableAttribute: continuous
+    variableUnit: Nepalese rupees in the source reference period
+    variableDescription: 'Per Capita Expenditure. Analytical role: poverty, expenditure, and survey design. Construction and
+      interpretation: Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: poverty
+    observationNumber: 9600
+  national_real_poverty_line_npr_person_year:
+    variableNameInDataset: pline
+    variableNameInArticle: National Real Poverty Line (NPR/person/year)
+    variableAttribute: continuous
+    variableUnit: Nepalese rupees in the source reference period
+    variableDescription: 'National Real Poverty Line (NPR/person/year). Analytical role: poverty, expenditure, and survey
+      design. Construction and interpretation: Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: poverty
+    observationNumber: 9600
+  national_real_food_poverty_line_npr_person_year:
+    variableNameInDataset: fpline
+    variableNameInArticle: National Real Food Poverty Line (NPR/person/year)
+    variableAttribute: continuous
+    variableUnit: Nepalese rupees in the source reference period
+    variableDescription: 'National Real Food Poverty Line (NPR/person/year). Analytical role: poverty, expenditure, and survey
+      design. Construction and interpretation: Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: poverty
+    observationNumber: 9600
+  national_real_non_food_poverty_line_npr_person_year:
+    variableNameInDataset: nfpline
+    variableNameInArticle: National Real Non-food Poverty Line (NPR/person/year)
+    variableAttribute: continuous
+    variableUnit: Nepalese rupees in the source reference period
+    variableDescription: 'National Real Non-food Poverty Line (NPR/person/year). Analytical role: poverty, expenditure, and
+      survey design. Construction and interpretation: Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: poverty
+    observationNumber: 9600
+  poverty_status:
+    variableNameInDataset: poor
+    variableNameInArticle: Poverty Status
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'Poverty Status. Analytical role: poverty, expenditure, and survey design. Construction and interpretation:
+      Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: poverty
+    observationNumber: 9600
+  expenditure_quintile:
+    variableNameInDataset: quintile_pcep
+    variableNameInArticle: Expenditure quintile
+    variableAttribute: continuous
+    variableUnit: Nepalese rupees in the source reference period
+    variableDescription: 'Expenditure quintile. Analytical role: poverty, expenditure, and survey design. Construction and
+      interpretation: Decoded from approved value labels and stored as string to preserve mixed labels.'
+    variableSource: poverty
+    observationNumber: 9600
+  residential_facility:
+    variableNameInDataset: q17_01
+    variableNameInArticle: Residential facility
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Residential facility. Analytical role: subjective welfare and service constraints. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S17
+    observationNumber: 9600
+  clothing:
+    variableNameInDataset: q17_02
+    variableNameInArticle: Clothing
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Clothing. Analytical role: subjective welfare and service constraints. Construction and interpretation:
+      Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S17
+    observationNumber: 9600
+  health_care:
+    variableNameInDataset: q17_03
+    variableNameInArticle: Health care
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Health care. Analytical role: subjective welfare and service constraints. Construction and interpretation:
+      Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S17
+    observationNumber: 9600
+  childrens_schooling:
+    variableNameInDataset: q17_04
+    variableNameInArticle: Childrens schooling
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Childrens schooling. Analytical role: subjective welfare and service constraints. Construction and
+      interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S17
+    observationNumber: 9600
+  total_income_over_the_past_one_month:
+    variableNameInDataset: q17_05
+    variableNameInArticle: Total income over the past one month
+    variableAttribute: categorical
+    variableUnit: Nepalese rupees in the source reference period
+    variableDescription: 'Total income over the past one month. Analytical role: subjective welfare and service constraints.
+      Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S17
+    observationNumber: 9600
+  health_facility:
+    variableNameInDataset: q17_06_a
+    variableNameInArticle: Health facility
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Health facility. Analytical role: subjective welfare and service constraints. Construction and interpretation:
+      Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S17
+    observationNumber: 9600
+  health_facility_q17_06_b:
+    variableNameInDataset: q17_06_b
+    variableNameInArticle: Health facility (q17_06_b)
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Health facility (q17_06_b). Analytical role: subjective welfare and service constraints. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S17
+    observationNumber: 9600
+  education_facilities:
+    variableNameInDataset: q17_07_a
+    variableNameInArticle: Education facilities
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Education facilities. Analytical role: subjective welfare and service constraints. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S17
+    observationNumber: 9600
+  education_facilities_q17_07_b:
+    variableNameInDataset: q17_07_b
+    variableNameInArticle: Education facilities (q17_07_b)
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Education facilities (q17_07_b). Analytical role: subjective welfare and service constraints. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S17
+    observationNumber: 9600
+  drinking_water_facility:
+    variableNameInDataset: q17_08_a
+    variableNameInArticle: Drinking water facility
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Drinking water facility. Analytical role: subjective welfare and service constraints. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S17
+    observationNumber: 9600
+  drinking_water_facility_q17_08_b:
+    variableNameInDataset: q17_08_b
+    variableNameInArticle: Drinking water facility (q17_08_b)
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Drinking water facility (q17_08_b). Analytical role: subjective welfare and service constraints.
+      Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S17
+    observationNumber: 9600
+  electricity_facility:
+    variableNameInDataset: q17_09_a
+    variableNameInArticle: Electricity facility
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Electricity facility. Analytical role: subjective welfare and service constraints. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S17
+    observationNumber: 9600
+  electricity_facility_q17_09_b:
+    variableNameInDataset: q17_09_b
+    variableNameInArticle: Electricity facility (q17_09_b)
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Electricity facility (q17_09_b). Analytical role: subjective welfare and service constraints. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S17
+    observationNumber: 9600
+  road_facility:
+    variableNameInDataset: q17_10_a
+    variableNameInArticle: Road facility
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Road facility. Analytical role: subjective welfare and service constraints. Construction and interpretation:
+      Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S17
+    observationNumber: 9600
+  postal_facility:
+    variableNameInDataset: q17_11_a
+    variableNameInArticle: Postal facility
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Postal facility. Analytical role: subjective welfare and service constraints. Construction and interpretation:
+      Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S17
+    observationNumber: 9600
+  postal_facility_q17_11_b:
+    variableNameInDataset: q17_11_b
+    variableNameInArticle: Postal facility (q17_11_b)
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Postal facility (q17_11_b). Analytical role: subjective welfare and service constraints. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S17
+    observationNumber: 9600
+  telephone_facility:
+    variableNameInDataset: q17_12_a
+    variableNameInArticle: Telephone facility
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Telephone facility. Analytical role: subjective welfare and service constraints. Construction and
+      interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S17
+    observationNumber: 9600
+  telephone_facility_q17_12_b:
+    variableNameInDataset: q17_12_b
+    variableNameInArticle: Telephone facility (q17_12_b)
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Telephone facility (q17_12_b). Analytical role: subjective welfare and service constraints. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S17
+    observationNumber: 9600
+  internet_facility:
+    variableNameInDataset: q17_13_a
+    variableNameInArticle: Internet facility
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Internet facility. Analytical role: subjective welfare and service constraints. Construction and
+      interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S17
+    observationNumber: 9600
+  internet_facility_q17_13_b:
+    variableNameInDataset: q17_13_b
+    variableNameInArticle: Internet facility (q17_13_b)
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Internet facility (q17_13_b). Analytical role: subjective welfare and service constraints. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S17
+    observationNumber: 9600
+  facility_description:
+    variableNameInDataset: s03_desc
+    variableNameInArticle: FACILITY DESCRIPTION
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'FACILITY DESCRIPTION. Analytical role: facility-specific travel and use. Construction and interpretation:
+      Retained as text with leading and trailing whitespace removed.'
+    variableSource: S03
+    observationNumber: 220800
+  how_do_you_or_would_you_normally_travel_to_the_closest_facility:
+    variableNameInDataset: q03_01
+    variableNameInArticle: How do you OR would you normally travel to the closest .. FACILITY
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'How do you OR would you normally travel to the closest .. FACILITY. Analytical role: facility-specific
+      travel and use. Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S03
+    observationNumber: 220800
+  how_long_does_it_take_to_get_from_your_house_to_the_closest_facility:
+    variableNameInDataset: q03_02_a
+    variableNameInArticle: How long does it take to get from your house to the closest .. FACILITY
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'How long does it take to get from your house to the closest .. FACILITY. Analytical role: facility-specific
+      travel and use. Construction and interpretation: Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: S03
+    observationNumber: 140634
+  hours:
+    variableNameInDataset: q03_02_b
+    variableNameInArticle: HOURS
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'HOURS. Analytical role: facility-specific travel and use. Construction and interpretation: Retained
+      in the source scale with no imputation, clipping, or transformation.'
+    variableSource: S03
+    observationNumber: 140634
+  minutes:
+    variableNameInDataset: q03_02_c
+    variableNameInArticle: MINUTES
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'MINUTES. Analytical role: facility-specific travel and use. Construction and interpretation: Retained
+      in the source scale with no imputation, clipping, or transformation.'
+    variableSource: S03
+    observationNumber: 140634
+  how_far_is_the_closest_facility_to_this_household:
+    variableNameInDataset: q03_03
+    variableNameInArticle: How far is the closest FACILITY to this household
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'How far is the closest FACILITY to this household. Analytical role: facility-specific travel and
+      use. Construction and interpretation: Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: S03
+    observationNumber: 140634
+  have_the_members_of_this_household_used_facility_during_the_past_12:
+    variableNameInDataset: q03_04
+    variableNameInArticle: Have the members of this household used .. FACILITY .. during the past 12
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Have the members of this household used .. FACILITY .. during the past 12. Analytical role: facility-specific
+      travel and use. Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: S03
+    observationNumber: 181381
+  shock_type:
+    variableNameInDataset: shockid
+    variableNameInArticle: Shock Type
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Shock Type. Analytical role: wave 2016 shock loss, assistance, and coping. Construction and interpretation:
+      Decoded from approved value labels and stored as a labelled category.'
+    variableSource: Section_15a
+    observationNumber: 1493
+  decrease_or_loss_of_income_or_assets:
+    variableNameInDataset: s15q02
+    variableNameInArticle: Decrease or loss of income or assets
+    variableAttribute: categorical
+    variableUnit: Nepalese rupees in the source reference period
+    variableDescription: 'Decrease or loss of income or assets. Analytical role: wave 2016 shock loss, assistance, and coping.
+      Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: Section_15a
+    observationNumber: 1493
+  the_monetary_value_of_the_loss_in_rupees:
+    variableNameInDataset: s15q03
+    variableNameInArticle: The monetary value of the loss (in Rupees)
+    variableAttribute: continuous
+    variableUnit: Nepalese rupees in the source reference period
+    variableDescription: 'The monetary value of the loss (in Rupees). Analytical role: wave 2016 shock loss, assistance, and
+      coping. Construction and interpretation: Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: Section_15a
+    observationNumber: 1488
+  number_of_months_ago_when_this_shock_took_place:
+    variableNameInDataset: s15q04
+    variableNameInArticle: Number of months ago when this shock took place
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'Number of months ago when this shock took place. Analytical role: wave 2016 shock loss, assistance,
+      and coping. Construction and interpretation: Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: Section_15a
+    observationNumber: 1493
+  spend_savings_borrow_money_sell_or_pawn_properties:
+    variableNameInDataset: s15q05a
+    variableNameInArticle: Spend savings, borrow money, sell or pawn properties
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Spend savings, borrow money, sell or pawn properties. Analytical role: wave 2016 shock loss, assistance,
+      and coping. Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: Section_15a
+    observationNumber: 1493
+  reduce_consumption_or_expenditure_on_foods:
+    variableNameInDataset: s15q07a
+    variableNameInArticle: Reduce consumption or expenditure on foods
+    variableAttribute: categorical
+    variableUnit: Nepalese rupees in the source reference period
+    variableDescription: 'Reduce consumption or expenditure on foods. Analytical role: wave 2016 shock loss, assistance, and
+      coping. Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: Section_15a
+    observationNumber: 1493
+  reduce_consumption_or_expenditures_on_non_food_items:
+    variableNameInDataset: s15q08a
+    variableNameInArticle: Reduce consumption or expenditures on non-food items
+    variableAttribute: categorical
+    variableUnit: Nepalese rupees in the source reference period
+    variableDescription: 'Reduce consumption or expenditures on non-food items. Analytical role: wave 2016 shock loss, assistance,
+      and coping. Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: Section_15a
+    observationNumber: 1493
+  education_of_children_affected_by_the_shock:
+    variableNameInDataset: s15q09a
+    variableNameInArticle: Education of children affected by the shock
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Education of children affected by the shock. Analytical role: wave 2016 shock loss, assistance,
+      and coping. Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: Section_15a
+    observationNumber: 1493
+  received_assistance_or_help_from_others:
+    variableNameInDataset: s15q10a
+    variableNameInArticle: Received assistance or help from others
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Received assistance or help from others. Analytical role: wave 2016 shock loss, assistance, and
+      coping. Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: Section_15a
+    observationNumber: 1493
+  source_of_assistance_relatives:
+    variableNameInDataset: s15q10b_1
+    variableNameInArticle: Source of assistance Relatives
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Source of assistance Relatives. Analytical role: wave 2016 shock loss, assistance, and coping. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: Section_15a
+    observationNumber: 60
+  source_of_assistance_friends_neighbors:
+    variableNameInDataset: s15q10b_2
+    variableNameInArticle: Source of assistance Friends/neighbors
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Source of assistance Friends/neighbors. Analytical role: wave 2016 shock loss, assistance, and coping.
+      Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: Section_15a
+    observationNumber: 60
+  source_of_assistance_government:
+    variableNameInDataset: s15q10b_3
+    variableNameInArticle: Source of assistance Government
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Source of assistance Government. Analytical role: wave 2016 shock loss, assistance, and coping.
+      Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: Section_15a
+    observationNumber: 60
+  source_of_assistance_ngo_church:
+    variableNameInDataset: s15q10b_4
+    variableNameInArticle: Source of assistance NGO/Church
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Source of assistance NGO/Church. Analytical role: wave 2016 shock loss, assistance, and coping.
+      Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: Section_15a
+    observationNumber: 60
+  source_of_assistance_other:
+    variableNameInDataset: s15q10b_5
+    variableNameInArticle: Source of assistance Other
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Source of assistance Other. Analytical role: wave 2016 shock loss, assistance, and coping. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: Section_15a
+    observationNumber: 60
+  type_of_assistance_cash:
+    variableNameInDataset: s15q10c_1
+    variableNameInArticle: Type of assistance Cash
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Type of assistance Cash. Analytical role: wave 2016 shock loss, assistance, and coping. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: Section_15a
+    observationNumber: 60
+  type_of_assistance_in_kind_food:
+    variableNameInDataset: s15q10c_2
+    variableNameInArticle: Type of assistance In Kind (Food)
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Type of assistance In Kind (Food). Analytical role: wave 2016 shock loss, assistance, and coping.
+      Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: Section_15a
+    observationNumber: 60
+  type_of_assistance_in_kind_non_food:
+    variableNameInDataset: s15q10c_3
+    variableNameInArticle: Type of assistance In Kind (Non Food)
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Type of assistance In Kind (Non Food). Analytical role: wave 2016 shock loss, assistance, and coping.
+      Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: Section_15a
+    observationNumber: 60
+  time_taken_to_receive_assistance:
+    variableNameInDataset: s15q10e
+    variableNameInArticle: time taken to receive assistance
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'time taken to receive assistance. Analytical role: wave 2016 shock loss, assistance, and coping.
+      Construction and interpretation: Retained as text with leading and trailing whitespace removed.'
+    variableSource: Section_15a
+    observationNumber: 1493
+  look_for_work_got_employed_or_worked_more:
+    variableNameInDataset: s15q11a
+    variableNameInArticle: Look for work, got employed or worked more
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Look for work, got employed or worked more. Analytical role: wave 2016 shock loss, assistance, and
+      coping. Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: Section_15a
+    observationNumber: 1493
+  changes_in_your_living_arrangements_or_the_number_of_household_members:
+    variableNameInDataset: s15q12a
+    variableNameInArticle: Changes in your living arrangements or the number of household members
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Changes in your living arrangements or the number of household members. Analytical role: wave 2016
+      shock loss, assistance, and coping. Construction and interpretation: Decoded from approved value labels and stored as
+      a labelled category.'
+    variableSource: Section_15a
+    observationNumber: 1493
+  first_of_the_two_main_strategies_adopted:
+    variableNameInDataset: s15q13a
+    variableNameInArticle: First of the two main strategies adopted
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'First of the two main strategies adopted. Analytical role: wave 2016 shock loss, assistance, and
+      coping. Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: Section_15a
+    observationNumber: 1492
+  second_of_the_two_main_strategies_adopted:
+    variableNameInDataset: s15q13b
+    variableNameInArticle: Second of the two main strategies adopted
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Second of the two main strategies adopted. Analytical role: wave 2016 shock loss, assistance, and
+      coping. Construction and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: Section_15a
+    observationNumber: 1089
+  ingos:
+    variableNameInDataset: s15q10b_6
+    variableNameInArticle: INGOs
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'INGOs. Analytical role: wave 2017 shock loss, assistance, and coping. Construction and interpretation:
+      Decoded from approved value labels and stored as a labelled category.'
+    variableSource: Section_15a
+    observationNumber: 103
+  cash_assistance_amount:
+    variableNameInDataset: s15q10d
+    variableNameInArticle: cash assistance amount
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'cash assistance amount. Analytical role: wave 2017 shock loss, assistance, and coping. Construction
+      and interpretation: Retained in the source scale with no imputation, clipping, or transformation.'
+    variableSource: Section_15a
+    observationNumber: 35
+  who_provided_assistance:
+    variableNameInDataset: s15q10b_6
+    variableNameInArticle: Who provided assistance
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Who provided assistance. Analytical role: wave 2018 shock loss, assistance, and coping. Construction
+      and interpretation: Decoded from approved value labels and stored as a labelled category.'
+    variableSource: Section_15a
+    observationNumber: 60
+  topology_repair_threshold_m:
+    variableNameInDataset: Topology repair threshold (m)
+    variableNameInArticle: Road-network topology repair threshold (m)
+    variableAttribute: continuous
+    variableUnit: metres
+    variableDescription: 'Road-network topology repair threshold (m). Analytical role: network robustness parameter. Construction
+      and interpretation: Join a dangling endpoint only to the nearest node in a different component when their separation
+      is at most \(R\); reject connectors intersecting mapped waterways. The strict 0 m and alternative 10 m and 20 m graphs
+      are robustness scenarios; the exploratory 50 m rule is excluded.'
+    variableSource: network_accessibility
+    observationNumber: 3068
+  road_edge_travel_time_minutes:
+    variableNameInDataset: Edge travel time (minutes)
+    variableNameInArticle: Modeled road-edge traversal time (minutes)
+    variableAttribute: continuous
+    variableUnit: minutes
+    variableDescription: 'Modeled road-edge traversal time (minutes). Analytical role: network cost. Construction and interpretation:
+      Derived for every mapped road segment using the confirmed class-speed lookup. Accepted topology-repair connectors use
+      a conservative speed of 10 km/h.'
+    variableSource: network_accessibility
+    observationNumber: 751866
+  settlement_to_road_snap_distance_m:
+    variableNameInDataset: Settlement-to-Road Snap Distance (m)
+    variableNameInArticle: Euclidean settlement-to-nearest-road-node distance (m)
+    variableAttribute: continuous
+    variableUnit: metres
+    variableDescription: 'Euclidean settlement-to-nearest-road-node distance (m). Analytical role: network linkage and robustness
+      parameter. Construction and interpretation: The primary network linkage retains settlements with \(d_s\leq 3000\) m.
+      Thresholds of 500 m, 1000 m, 2000 m, and 3000 m are retained for sensitivity analysis.'
+    variableSource: network_accessibility
+    observationNumber: 147264
+  baseline_health_emergency_accessibility_minutes:
+    variableNameInDataset: Baseline health/emergency accessibility (minutes)
+    variableNameInArticle: Modeled pre-event travel time to the nearest health or emergency facility (minutes)
+    variableAttribute: continuous
+    variableUnit: minutes
+    variableDescription: 'Modeled pre-event travel time to the nearest health or emergency facility (minutes). Analytical
+      role: accessibility outcome. Construction and interpretation: Computed by multi-source shortest paths from health and
+      emergency facility nodes. Values remain missing when a settlement is more than 3 km from the road graph or no service
+      path exists.'
+    variableSource: network_accessibility
+    observationNumber: 2439
+  baseline_service_reachable:
+    variableNameInDataset: Baseline service reachable
+    variableNameInArticle: Baseline reachability of a health or emergency facility
+    variableAttribute: boolean
+    variableUnit: binary indicator
+    variableDescription: 'Baseline reachability of a health or emergency facility. Analytical role: accessibility outcome.
+      Construction and interpretation: Boolean indicator calculated separately for the 0 m, 5 m, 10 m, and 20 m topology scenarios;
+      no missing values are imputed.'
+    variableSource: network_accessibility
+    observationNumber: 3068
+  surface_change:
+    variableNameInDataset: Sentinel-1 VH/VV and Sentinel-2 MNDWI change evidence
+    variableNameInArticle: Event-window radar and optical surface-change evidence
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'Event-window radar and optical surface-change evidence. Analytical role: hazard evidence. Construction
+      and interpretation: Preserve signed post-minus-pre radar change. The primary radar decrease rule is \(\Delta VH_p\leq-2\)
+      dB. Optical evidence requires valid pixels on both dates and \(\Delta MNDWI_p\geq0.15\).'
+    variableSource: hazard_evidence
+    observationNumber: 907506
+  terrain_slope:
+    variableNameInDataset: Slope 30 Degree Context
+    variableNameInArticle: Terrain slope in degrees
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'Terrain slope in degrees. Analytical role: terrain context. Construction and interpretation: Derived
+      from the 30 m elevation surface and retained in degrees. Pixels with \(\theta_p\geq30\) degrees provide steep-terrain
+      context but cannot create mapped hazard evidence by themselves.'
+    variableSource: hazard_evidence
+    observationNumber: 18981984
+  channel_context:
+    variableNameInDataset: HydroRIVERS 120 m Channel Context
+    variableNameInArticle: Proximity to the reference river network
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Proximity to the reference river network. Analytical role: flow-path context. Construction and interpretation:
+      A 120 m river-network buffer supplies downstream flow-path context. It supports sensor screening but cannot create hazard
+      evidence without a sensor signal.'
+    variableSource: hazard_evidence
+    observationNumber: 907506
+  flow_path:
+    variableNameInDataset: Planned Flow Path sensitivity layer
+    variableNameInArticle: DEM-derived D8 flow path
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'DEM-derived D8 flow path. Analytical role: flow-path context. Construction and interpretation: Derive
+      from a depression-filled elevation surface using the confirmed D8 rule. This output remains pending and will be used
+      as an additional sensitivity layer rather than replacing the observed river network.'
+    variableSource: hazard_evidence
+    observationNumber: 0
+  hazard_evidence_class:
+    variableNameInDataset: Hazard Evidence Confidence Class
+    variableNameInArticle: Multi-source hazard-evidence confidence class
+    variableAttribute: ordinal
+    variableUnit: category
+    variableDescription: 'Multi-source hazard-evidence confidence class. Analytical role: hazard evidence and scenario assignment.
+      Construction and interpretation: Class 1 requires at least one sensor signal plus channel or steep-slope context. Class
+      2 requires at least one rapid-mapping reference or both sensors plus context. Class 3 requires two rapid-mapping references
+      or one mapped reference plus at least one sensor signal. The variable is not physical hazard intensity.'
+    variableSource: hazard_evidence
+    observationNumber: 907506
+  hazard_scenario:
+    variableNameInDataset: Hazard Scenario
+    variableNameInArticle: Nested hazard-evidence footprint scenario
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Nested hazard-evidence footprint scenario. Analytical role: robustness parameter. Construction and
+      interpretation: The primary conservative, alternative mapped-or-multisensor, and sensitivity screening footprints use
+      minimum evidence classes 3, 2, and 1, respectively.'
+    variableSource: hazard_evidence
+    observationNumber: 907506
+  footprint_area_sq_km:
+    variableNameInDataset: Footprint Area (sq km)
+    variableNameInArticle: Scenario footprint area in square kilometres
+    variableAttribute: continuous
+    variableUnit: square kilometres
+    variableDescription: 'Scenario footprint area in square kilometres. Analytical role: exposure denominator. Construction
+      and interpretation: Sum the area of all non-NoData pixels meeting each scenario threshold.'
+    variableSource: hazard_exposure
+    observationNumber: 3
+  exposed_population:
+    variableNameInDataset: Exposed Population
+    variableNameInArticle: Modeled population inside a scenario footprint
+    variableAttribute: count
+    variableUnit: persons
+    variableDescription: 'Modeled population inside a scenario footprint. Analytical role: exposure outcome. Construction
+      and interpretation: Reproject calibrated gridded population counts to the 20 m evidence grid with area-conserving sum
+      resampling, then sum within each nested footprint. This is neither a casualty nor a displacement estimate.'
+    variableSource: hazard_exposure
+    observationNumber: 3
+  population_share_of_analysis_scope:
+    variableNameInDataset: Population Share of Analysis Scope (%)
+    variableNameInArticle: Share of modeled analysis-scope population exposed under a scenario
+    variableAttribute: count
+    variableUnit: percent
+    variableDescription: 'Share of modeled analysis-scope population exposed under a scenario. Analytical role: exposure outcome.
+      Construction and interpretation: Use the modeled population inside the analysis scope as the denominator; do not use
+      the full three-district population total.'
+    variableSource: hazard_exposure
+    observationNumber: 3
+  exposed_road_length_km:
+    variableNameInDataset: Exposed Road Length (km)
+    variableNameInArticle: Approximate road length intersecting a scenario footprint
+    variableAttribute: continuous
+    variableUnit: kilometres
+    variableDescription: 'Approximate road length intersecting a scenario footprint. Analytical role: infrastructure exposure
+      outcome. Construction and interpretation: Sample road lines at intervals no greater than 20 m and sum represented segment
+      length where the sampled evidence class meets the scenario threshold.'
+    variableSource: hazard_exposure
+    observationNumber: 3
+  exposed_building_count:
+    variableNameInDataset: Buildings Intersecting Footprint
+    variableNameInArticle: Buildings intersecting a scenario footprint
+    variableAttribute: count
+    variableUnit: count
+    variableDescription: 'Buildings intersecting a scenario footprint. Analytical role: infrastructure exposure outcome. Construction
+      and interpretation: Count a building when its geometry touches at least one footprint pixel meeting the scenario threshold.
+      Intersection indicates exposure, not confirmed structural damage.'
+    variableSource: hazard_exposure
+    observationNumber: 3
+  exposed_bridge_count:
+    variableNameInDataset: Bridges Intersecting Footprint
+    variableNameInArticle: Bridges intersecting a scenario footprint
+    variableAttribute: count
+    variableUnit: count
+    variableDescription: 'Bridges intersecting a scenario footprint. Analytical role: infrastructure exposure outcome. Construction
+      and interpretation: Count a bridge when its geometry touches at least one footprint pixel meeting the scenario threshold.
+      Intersection indicates exposure, not confirmed bridge failure.'
+    variableSource: hazard_exposure
+    observationNumber: 3
+  directly_exposed_facility_count:
+    variableNameInDataset: Facilities Directly Exposed
+    variableNameInArticle: Facility points inside a scenario footprint
+    variableAttribute: count
+    variableUnit: count
+    variableDescription: 'Facility points inside a scenario footprint. Analytical role: service exposure outcome. Construction
+      and interpretation: Sample evidence class at each facility point. Report the separate count of facilities within 250
+      m of a qualifying pixel as proximity exposure rather than direct exposure.'
+    variableSource: hazard_exposure
+    observationNumber: 3
+  directly_exposed_settlement_count:
+    variableNameInDataset: Settlements Directly Exposed
+    variableNameInArticle: Settlement points inside a scenario footprint
+    variableAttribute: count
+    variableUnit: count
+    variableDescription: 'Settlement points inside a scenario footprint. Analytical role: settlement exposure outcome. Construction
+      and interpretation: Sample evidence class at each settlement point. Report the separate count of settlements within
+      500 m of a qualifying pixel as proximity exposure rather than direct exposure.'
+    variableSource: hazard_exposure
+    observationNumber: 3
+  disruption_candidate_edge_count:
+    variableNameInDataset: CEMS Disruption Candidate Edges Intersecting Footprint
+    variableNameInArticle: Evidence-linked graph edges intersecting a scenario footprint
+    variableAttribute: count
+    variableUnit: count
+    variableDescription: 'Evidence-linked graph edges intersecting a scenario footprint. Analytical role: network disruption
+      input. Construction and interpretation: Count graph edges carrying a rapid-mapping grade of possibly damaged, damaged,
+      or destroyed when they intersect the scenario footprint. Multiple graph edges may represent one mapped road feature,
+      so this is not a count of independently damaged roads.'
+    variableSource: hazard_exposure
+    observationNumber: 3
+  road_closure_rule:
+    variableNameInDataset: Road Closure Rule
+    variableNameInArticle: Graded evidence-based road-closure assumption
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Graded evidence-based road-closure assumption. Analytical role: network disruption and robustness
+      parameter. Construction and interpretation: The primary analysis closes only graph edges graded Destroyed that intersect
+      the selected hazard footprint. Robustness analysis closes every graded disruption-candidate edge intersecting the footprint.
+      These are modeled assumptions, not field-confirmed closures.'
+    variableSource: network_disruption
+    observationNumber: 147264
+  facility_availability_rule:
+    variableNameInDataset: Facility Availability Rule
+    variableNameInArticle: Scenario-specific health and emergency destination availability
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Scenario-specific health and emergency destination availability. Analytical role: service disruption
+      and sensitivity parameter. Construction and interpretation: Retain all mapped health and emergency destinations in the
+      primary road-disruption analysis. In sensitivity analysis only, remove destinations whose point location is directly
+      exposed within the selected hazard footprint. Direct exposure is not treated as observed facility failure.'
+    variableSource: network_disruption
+    observationNumber: 147264
+  closed_edge_length_km:
+    variableNameInDataset: Closed Edge Length (km)
+    variableNameInArticle: Total modeled length of closed graph edges
+    variableAttribute: continuous
+    variableUnit: kilometres
+    variableDescription: 'Total modeled length of closed graph edges. Analytical role: network disruption diagnostic. Construction
+      and interpretation: Sum the metric length of graph edges closed by the scenario-specific road-closure rule. Multiple
+      graph edges may represent one mapped road feature.'
+    variableSource: network_disruption
+    observationNumber: 192
+  removed_health_emergency_destination_count:
+    variableNameInDataset: Removed Health/Emergency Destinations
+    variableNameInArticle: Number of service destinations excluded under a facility-loss scenario
+    variableAttribute: count
+    variableUnit: count
+    variableDescription: 'Number of service destinations excluded under a facility-loss scenario. Analytical role: service
+      disruption diagnostic. Construction and interpretation: Equal to zero in the primary analysis. In facility-loss sensitivity
+      analysis, count directly exposed destination points removed from the multi-source shortest-path calculation.'
+    variableSource: network_disruption
+    observationNumber: 192
+  post_disruption_service_reachable:
+    variableNameInDataset: Post-Disruption Service Reachable
+    variableNameInArticle: Modeled reachability of a health or emergency facility after disruption
+    variableAttribute: boolean
+    variableUnit: binary indicator
+    variableDescription: 'Modeled reachability of a health or emergency facility after disruption. Analytical role: accessibility
+      outcome. Construction and interpretation: Evaluate reachability on the scenario-specific disrupted graph and available
+      destination set. Preserve missing values for settlements that were ineligible or unreachable at baseline.'
+    variableSource: network_disruption
+    observationNumber: 112176
+  post_disruption_travel_time_minutes:
+    variableNameInDataset: Post-Disruption Travel Time (minutes)
+    variableNameInArticle: Modeled post-event travel time to the nearest available health or emergency facility
+    variableAttribute: boolean
+    variableUnit: minutes
+    variableDescription: 'Modeled post-event travel time to the nearest available health or emergency facility. Analytical
+      role: accessibility outcome. Construction and interpretation: Compute multi-source shortest paths on the disrupted graph
+      after applying the road-closure and facility-availability rules. Preserve missing values for baseline-ineligible settlements
+      and newly isolated settlements.'
+    variableSource: network_disruption
+    observationNumber: 108768
+  accessibility_loss_minutes:
+    variableNameInDataset: Accessibility Loss (minutes)
+    variableNameInArticle: Increase in modeled service travel time after disruption
+    variableAttribute: boolean
+    variableUnit: minutes
+    variableDescription: 'Increase in modeled service travel time after disruption. Analytical role: accessibility outcome.
+      Construction and interpretation: Calculate the finite travel-time increase for baseline-eligible settlements that remain
+      reachable. Preserve missing values for baseline-ineligible or newly isolated settlements; represent isolation with separate
+      indicators.'
+    variableSource: network_disruption
+    observationNumber: 108768
+  newly_isolated:
+    variableNameInDataset: Newly Isolated
+    variableNameInArticle: Baseline-reachable settlement with no modeled service path after disruption
+    variableAttribute: boolean
+    variableUnit: binary indicator
+    variableDescription: 'Baseline-reachable settlement with no modeled service path after disruption. Analytical role: accessibility
+      outcome. Construction and interpretation: Assign true only when the settlement was service-reachable on the confirmed
+      baseline graph but becomes unreachable under the disruption scenario.'
+    variableSource: network_disruption
+    observationNumber: 112176
+  accessibility_loss_is_infinite:
+    variableNameInDataset: Accessibility Loss Is Infinite
+    variableNameInArticle: Indicator that disruption changes finite baseline access to no available service path
+    variableAttribute: boolean
+    variableUnit: binary indicator
+    variableDescription: 'Indicator that disruption changes finite baseline access to no available service path. Analytical
+      role: accessibility outcome. Construction and interpretation: Assign true for newly isolated settlements, false for
+      baseline-eligible settlements that remain reachable, and missing for baseline-ineligible settlements.'
+    variableSource: network_disruption
+    observationNumber: 112176
+  accessibility_status:
+    variableNameInDataset: Accessibility Status
+    variableNameInArticle: Mutually exclusive modeled service-access outcome class
+    variableAttribute: boolean
+    variableUnit: binary indicator
+    variableDescription: 'Mutually exclusive modeled service-access outcome class. Analytical role: accessibility outcome
+      and reporting category. Construction and interpretation: Classify settlements in order as baseline ineligible, newly
+      isolated, delayed by more than 5 minutes, or limited change. The 5-minute threshold is a reporting rule and will be
+      tested in sensitivity analysis.'
+    variableSource: network_disruption
+    observationNumber: 147264
+  population_allocation_threshold_m:
+    variableNameInDataset: Allocation Threshold (m)
+    variableNameInArticle: Maximum raster-cell-to-settlement assignment distance
+    variableAttribute: count
+    variableUnit: metres
+    variableDescription: 'Maximum raster-cell-to-settlement assignment distance. Analytical role: population construction
+      and sensitivity parameter. Construction and interpretation: Apply nested distance thresholds after constraining every
+      nearest-settlement search to the same third-level administrative allocation unit.'
+    variableSource: population_accessibility
+    observationNumber: 3068
+  population_cell_assignment_distance_m:
+    variableNameInDataset: Nearest Settlement Distance (m)
+    variableNameInArticle: Distance from a positive-population raster-cell centre to its nearest eligible settlement
+    variableAttribute: count
+    variableUnit: metres
+    variableDescription: 'Distance from a positive-population raster-cell centre to its nearest eligible settlement. Analytical
+      role: population linkage diagnostic. Construction and interpretation: Calculate Euclidean distance in EPSG:32645. Leave
+      the nearest settlement missing when the cell''s allocation unit contains no mapped settlement.'
+    variableSource: population_accessibility
+    observationNumber: 228212
+  estimated_settlement_population:
+    variableNameInDataset: Estimated Settlement Population
+    variableNameInArticle: Modeled pre-event population assigned to a settlement
+    variableAttribute: count
+    variableUnit: persons
+    variableDescription: 'Modeled pre-event population assigned to a settlement. Analytical role: population exposure and
+      weighting variable. Construction and interpretation: Assign each calibrated positive-population cell to no more than
+      one nearest OSM settlement inside the same allocation unit. The primary value uses 3000 m and is not an observed settlement
+      census.'
+    variableSource: population_accessibility
+    observationNumber: 3068
+  has_assigned_population:
+    variableNameInDataset: Has Assigned Population
+    variableNameInArticle: Indicator that a settlement receives positive modeled population within the allocation threshold
+    variableAttribute: boolean
+    variableUnit: persons
+    variableDescription: 'Indicator that a settlement receives positive modeled population within the allocation threshold.
+      Analytical role: population coverage diagnostic. Construction and interpretation: Assign true when at least one positive-population
+      cell is allocated to the settlement under threshold \(T\); do not impute zero-population settlements.'
+    variableSource: population_accessibility
+    observationNumber: 3068
+  unallocated_population:
+    variableNameInDataset: Unallocated Population
+    variableNameInArticle: Calibrated population not assigned to any settlement under the selected threshold
+    variableAttribute: count
+    variableUnit: persons
+    variableDescription: 'Calibrated population not assigned to any settlement under the selected threshold. Analytical role:
+      population coverage diagnostic. Construction and interpretation: Retain population beyond threshold \(T\), outside an
+      eligible allocation unit, or inside an allocation unit with no mapped settlement as unallocated. Do not redistribute
+      this residual.'
+    variableSource: population_accessibility
+    observationNumber: 4
+  newly_isolated_population:
+    variableNameInDataset: Newly Isolated Population
+    variableNameInArticle: Modeled population assigned to settlements that become isolated
+    variableAttribute: boolean
+    variableUnit: persons
+    variableDescription: 'Modeled population assigned to settlements that become isolated. Analytical role: population-weighted
+      accessibility outcome. Construction and interpretation: Sum primary-threshold settlement population where Newly Isolated
+      is true. Unallocated population and baseline-ineligible settlements do not enter this total.'
+    variableSource: population_accessibility
+    observationNumber: 12
+  population_delayed_over_5_minutes:
+    variableNameInDataset: Population Delayed over 5 Minutes
+    variableNameInArticle: Modeled population assigned to settlements with finite accessibility loss above five minutes
+    variableAttribute: boolean
+    variableUnit: persons
+    variableDescription: 'Modeled population assigned to settlements with finite accessibility loss above five minutes. Analytical
+      role: population-weighted accessibility outcome. Construction and interpretation: Sum primary-threshold settlement population
+      among baseline-eligible settlements that remain reachable and exceed the reporting threshold.'
+    variableSource: population_accessibility
+    observationNumber: 12
+  population_with_positive_accessibility_loss:
+    variableNameInDataset: Population with Positive Accessibility Loss
+    variableNameInArticle: Modeled population assigned to settlements with any positive finite travel-time increase
+    variableAttribute: count
+    variableUnit: persons
+    variableDescription: 'Modeled population assigned to settlements with any positive finite travel-time increase. Analytical
+      role: population-weighted accessibility outcome. Construction and interpretation: Sum primary-threshold settlement population
+      only where finite accessibility loss is positive.'
+    variableSource: population_accessibility
+    observationNumber: 12
+  population_weighted_accessibility_loss_person_minutes:
+    variableNameInDataset: Population-Weighted Accessibility Loss (person-minutes)
+    variableNameInArticle: Total modeled finite travel-time burden across assigned settlement population
+    variableAttribute: boolean
+    variableUnit: person-minutes
+    variableDescription: 'Total modeled finite travel-time burden across assigned settlement population. Analytical role:
+      population-weighted accessibility outcome. Construction and interpretation: Multiply finite settlement-level accessibility
+      loss by assigned population and sum. Newly isolated settlements are reported separately rather than assigned an arbitrary
+      finite penalty.'
+    variableSource: population_accessibility
+    observationNumber: 12
+  population_weighted_mean_finite_accessibility_loss_minutes:
+    variableNameInDataset: Population-Weighted Mean Finite Accessibility Loss (minutes)
+    variableNameInArticle: Average modeled finite travel-time increase weighted by assigned settlement population
+    variableAttribute: boolean
+    variableUnit: minutes
+    variableDescription: 'Average modeled finite travel-time increase weighted by assigned settlement population. Analytical
+      role: population-weighted accessibility outcome. Construction and interpretation: Divide total person-minutes by assigned
+      population with a finite post-disruption path. Interpret jointly with Newly Isolated Population.'
+    variableSource: population_accessibility
+    observationNumber: 12
+  economic_deprivation:
+    variableNameInDataset: Economic Deprivation
+    variableNameInArticle: Household poverty and income-inadequacy domain score
+    variableAttribute: continuous
+    variableUnit: proportion from 0 to 1
+    variableDescription: 'Household poverty and income-inadequacy domain score. Analytical role: contextual social vulnerability
+      component. Construction and interpretation: Code Poverty Status equal to one and income reported as less than adequate
+      as higher vulnerability. Require both indicators; apply no missing-value imputation.'
+    variableSource: vulnerability_estimates
+    observationNumber: 13
+  basic_needs_inadequacy:
+    variableNameInDataset: Basic Needs Inadequacy
+    variableNameInArticle: Household basic-needs inadequacy domain score
+    variableAttribute: continuous
+    variableUnit: proportion from 0 to 1
+    variableDescription: 'Household basic-needs inadequacy domain score. Analytical role: contextual social vulnerability
+      component. Construction and interpretation: Code each response of less than adequate as one and just or more than adequate
+      as zero. Treat not applicable as missing and require at least three valid indicators.'
+    variableSource: vulnerability_estimates
+    observationNumber: 13
+  essential_public_service_deprivation:
+    variableNameInDataset: Essential Public Service Deprivation
+    variableNameInArticle: Household government-service deprivation domain score
+    variableAttribute: continuous
+    variableUnit: proportion from 0 to 1
+    variableDescription: 'Household government-service deprivation domain score. Analytical role: contextual social vulnerability
+      component. Construction and interpretation: Use government-facility ratings only. Code Bad as one and Good or Fair as
+      zero, treat not applicable as missing, and require at least three valid indicators.'
+    variableSource: vulnerability_estimates
+    observationNumber: 13
+  weighted_district_vulnerability_domain_estimate:
+    variableNameInDataset: Estimate
+    variableNameInArticle: Survey-weighted mean of a vulnerability domain within a district
+    variableAttribute: continuous
+    variableUnit: proportion from 0 to 1
+    variableDescription: 'Survey-weighted mean of a vulnerability domain within a district. Analytical role: supported-domain
+      survey estimate. Construction and interpretation: Link households to districts through the verified one-to-one PSU crosswalk
+      and retain only positive household weights. Do not assign household values to settlements.'
+    variableSource: vulnerability_estimates
+    observationNumber: 39
+  district_vulnerability_domain_standard_error:
+    variableNameInDataset: Standard Error
+    variableNameInArticle: PSU-clustered linearization standard error for a weighted district-domain estimate
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'PSU-clustered linearization standard error for a weighted district-domain estimate. Analytical role:
+      survey uncertainty diagnostic. Construction and interpretation: Estimate uncertainty from between-PSU variation. Preserve
+      missing uncertainty when a district has fewer than two PSUs.'
+    variableSource: vulnerability_estimates
+    observationNumber: 36
+  district_vulnerability_domain_95_ci:
+    variableNameInDataset: CI 95% Low and CI 95% High
+    variableNameInArticle: Cluster-adjusted uncertainty interval for a weighted district-domain estimate
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'Cluster-adjusted uncertainty interval for a weighted district-domain estimate. Analytical role:
+      survey uncertainty diagnostic. Construction and interpretation: Use a t critical value based on PSU count and bound
+      proportional-domain intervals to zero and one. Do not report a direct interval for Rasuwa because only one PSU is observed.'
+    variableSource: vulnerability_estimates
+    observationNumber: 36
+  survey_effective_sample_size:
+    variableNameInDataset: Effective Sample Size
+    variableNameInArticle: Weight-adjusted effective number of observations
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'Weight-adjusted effective number of observations. Analytical role: survey precision diagnostic.
+      Construction and interpretation: Calculate separately for every reported domain and indicator using complete observations
+      with positive weights.'
+    variableSource: vulnerability_estimates
+    observationNumber: 39
+  survey_reliability_category:
+    variableNameInDataset: Reliability Category
+    variableNameInArticle: Qualitative support category based on independent survey clusters
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'Qualitative support category based on independent survey clusters. Analytical role: evidence-strength
+      diagnostic. Construction and interpretation: Classify fewer than two PSUs as insufficient for design-based uncertainty,
+      two to four as very limited, five to nine as limited, ten to twenty-nine as moderate, and thirty or more as broad contextual
+      support.'
+    variableSource: vulnerability_estimates
+    observationNumber: 39
+  district_social_vulnerability_percentile:
+    variableNameInDataset: District Social Vulnerability Percentile
+    variableNameInArticle: Equal-domain district vulnerability score before shrinkage
+    variableAttribute: continuous
+    variableUnit: proportion from 0 to 1
+    variableDescription: 'Equal-domain district vulnerability score before shrinkage. Analytical role: contextual vulnerability
+      diagnostic. Construction and interpretation: Orient every domain so higher values indicate greater vulnerability, percentile-scale
+      across the thirteen Bagmati districts, and average the three domain percentiles equally. Exclude this score from the
+      primary settlement ranking.'
+    variableSource: vulnerability_estimates
+    observationNumber: 13
+  domain_shrinkage_weight:
+    variableNameInDataset: Shrinkage Weight
+    variableNameInArticle: Empirical-Bayes reliability weight for a district-domain estimate
+    variableAttribute: continuous
+    variableUnit: years
+    variableDescription: 'Empirical-Bayes reliability weight for a district-domain estimate. Analytical role: vulnerability
+      sensitivity parameter. Construction and interpretation: Estimate \(\tau_k^2\) as non-negative between-district variance
+      after subtracting sampling variance; use the observed or PSU-count-adjusted sampling variance \(v_{d,k}\). Set the weight
+      to zero when no between-district variance is resolvable.'
+    variableSource: vulnerability_estimates
+    observationNumber: 39
+  shrinkage_adjusted_district_vulnerability_percentile:
+    variableNameInDataset: Shrinkage-Adjusted District Vulnerability Percentile
+    variableNameInArticle: Equal-domain vulnerability percentile after reliability shrinkage
+    variableAttribute: continuous
+    variableUnit: years
+    variableDescription: 'Equal-domain vulnerability percentile after reliability shrinkage. Analytical role: sensitivity-only
+      contextual vulnerability. Construction and interpretation: Shrink each domain toward its weighted Bagmati estimate before
+      percentile scaling and equal-domain averaging. Use only as a sensitivity input, never as a measured settlement characteristic.'
+    variableSource: vulnerability_estimates
+    observationNumber: 13
+  settlement_contextual_vulnerability_sensitivity_only:
+    variableNameInDataset: Shrinkage-Adjusted District Vulnerability Percentile
+    variableNameInArticle: District vulnerability context attached to a settlement for sensitivity analysis
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'District vulnerability context attached to a settlement for sensitivity analysis. Analytical role:
+      settlement-priority sensitivity input. Construction and interpretation: Repeat the shrinkage-adjusted district percentile
+      for settlements located in that district. Label it explicitly as district context and exclude it from the primary settlement
+      ranking.'
+    variableSource: vulnerability_estimates
+    observationNumber: 13
+  pre_warning_deficit:
+    variableNameInDataset: No Pre-Warning Information
+    variableNameInArticle: Share of households reporting no pre-warning information
+    variableAttribute: continuous
+    variableUnit: proportion from 0 to 1
+    variableDescription: 'Share of households reporting no pre-warning information. Analytical role: supported-domain preparedness
+      indicator. Construction and interpretation: Estimate only for Bagmati ecological-belt reporting domains using NCCS survey
+      weights and PSU-clustered uncertainty. Do not downscale to districts or settlements.'
+    variableSource: survey_supported_domains
+    observationNumber: 2
+  conditional_preparedness_deficit:
+    variableNameInDataset: No Preparatory Action among Warned Households
+    variableNameInArticle: Share of warned households reporting no preparatory action
+    variableAttribute: continuous
+    variableUnit: proportion from 0 to 1
+    variableDescription: 'Share of warned households reporting no preparatory action. Analytical role: supported-domain preparedness
+      indicator. Construction and interpretation: Restrict the denominator to households that received pre-warning. Report
+      the very small eligible sample and cluster count explicitly.'
+    variableSource: survey_supported_domains
+    observationNumber: 2
+  flood_landslide_risk_reduction_participation_deficit:
+    variableNameInDataset: No Flood/Landslide Risk-Reduction Participation
+    variableNameInArticle: Share of households reporting no flood or landslide risk-reduction participation
+    variableAttribute: continuous
+    variableUnit: proportion from 0 to 1
+    variableDescription: 'Share of households reporting no flood or landslide risk-reduction participation. Analytical role:
+      supported-domain preparedness indicator. Construction and interpretation: Estimate only for supported Bagmati ecological-belt
+      domains; higher values indicate weaker preparedness context.'
+    variableSource: survey_supported_domains
+    observationNumber: 2
+  historical_assistance_receipt:
+    variableNameInDataset: Assistance Receipt
+    variableNameInArticle: Weighted share of recorded historical shock episodes receiving assistance
+    variableAttribute: continuous
+    variableUnit: proportion from 0 to 1
+    variableDescription: 'Weighted share of recorded historical shock episodes receiving assistance. Analytical role: supported-domain
+      shock-response indicator. Construction and interpretation: Estimate by observed HRVS district and survey year for all
+      recorded shock episodes. Cluster uncertainty by household and do not fill the absent Rasuwa domain.'
+    variableSource: survey_supported_domains
+    observationNumber: 6
+  historical_food_consumption_reduction_coping:
+    variableNameInDataset: Food-Consumption Reduction Coping
+    variableNameInArticle: Weighted share of recorded historical shock episodes involving reduced food consumption or expenditure
+    variableAttribute: continuous
+    variableUnit: proportion from 0 to 1
+    variableDescription: 'Weighted share of recorded historical shock episodes involving reduced food consumption or expenditure.
+      Analytical role: supported-domain harmful-coping indicator. Construction and interpretation: Estimate by observed HRVS
+      district and survey year for all recorded shock episodes. Treat as contextual historical evidence rather than a 2026
+      event outcome.'
+    variableSource: survey_supported_domains
+    observationNumber: 6
+  intervention_priority:
+    variableNameInDataset: Intervention Priority
+    variableNameInArticle: Equal-weight event-specific settlement priority score
+    variableAttribute: continuous
+    variableUnit: proportion from 0 to 1
+    variableDescription: 'Equal-weight event-specific settlement priority score. Analytical role: primary decision outcome.
+      Construction and interpretation: Average the tied-midrank Hazard and Exposure components with the isolation-preserving
+      Accessibility component for settlements in the scenario-specific ranking set. District vulnerability is excluded.'
+    variableSource: settlement_priority_robustness
+    observationNumber: 84
+  priority_rank:
+    variableNameInDataset: Priority Rank
+    variableNameInArticle: Descending primary settlement priority rank
+    variableAttribute: ordinal
+    variableUnit: rank
+    variableDescription: 'Descending primary settlement priority rank. Analytical role: primary decision outcome. Construction
+      and interpretation: Assign the same rank to tied Intervention Priority values and leave settlements outside the scenario-specific
+      ranking set unranked.'
+    variableSource: settlement_priority_robustness
+    observationNumber: 84
+  sensitivity_intervention_priority:
+    variableNameInDataset: Sensitivity Intervention Priority
+    variableNameInArticle: Equal-weight settlement priority score with district vulnerability context
+    variableAttribute: continuous
+    variableUnit: proportion from 0 to 1
+    variableDescription: 'Equal-weight settlement priority score with district vulnerability context. Analytical role: sensitivity
+      decision outcome. Construction and interpretation: Add the shrinkage-adjusted district vulnerability percentile as a
+      fourth equal-weight sensitivity component. Do not interpret the result as measured settlement vulnerability.'
+    variableSource: settlement_priority_robustness
+    observationNumber: 84
+  sensitivity_priority_rank:
+    variableNameInDataset: Sensitivity Priority Rank
+    variableNameInArticle: Descending vulnerability-sensitivity settlement rank
+    variableAttribute: ordinal
+    variableUnit: rank
+    variableDescription: 'Descending vulnerability-sensitivity settlement rank. Analytical role: sensitivity decision outcome.
+      Construction and interpretation: Rank only the same scenario-specific settlement set used by the primary score.'
+    variableSource: settlement_priority_robustness
+    observationNumber: 84
+  sensitivity_rank_shift:
+    variableNameInDataset: Sensitivity Rank Shift
+    variableNameInArticle: Change in rank after adding district vulnerability context
+    variableAttribute: continuous
+    variableUnit: rank
+    variableDescription: 'Change in rank after adding district vulnerability context. Analytical role: sensitivity diagnostic.
+      Construction and interpretation: Positive values indicate movement toward higher priority after district context is
+      added; negative values indicate movement toward lower priority.'
+    variableSource: settlement_priority_robustness
+    observationNumber: 84
+  scenario_inclusion_frequency:
+    variableNameInDataset: Scenario Inclusion Frequency
+    variableNameInArticle: Share of structural scenarios in which a settlement enters the ranking set
+    variableAttribute: categorical
+    variableUnit: proportion from 0 to 1
+    variableDescription: 'Share of structural scenarios in which a settlement enters the ranking set. Analytical role: coverage
+      and robustness diagnostic. Construction and interpretation: Calculate over all 192 pre-specified hazard, closure, facility,
+      topology, and snap-distance scenarios. Do not treat non-inclusion as a zero priority score.'
+    variableSource: settlement_priority_robustness
+    observationNumber: 767
+  allocation_threshold_inclusion_frequency:
+    variableNameInDataset: Allocation-Threshold Inclusion Frequency
+    variableNameInArticle: Share of population-allocation specifications in which a settlement enters the primary-network
+      ranking set
+    variableAttribute: continuous
+    variableUnit: proportion from 0 to 1
+    variableDescription: 'Share of population-allocation specifications in which a settlement enters the primary-network ranking
+      set. Analytical role: coverage and robustness diagnostic. Construction and interpretation: Calculate over the four pre-specified
+      population-allocation thresholds of 500, 1000, 2000, and 3000 m while holding the primary hazard and network scenario
+      fixed. Do not confuse population allocation with settlement-to-road snapping.'
+    variableSource: settlement_priority_robustness
+    observationNumber: 767
+  structural_scenario_top_10_frequency:
+    variableNameInDataset: Structural-Scenario Top-10 Frequency
+    variableNameInArticle: Top-10 membership frequency within eligible structural scenarios
+    variableAttribute: categorical
+    variableUnit: proportion from 0 to 1
+    variableDescription: 'Top-10 membership frequency within eligible structural scenarios. Analytical role: robustness outcome.
+      Construction and interpretation: Calculate only from the 192 hazard, closure, facility, topology, and snap-distance
+      scenarios in which the settlement is eligible. Report separately from weighting robustness.'
+    variableSource: settlement_priority_robustness
+    observationNumber: 117
+  allocation_threshold_top_10_frequency:
+    variableNameInDataset: Allocation-Threshold Top-10 Frequency
+    variableNameInArticle: Top-10 membership frequency within eligible primary-network population-allocation specifications
+    variableAttribute: continuous
+    variableUnit: proportion from 0 to 1
+    variableDescription: 'Top-10 membership frequency within eligible primary-network population-allocation specifications.
+      Analytical role: robustness outcome. Construction and interpretation: Calculate from the four population-allocation
+      thresholds while holding the primary hazard, closure, facility, topology, and settlement-to-road rules fixed. Report
+      separately from structural and weighting robustness.'
+    variableSource: settlement_priority_robustness
+    observationNumber: 84
+  weight_rule_top_10_frequency:
+    variableNameInDataset: Weight-Rule Top-10 Frequency
+    variableNameInArticle: Top-10 membership frequency within primary-scenario weighting and functional-form specifications
+    variableAttribute: categorical
+    variableUnit: proportion from 0 to 1
+    variableDescription: 'Top-10 membership frequency within primary-scenario weighting and functional-form specifications.
+      Analytical role: robustness outcome. Construction and interpretation: Calculate from six deterministic alternatives,
+      one geometric specification, and 10,000 seeded Dirichlet draws for primary-ranking settlements. Monte Carlo draw count
+      controls precision, not robustness-family influence.'
+    variableSource: settlement_priority_robustness
+    observationNumber: 84
+  rank_stability:
+    variableNameInDataset: Rank Stability
+    variableNameInArticle: Family-balanced top-10 membership frequency
+    variableAttribute: continuous
+    variableUnit: rank
+    variableDescription: 'Family-balanced top-10 membership frequency. Analytical role: robustness outcome. Construction and
+      interpretation: Give structural-scenario, population-allocation, and weighting families equal influence regardless of
+      their specification counts. Preserve all family-specific frequencies alongside the balanced summary.'
+    variableSource: settlement_priority_robustness
+    observationNumber: 84
+  median_priority_rank:
+    variableNameInDataset: Median Priority Rank
+    variableNameInArticle: Family-balanced median rank across retained eligible robustness families
+    variableAttribute: ordinal
+    variableUnit: rank
+    variableDescription: 'Family-balanced median rank across retained eligible robustness families. Analytical role: robustness
+      outcome. Construction and interpretation: Compute weighted rank quantiles by assigning total weight one-third to each
+      available family and equal weight within family. Report balanced IQR and P05-P95 intervals and preserve complete family-specific
+      rank surfaces.'
+    variableSource: settlement_priority_robustness
+    observationNumber: 84
+  critical_road_section:
+    variableNameInDataset: Critical Road Section
+    variableNameInArticle: OSM road-feature repair candidate label
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'OSM road-feature repair candidate label. Analytical role: repair-screening identifier. Construction
+      and interpretation: Group non-overlapping graph edges by OSM feature. The primary candidate set requires Hazard Evidence
+      Class 3 and CEMS Damage Grade equal to Destroyed.'
+    variableSource: road_repair_benefits
+    observationNumber: 194
+  is_critical_road_section:
+    variableNameInDataset: Is Critical Road Section
+    variableNameInArticle: Indicator of positive modeled marginal access benefit
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Indicator of positive modeled marginal access benefit. Analytical role: repair-screening outcome.
+      Construction and interpretation: Restore one candidate section at a time while all other primary closures remain fixed.
+      This is a screening classification, not an engineering repair order.'
+    variableSource: road_repair_benefits
+    observationNumber: 194
+  repair_section_length_m:
+    variableNameInDataset: Repair Section Length (m)
+    variableNameInArticle: Total modeled length of graph edges reopened for one candidate
+    variableAttribute: categorical
+    variableUnit: metres
+    variableDescription: 'Total modeled length of graph edges reopened for one candidate. Analytical role: repair-screening
+      diagnostic. Construction and interpretation: Sum only primary-scenario closed graph edges belonging to the candidate
+      OSM feature. It is not a field-measured repair length or cost proxy.'
+    variableSource: road_repair_benefits
+    observationNumber: 194
+  restored_access_after_repair:
+    variableNameInDataset: Restored Access after Repair
+    variableNameInArticle: Newly isolated settlement regaining a finite modeled service path after one candidate repair
+    variableAttribute: continuous
+    variableUnit: source-reported unit
+    variableDescription: 'Newly isolated settlement regaining a finite modeled service path after one candidate repair. Analytical
+      role: repair-screening outcome. Construction and interpretation: Reopen all primary-closed graph edges of candidate
+      section \(j\) and retain every other primary closure. Preserve missing values for baseline-ineligible settlements.'
+    variableSource: road_repair_benefits
+    observationNumber: 194
+  population_reconnected:
+    variableNameInDataset: Population Reconnected
+    variableNameInArticle: Assigned settlement population regaining modeled service access after one candidate repair
+    variableAttribute: boolean
+    variableUnit: persons
+    variableDescription: 'Assigned settlement population regaining modeled service access after one candidate repair. Analytical
+      role: repair-screening outcome. Construction and interpretation: Sum only population assigned within 3000 m to settlements
+      that were newly isolated in the primary disruption and regain a finite path. Unallocated population is excluded and
+      reported separately.'
+    variableSource: road_repair_benefits
+    observationNumber: 194
+  post_repair_travel_time_minutes:
+    variableNameInDataset: Post-Repair Travel Time (minutes)
+    variableNameInArticle: Modeled travel time to the nearest retained health or emergency destination after one candidate
+      repair
+    variableAttribute: continuous
+    variableUnit: minutes
+    variableDescription: 'Modeled travel time to the nearest retained health or emergency destination after one candidate
+      repair. Analytical role: repair-screening outcome. Construction and interpretation: Use the primary disrupted graph
+      with candidate section \(j\) reopened. Retain all primary health and emergency destinations and preserve missing values
+      when no finite path exists.'
+    variableSource: road_repair_benefits
+    observationNumber: 114461
+  finite_travel_time_improvement_after_repair_minutes:
+    variableNameInDataset: Finite Travel-Time Improvement after Repair (minutes)
+    variableNameInArticle: Reduction in finite modeled travel time after one candidate repair
+    variableAttribute: continuous
+    variableUnit: minutes
+    variableDescription: 'Reduction in finite modeled travel time after one candidate repair. Analytical role: repair-screening
+      outcome. Construction and interpretation: Keep reconnected settlements separate rather than assigning an arbitrary finite
+      improvement to a formerly infinite path. Nonnegative values are required by validation.'
+    variableSource: road_repair_benefits
+    observationNumber: 114460
+  population_weighted_finite_travel_time_improvement_person_minutes:
+    variableNameInDataset: Population-Weighted Finite Travel-Time Improvement (person-minutes)
+    variableNameInArticle: Total finite travel-time improvement weighted by assigned settlement population
+    variableAttribute: count
+    variableUnit: person-minutes
+    variableDescription: 'Total finite travel-time improvement weighted by assigned settlement population. Analytical role:
+      repair-screening outcome. Construction and interpretation: Sum only positive finite improvements. Interpret jointly
+      with Population Reconnected and do not convert the result into cost-effectiveness without Nepal-specific engineering
+      cost evidence.'
+    variableSource: road_repair_benefits
+    observationNumber: 194
+  repair_portfolio_size_sections:
+    variableNameInDataset: Repair Portfolio Size (sections)
+    variableNameInArticle: Number of road sections in a count-constrained repair-screening portfolio
+    variableAttribute: count
+    variableUnit: count
+    variableDescription: 'Number of road sections in a count-constrained repair-screening portfolio. Analytical role: repair-portfolio
+      scenario parameter. Construction and interpretation: Select a nested forward sequence using joint rerouting after every
+      added Critical Road Section. Report the four confirmed section counts without treating a larger portfolio as inherently
+      better.'
+    variableSource: road_repair_portfolios
+    observationNumber: 4
+  portfolio_population_reconnected:
+    variableNameInDataset: Portfolio Population Reconnected
+    variableNameInArticle: Assigned settlement population regaining modeled service access after jointly reopening a road-repair
+      portfolio
+    variableAttribute: boolean
+    variableUnit: persons
+    variableDescription: 'Assigned settlement population regaining modeled service access after jointly reopening a road-repair
+      portfolio. Analytical role: repair-portfolio outcome. Construction and interpretation: Jointly reopen the primary candidate-edge
+      groups in portfolio \(\mathcal{J}_K\), rerun shortest paths, and sum assigned population at scenario-specific newly
+      isolated settlements that regain a finite path. Do not add single-section marginal benefits.'
+    variableSource: road_repair_portfolios
+    observationNumber: 768
+  portfolio_weighted_finite_travel_time_improvement_person_minutes:
+    variableNameInDataset: Portfolio-Weighted Finite Travel-Time Improvement (person-minutes)
+    variableNameInArticle: Total finite modeled travel-time improvement after jointly reopening a road-repair portfolio
+    variableAttribute: continuous
+    variableUnit: person-minutes
+    variableDescription: 'Total finite modeled travel-time improvement after jointly reopening a road-repair portfolio. Analytical
+      role: repair-portfolio outcome. Construction and interpretation: Multiply each positive finite travel-time improvement
+      by assigned settlement population and sum. Keep reconnected settlements separate instead of assigning an arbitrary finite
+      improvement to a previously infinite path.'
+    variableSource: road_repair_portfolios
+    observationNumber: 768
+  portfolio_structural_scenario_retention:
+    variableNameInDataset: Portfolio Structural-Scenario Retention
+    variableNameInArticle: Share of structural scenarios in which a fixed primary repair portfolio retains any positive modeled
+      access benefit
+    variableAttribute: categorical
+    variableUnit: category
+    variableDescription: 'Share of structural scenarios in which a fixed primary repair portfolio retains any positive modeled
+      access benefit. Analytical role: repair-portfolio robustness outcome. Construction and interpretation: Evaluate each
+      fixed primary forward portfolio across all 192 hazard, closure, facility, topology, and snap-distance scenarios. Positive
+      retention means population reconnection or finite person-minute improvement; it does not measure benefit magnitude or
+      engineering robustness.'
+    variableSource: road_repair_portfolios
+    observationNumber: 4
+tableDictionary:
+  table_evidence_base_and_validation_status:
+    tableId: table_evidence_base_and_validation_status
+    tablePath: data/results/tables/Table_evidence_base_and_validation_status.xlsx
+    tableCaption: Evidence base and validation status
+    tableAim: Summarizes whether each required evidence layer is available, validated, linkable, and adequate for its intended
+      research use through source-backed counts, population-allocation coverage, and metadata checks.
+    tableExplanation: Audits availability, period, linkage, validation, limitations, and intended role for every evidence
+      family, including population-allocation coverage.
+    tableSuitableSection: 'Appendix Table A1: Evidence audit'
+  table_hazard_and_exposure_key_indicators:
+    tableId: table_hazard_and_exposure_key_indicators
+    tablePath: data/results/tables/Table_hazard_and_exposure_key_indicators.xlsx
+    tableCaption: Hazard and exposure key indicators
+    tableAim: Reports the compact physical-footprint, modeled population, road, bridge, building, facility, and settlement
+      exposure indicators needed to characterize the event corridor.
+    tableExplanation: Compares footprint area and modeled population, road, bridge, building, facility, and settlement exposure
+      across the three nested hazard-evidence thresholds.
+    tableSuitableSection: 'Results: Hazard footprint and exposure'
+  table_pre_disaster_vulnerability_dimensions:
+    tableId: table_pre_disaster_vulnerability_dimensions
+    tablePath: data/results/tables/Table_pre_disaster_vulnerability_dimensions.xlsx
+    tableCaption: Pre-disaster vulnerability dimensions
+    tableAim: Reports weighted, domain-supported summaries of deprivation, preparedness, assistance, and harmful coping with
+      their survey support boundaries.
+    tableExplanation: Summarizes supported-domain estimates, uncertainty, effective sample size, reliability, and the boundary
+      on settlement interpretation.
+    tableSuitableSection: 'Appendix Table A2: Contextual vulnerability'
+  table_accessibility_and_isolation_scenarios:
+    tableId: table_accessibility_and_isolation_scenarios
+    tablePath: data/results/tables/Table_accessibility_and_isolation_scenarios.xlsx
+    tableCaption: Accessibility and isolation scenarios
+    tableAim: Compares the primary network-disruption result with a compact pre-specified subset of topology, snap-distance,
+      hazard, closure, and facility-availability scenarios while explicitly identifying any row that changes more than one
+      assumption.
+    tableExplanation: Compares the primary disruption with a compact set of topology, snap-distance, hazard, closure, and
+      facility-availability alternatives.
+    tableSuitableSection: 'Appendix Table A3: Accessibility robustness'
+  table_top_10_priority_settlements:
+    tableId: table_top_10_priority_settlements
+    tablePath: data/results/tables/Table_top_10_priority_settlements.xlsx
+    tableCaption: Top ten priority settlements
+    tableAim: Presents a readable decision summary for the ten settlements with the strongest combined event-specific evidence,
+      while reporting eligibility, structural-scenario robustness, population-allocation robustness, weighting robustness,
+      and family-balanced stability without allowing specification counts to dominate.
+    tableExplanation: Presents the highest primary-priority settlements with hazard, population, access status, primary rank,
+      three robustness-family frequencies, balanced stability, and sensitivity rank.
+    tableSuitableSection: 'Results: Settlement intervention priorities'
+  table_road_repair_screening_and_portfolio_scenarios:
+    tableId: table_road_repair_screening_and_portfolio_scenarios
+    tablePath: data/results/tables/Table_road_repair_screening_and_portfolio_scenarios.xlsx
+    tableCaption: Road-repair screening and portfolio scenarios
+    tableAim: Integrates the two positive single-section candidates with the four jointly rerouted count-constrained portfolios,
+      preserving distinct marginal and cumulative effects and making the zero-gain plateau beyond \(K=2\) explicit.
+    tableExplanation: Separates positive single-section benefits from jointly rerouted portfolio totals and retains the observed
+      zero-gain plateau beyond two sections.
+    tableSuitableSection: 'Results: Road-repair screening'
+figureDictionary:
+  fig_cascading_hazard_evidence_and_consensus_footprint:
+    figureId: fig_cascading_hazard_evidence_and_consensus_footprint
+    figurePath: data/results/figures/Figure_cascading_hazard_evidence_and_consensus_footprint.png
+    figureCaption: Cascading-hazard evidence and consensus footprint
+    figureAim: Locates the event within Nepal and shows how event-window sensor change, terrain and channel context, and independent
+      mapped evidence combine into nested hazard-evidence scenarios for the cascading-hazard question.
+    figureExplanation: Shows the Nepal location, event corridor, sensor change, terrain and channel context, independent mapped
+      evidence, and three nested hazard-evidence classes.
+    figureSuitableSection: 'Results: Event reconstruction and physical footprint'
+  fig_road_disruption_and_service_access_loss:
+    figureId: fig_road_disruption_and_service_access_loss
+    figurePath: data/results/figures/Figure_road_disruption_and_service_access_loss.png
+    figureCaption: Road disruption and modeled service-access loss
+    figureAim: Shows how evidence-linked road closures translate the physical footprint into finite travel-time increases
+      or complete loss of modeled health and emergency access.
+    figureExplanation: Maps evidence-linked road closures and the resulting finite delays or complete modeled loss of access
+      to retained health and emergency services.
+    figureSuitableSection: 'Results: Network disruption and service access'
+  fig_settlement_exposure_isolation_and_intervention_priority:
+    figureId: fig_settlement_exposure_isolation_and_intervention_priority
+    figurePath: data/results/figures/Figure_settlement_exposure_isolation_and_intervention_priority.png
+    figureCaption: Settlement exposure, isolation, and intervention priority
+    figureAim: Integrates hazard evidence, modeled population, service-access disruption, and sensitivity-only district vulnerability
+      context to identify priority settlements without downscaling household observations.
+    figureExplanation: Combines event-specific hazard evidence, assigned population, and access loss in the primary settlement
+      ranking while showing district vulnerability only as sensitivity context.
+    figureSuitableSection: 'Results: Settlement intervention priorities'
+  fig_pre_disaster_vulnerability_profile_by_supported_domain:
+    figureId: fig_pre_disaster_vulnerability_profile_by_supported_domain
+    figurePath: data/results/figures/Figure_pre_disaster_vulnerability_profile_by_supported_domain.png
+    figureCaption: Pre-disaster vulnerability by supported reporting domain
+    figureAim: Compares deprivation, warning, preparedness, assistance, and harmful coping only at survey-supported reporting
+      domains and displays the strength of the underlying survey support.
+    figureExplanation: Reports deprivation, preparedness, assistance, and harmful-coping context only at survey-supported
+      domains with uncertainty and reliability labels.
+    figureSuitableSection: 'Appendix Figure A1: Contextual vulnerability evidence'
+  fig_road_repair_screening_and_portfolio_benefits:
+    figureId: fig_road_repair_screening_and_portfolio_benefits
+    figurePath: data/results/figures/Figure_road_repair_screening_and_portfolio_benefits.png
+    figureCaption: Road-repair screening and portfolio benefits
+    figureAim: Maps the selected sections, separates population reconnection from finite-delay improvement, and makes the
+      observed zero marginal gain beyond \(K=2\) visible alongside structural-scenario retention.
+    figureExplanation: Locates selected sections and separates population reconnection, finite travel-time improvement, marginal
+      portfolio benefit, and structural-scenario retention.
+    figureSuitableSection: 'Results: Road-repair screening'
+  fig_priority_rank_robustness_across_assumptions:
+    figureId: fig_priority_rank_robustness_across_assumptions
+    figurePath: data/results/figures/Figure_priority_rank_robustness_across_assumptions.png
+    figureCaption: Priority-rank robustness across assumption families
+    figureAim: Distinguishes frequent eligibility from stable top-priority placement, reports structural-scenario, population-allocation,
+      and weighting robustness separately, and summarizes rank intervals with equal influence for all three robustness families.
+    figureExplanation: Compares structural, population-allocation, and weighting robustness separately and presents an equal-family
+      rank summary without specification-count dominance.
+    figureSuitableSection: 'Appendix Figure A2: Priority robustness'
+analysisStructureBrief:
+  overview: Applied multi-source spatial decision analysis for the August 2026 Nepal cascading-hazard corridor. The evidence
+    chain moves from hazard reconstruction to exposure, modeled access loss, supported-domain social context, settlement priority,
+    robustness, and road-repair screening while preserving spatial, survey, scenario, population-allocation, and engineering
+    interpretation limits.
+  levels:
+  - levelName: Hazard reconstruction and exposure
+    levelAim: Reconstruct a defensible cascading-hazard corridor and quantify physical and population exposure without equating
+      exposure with confirmed damage.
+    inputs:
+    - Surface Change
+    - Terrain Slope
+    - Channel Context
+    - Hazard Evidence Class
+    - Hazard Scenario
+    - Estimated Settlement Population
+    modelOrMethod: Align independent radar, optical, mapped-event, terrain, and channel evidence on a 20 m grid; apply the
+      pre-specified nested class-3, class-2, and class-1 evidence rules; overlay each footprint with calibrated population
+      and mapped infrastructure.
+    outputs:
+    - Cascading-Hazard Evidence and Consensus Footprint
+    - Hazard and Exposure Key Indicators
+    - Evidence Base and Validation Status
+    interpretation: Convergence across independent sources supports a coherent event corridor and descriptive exposure totals.
+      The classes are evidence-confidence categories, not physical intensity, field-validated damage, or climate attribution.
+  - levelName: Network disruption and population access loss
+    levelAim: Estimate how evidence-linked road and facility disruptions change modeled settlement access to health and emergency
+      destinations.
+    inputs:
+    - Topology repair threshold (m)
+    - Settlement-to-road snap distance (m)
+    - Road Closure Rule
+    - Facility Availability Rule
+    - Baseline health/emergency accessibility (minutes)
+    - Estimated Settlement Population
+    modelOrMethod: Build the pre-event routable baseline, remove evidence-eligible road edges and optional exposed destinations,
+      rerun shortest paths, and report finite delays and newly isolated settlements separately across 192 structural scenarios.
+      Apply four population-allocation thresholds and retain unallocated population explicitly.
+    outputs:
+    - Road Disruption and Service-Access Loss
+    - Accessibility and Isolation Scenarios
+    interpretation: The results identify modeled network mechanisms and assigned-population impacts conditional on graph topology,
+      closure, facility, snap, and population-allocation assumptions. They do not verify field operating status.
+  - levelName: Supported-domain vulnerability context
+    levelAim: Describe pre-disaster deprivation, preparedness, assistance, and harmful coping only at geographic levels supported
+      by the survey designs.
+    inputs:
+    - Economic Deprivation
+    - Basic Needs Inadequacy
+    - Essential Public Service Deprivation
+    - Pre-Warning Deficit
+    - Historical Assistance Receipt
+    - Historical Food-Consumption Reduction Coping
+    - Survey Reliability Category
+    modelOrMethod: Use survey-weighted means, PSU- or household-clustered uncertainty, effective sample sizes, and reliability
+      categories. Estimate NLSS district domains with empirical-Bayes shrinkage and keep NCCS ecological-belt and HRVS district-year
+      estimates at their supported domains.
+    outputs:
+    - Pre-Disaster Vulnerability Profile by Supported Domain
+    - Pre-Disaster Vulnerability Dimensions
+    interpretation: These estimates describe contextual capacity and evidence strength. They are not 2026 disaster outcomes
+      and are never treated as measured household or settlement vulnerability; Rasuwa and HRVS coverage limits remain explicit.
+  - levelName: Settlement intervention priority
+    levelAim: Identify settlements with high joint event-specific hazard evidence, assigned population, and isolation burden
+      while keeping social context outside the primary score.
+    inputs:
+    - Hazard Evidence Class
+    - Estimated Settlement Population
+    - Newly Isolated
+    - Accessibility Loss (minutes)
+    - Settlement Contextual Vulnerability (Sensitivity Only)
+    modelOrMethod: Within each eligible scenario set, combine tied-midrank hazard and exposure components with an isolation-preserving
+      accessibility component using equal weights. Add shrinkage-adjusted district context only in a separately labelled four-component
+      sensitivity score.
+    outputs:
+    - Settlement Exposure, Isolation, and Intervention Priority
+    - Top 10 Priority Settlements
+    interpretation: Primary ranks are transparent decision-support priorities, not causal effects or welfare estimates. The
+      vulnerability sensitivity tests contextual rank movement and cannot establish settlement-level vulnerability.
+  - levelName: Priority-rank robustness
+    levelAim: Test whether high-priority settlements persist within each major uncertainty family and under an equal-family
+      summary.
+    inputs:
+    - Priority Rank
+    - Scenario Inclusion Frequency
+    - Structural-Scenario Top-10 Frequency
+    - Allocation-Threshold Top-10 Frequency
+    - Weight-Rule Top-10 Frequency
+    - Rank Stability
+    - Median Priority Rank
+    modelOrMethod: Evaluate 192 structural scenarios, four population-allocation thresholds, and 10,007 deterministic, random-weight,
+      and functional-form specifications. Report each family separately, then assign one-third weight to each family for balanced
+      top-ten frequency and rank intervals.
+    outputs:
+    - Priority-Rank Robustness Across Assumptions
+    - Top 10 Priority Settlements
+    interpretation: A robust priority must persist separately within structural, allocation, and weighting families. The family-balanced
+      summary prevents the number of specifications in one family from dominating but does not replace the three family-specific
+      verdicts.
+  - levelName: Road-repair screening and portfolios
+    levelAim: Screen which modeled road restorations reconnect assigned population or reduce finite service travel time and
+      where additional sections cease to add benefit.
+    inputs:
+    - Critical Road Section
+    - Repair Section Length (m)
+    - Population Reconnected
+    - Population-Weighted Finite Travel-Time Improvement (person-minutes)
+    - Repair Portfolio Size (sections)
+    modelOrMethod: Reopen each of 194 primary candidates individually, then construct nested count-constrained portfolios
+      of 1, 2, 3, and 5 sections using lexicographic forward selection with full joint rerouting. Evaluate each fixed portfolio
+      across all 192 structural scenarios.
+    outputs:
+    - Road-Repair Screening and Portfolio Benefits
+    - Road-Repair Screening and Portfolio Scenarios
+    interpretation: The screening separates reconnection from finite-delay improvement and preserves the zero marginal gain
+      after two sections. It is not an engineering, cost-effectiveness, crew-scheduling, or globally optimal repair order;
+      two-thirds retention means persistence of any modeled benefit only.
