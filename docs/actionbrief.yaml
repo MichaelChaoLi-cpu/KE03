@@ -275,19 +275,18 @@ datasetDictionary:
       labels were retained.
   settlement_priority_robustness:
     datasetSourceName: settlement_intervention_priority_preprocessed.parquet and settlement_priority_robustness_preprocessed.parquet
-    datasetDescription: Primary and sensitivity settlement priorities plus structural, allocation, weighting, and family-balanced
+    datasetDescription: Primary and sensitivity settlement priorities plus separate structural, allocation, and weighting
       robustness summaries.
     datasetAttribute: table
     datasetProvider: Research-team decision-analysis derivatives
     datasetGenerationInfo: Hazard, population, and isolation components were scaled within eligible scenario sets; district
-      context was added only in a separately labelled sensitivity score; robustness families were summarized separately and
-      equally balanced.
+      context was added only in a separately labelled sensitivity score; robustness families were summarized separately.
     datasetPeriod: August 2026 event analysis
     datasetScale: 767 settlements; 192 structural, four allocation, and 10,007 weighting or functional-form specifications
     datasetSpatialResolution: Mapped settlements in the three-district event scope
     datasetTemporalResolution: Primary scenario plus three robustness families
-    datasetPreprocessingInfo: Tied midranks, isolation-preserving accessibility scoring, explicit eligibility, seeded weight
-      draws, and equal one-third family weights were used.
+    datasetPreprocessingInfo: Tied midranks, isolation-preserving accessibility scoring, explicit eligibility, paired structural
+      factor checks, and seeded weight draws were used. Nominally repeated structural states are not pooled as independent evidence.
   road_repair_benefits:
     datasetSourceName: road_repair_candidate_benefits_preprocessed.parquet and settlement_road_repair_benefits_preprocessed.parquet
     datasetDescription: Single-road-section screening results that separate population reconnection from finite travel-time
@@ -2242,25 +2241,22 @@ variableDictionary:
       controls precision, not robustness-family influence.'
     variableSource: settlement_priority_robustness
     observationNumber: 84
-  rank_stability:
-    variableNameInDataset: Rank Stability
-    variableNameInArticle: Family-balanced top-10 membership frequency
-    variableAttribute: continuous
-    variableUnit: rank
-    variableDescription: 'Family-balanced top-10 membership frequency. Analytical role: robustness outcome. Construction and
-      interpretation: Give structural-scenario, population-allocation, and weighting families equal influence regardless of
-      their specification counts. Preserve all family-specific frequencies alongside the balanced summary.'
-    variableSource: settlement_priority_robustness
-    observationNumber: 84
-  median_priority_rank:
-    variableNameInDataset: Median Priority Rank
-    variableNameInArticle: Family-balanced median rank across retained eligible robustness families
+  structural_rank_minimum:
+    variableNameInDataset: Structural Rank Minimum
+    variableNameInArticle: Best eligible priority rank across structural scenarios
     variableAttribute: ordinal
     variableUnit: rank
-    variableDescription: 'Family-balanced median rank across retained eligible robustness families. Analytical role: robustness
-      outcome. Construction and interpretation: Compute weighted rank quantiles by assigning total weight one-third to each
-      available family and equal weight within family. Report balanced IQR and P05-P95 intervals and preserve complete family-specific
-      rank surfaces.'
+    variableDescription: 'Minimum eligible priority rank across the structural scenario surface. Report with the maximum rank
+      as an observed range; do not interpret repeated nominal states as independent evidence.'
+    variableSource: settlement_priority_robustness
+    observationNumber: 84
+  structural_rank_maximum:
+    variableNameInDataset: Structural Rank Maximum
+    variableNameInArticle: Worst eligible priority rank across structural scenarios
+    variableAttribute: ordinal
+    variableUnit: rank
+    variableDescription: 'Maximum eligible priority rank across the structural scenario surface. Report with the minimum rank
+      and paired factor-activity results.'
     variableSource: settlement_priority_robustness
     observationNumber: 84
   critical_road_section:
@@ -2425,22 +2421,20 @@ tableDictionary:
   table_accessibility_and_isolation_scenarios:
     tableId: table_accessibility_and_isolation_scenarios
     tablePath: data/results/tables/Table_accessibility_and_isolation_scenarios.xlsx
-    tableCaption: Accessibility and isolation scenarios
-    tableAim: Compares the primary network-disruption result with a compact pre-specified subset of topology, snap-distance,
-      hazard, closure, and facility-availability scenarios while explicitly identifying any row that changes more than one
-      assumption.
-    tableExplanation: Compares the primary disruption with a compact set of topology, snap-distance, hazard, closure, and
-      facility-availability alternatives.
-    tableSuitableSection: 'Appendix Table A3: Accessibility robustness'
+    tableCaption: Structural scenario factor activity
+    tableAim: Shows which pre-specified structural factors change graph state, accessibility outcomes, or top-ten ordering in
+      paired comparisons holding all other factors fixed.
+    tableExplanation: Reports paired comparison counts, graph and accessibility activity, maximum outcome changes, and top-ten
+      set or order changes for each structural factor.
+    tableSuitableSection: 'Appendix Table A3: Structural factor activity'
   table_top_10_priority_settlements:
     tableId: table_top_10_priority_settlements
     tablePath: data/results/tables/Table_top_10_priority_settlements.xlsx
     tableCaption: Top ten priority settlements
     tableAim: Presents a readable decision summary for the ten settlements with the strongest combined event-specific evidence,
-      while reporting eligibility, structural-scenario robustness, population-allocation robustness, weighting robustness,
-      and family-balanced stability without allowing specification counts to dominate.
+      while reporting structural rank ranges, population-allocation persistence, and weighting persistence separately.
     tableExplanation: Presents the highest primary-priority settlements with hazard, population, access status, primary rank,
-      three robustness-family frequencies, balanced stability, and sensitivity rank.
+      structural rank range, allocation top-ten frequency, and weight-rule top-ten frequency.
     tableSuitableSection: 'Results: Settlement intervention priorities'
   table_road_repair_screening_and_portfolio_scenarios:
     tableId: table_road_repair_screening_and_portfolio_scenarios
@@ -2456,6 +2450,12 @@ figureDictionary:
     figureId: fig_cascading_hazard_evidence_and_consensus_footprint
     figurePath: data/results/figures/Figure_cascading_hazard_evidence_and_consensus_footprint.png
     figureCaption: Cascading-hazard evidence and consensus footprint
+    figurePanelCount: 5
+    figureNote: >-
+      Panel a locates Nepal, Bagmati Province, neighboring countries, the analysis extent, and the reported event source.
+      Panel b shows event-window Sentinel-1 VH change with UNOSAT and Copernicus reference evidence. Panel c compares
+      agreement among mapped and sensor evidence. Panel d adds terrain-slope and channel context. Panel e summarizes
+      the nested consensus evidence classes used in the analysis.
     figureAim: Locates the event within Nepal and shows how event-window sensor change, terrain and channel context, and independent
       mapped evidence combine into nested hazard-evidence scenarios for the cascading-hazard question.
     figureExplanation: Shows the Nepal location, event corridor, sensor change, terrain and channel context, independent mapped
@@ -2465,6 +2465,11 @@ figureDictionary:
     figureId: fig_road_disruption_and_service_access_loss
     figurePath: data/results/figures/Figure_road_disruption_and_service_access_loss.png
     figureCaption: Road disruption and modeled service-access loss
+    figurePanelCount: 3
+    figureNote: >-
+      Panel a maps evidence-linked primary road closures. Panel b shows baseline modeled access to retained health and
+      emergency destinations. Panel c shows finite travel-time delays and settlements that become newly isolated under
+      the primary disruption scenario.
     figureAim: Shows how evidence-linked road closures translate the physical footprint into finite travel-time increases
       or complete loss of modeled health and emergency access.
     figureExplanation: Maps evidence-linked road closures and the resulting finite delays or complete modeled loss of access
@@ -2474,6 +2479,11 @@ figureDictionary:
     figureId: fig_settlement_exposure_isolation_and_intervention_priority
     figurePath: data/results/figures/Figure_settlement_exposure_isolation_and_intervention_priority.png
     figureCaption: Settlement exposure, isolation, and intervention priority
+    figurePanelCount: 4
+    figureNote: >-
+      Panel a maps hazard evidence together with modeled settlement population. Panel b maps primary access loss and
+      isolation. Panel c maps the primary three-component intervention priority. Panel d shows how the ranking changes
+      when district-level vulnerability context is introduced as a sensitivity analysis.
     figureAim: Integrates hazard evidence, modeled population, service-access disruption, and sensitivity-only district vulnerability
       context to identify priority settlements without downscaling household observations.
     figureExplanation: Combines event-specific hazard evidence, assigned population, and access loss in the primary settlement
@@ -2483,6 +2493,11 @@ figureDictionary:
     figureId: fig_pre_disaster_vulnerability_profile_by_supported_domain
     figurePath: data/results/figures/Figure_pre_disaster_vulnerability_profile_by_supported_domain.png
     figureCaption: Pre-disaster vulnerability by supported reporting domain
+    figurePanelCount: 3
+    figureNote: >-
+      Panel a shows district deprivation with the number of supporting primary sampling units. Panel b shows preparedness
+      deficits by ecological belt. Panel c shows historical assistance and harmful coping, while marking the absence of
+      supported HRVS evidence for Rasuwa.
     figureAim: Compares deprivation, warning, preparedness, assistance, and harmful coping only at survey-supported reporting
       domains and displays the strength of the underlying survey support.
     figureExplanation: Reports deprivation, preparedness, assistance, and harmful-coping context only at survey-supported
@@ -2492,6 +2507,11 @@ figureDictionary:
     figureId: fig_road_repair_screening_and_portfolio_benefits
     figurePath: data/results/figures/Figure_road_repair_screening_and_portfolio_benefits.png
     figureCaption: Road-repair screening and portfolio benefits
+    figurePanelCount: 3
+    figureNote: >-
+      Panel a maps screened road sections and modeled beneficiary populations. Panel b separates benefits from reconnecting
+      isolated populations and reducing finite travel delays for individual sections. Panel c compares jointly rerouted
+      portfolios for K = 1, 2, 3, and 5, shows the benefit plateau after K = 2, and reports structural-scenario retention.
     figureAim: Maps the selected sections, separates population reconnection from finite-delay improvement, and makes the
       observed zero marginal gain beyond \(K=2\) visible alongside structural-scenario retention.
     figureExplanation: Locates selected sections and separates population reconnection, finite travel-time improvement, marginal
@@ -2501,10 +2521,13 @@ figureDictionary:
     figureId: fig_priority_rank_robustness_across_assumptions
     figurePath: data/results/figures/Figure_priority_rank_robustness_across_assumptions.png
     figureCaption: Priority-rank robustness across assumption families
-    figureAim: Distinguishes frequent eligibility from stable top-priority placement, reports structural-scenario, population-allocation,
-      and weighting robustness separately, and summarizes rank intervals with equal influence for all three robustness families.
-    figureExplanation: Compares structural, population-allocation, and weighting robustness separately and presents an equal-family
-      rank summary without specification-count dominance.
+    figurePanelCount: 2
+    figureNote: >-
+      Panel a presents primary scores and top-ten persistence under population-allocation and weighting assumptions. Panel b
+      compares structural and allocation min-max rank ranges with weight-rule P05-P95 intervals and primary ranks.
+    figureAim: Reports population-allocation and weighting persistence and compares family-specific rank intervals without
+      pooling nominal structural scenario repetitions.
+    figureExplanation: Compares structural, population-allocation, and weighting robustness separately.
     figureSuitableSection: 'Appendix Figure A2: Priority robustness'
 analysisStructureBrief:
   overview: Applied multi-source spatial decision analysis for the August 2026 Nepal cascading-hazard corridor. The evidence
@@ -2586,25 +2609,23 @@ analysisStructureBrief:
     interpretation: Primary ranks are transparent decision-support priorities, not causal effects or welfare estimates. The
       vulnerability sensitivity tests contextual rank movement and cannot establish settlement-level vulnerability.
   - levelName: Priority-rank robustness
-    levelAim: Test whether high-priority settlements persist within each major uncertainty family and under an equal-family
-      summary.
+    levelAim: Test whether high-priority settlements persist within each major uncertainty family without pooling heterogeneous
+      or nominally repeated specifications.
     inputs:
     - Priority Rank
-    - Scenario Inclusion Frequency
-    - Structural-Scenario Top-10 Frequency
+    - Structural Rank Minimum
+    - Structural Rank Maximum
     - Allocation-Threshold Top-10 Frequency
     - Weight-Rule Top-10 Frequency
-    - Rank Stability
-    - Median Priority Rank
-    modelOrMethod: Evaluate 192 structural scenarios, four population-allocation thresholds, and 10,007 deterministic, random-weight,
-      and functional-form specifications. Report each family separately, then assign one-third weight to each family for balanced
-      top-ten frequency and rank intervals.
+    - Family-Specific Median Priority Rank
+    modelOrMethod: Audit the 192 nominal structural combinations through paired factor comparisons and effective-state counts;
+      evaluate four population-allocation thresholds and 10,007 deterministic, random-weight, and functional-form specifications;
+      report each family separately.
     outputs:
     - Priority-Rank Robustness Across Assumptions
     - Top 10 Priority Settlements
-    interpretation: A robust priority must persist separately within structural, allocation, and weighting families. The family-balanced
-      summary prevents the number of specifications in one family from dominating but does not replace the three family-specific
-      verdicts.
+    interpretation: A robust priority should retain a narrow structural rank range and persist separately under allocation and
+      weighting assumptions. The 192 nominal structural combinations represent a factorial audit, not independent replications.
   - levelName: Road-repair screening and portfolios
     levelAim: Screen which modeled road restorations reconnect assigned population or reduce finite service travel time and
       where additional sections cease to add benefit.
