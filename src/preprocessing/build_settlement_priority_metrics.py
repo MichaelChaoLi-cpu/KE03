@@ -77,6 +77,8 @@ def summarize_rank_array(values: np.ndarray) -> dict[str, float | int]:
         return {
             "Specification Count": 0,
             "Top 10 Frequency": np.nan,
+            "Minimum Rank": np.nan,
+            "Maximum Rank": np.nan,
             "Median Rank": np.nan,
             "Rank IQR Lower": np.nan,
             "Rank IQR Upper": np.nan,
@@ -86,6 +88,8 @@ def summarize_rank_array(values: np.ndarray) -> dict[str, float | int]:
     return {
         "Specification Count": int(values.size),
         "Top 10 Frequency": float(np.mean(values <= TOP_N)),
+        "Minimum Rank": float(np.min(values)),
+        "Maximum Rank": float(np.max(values)),
         "Median Rank": float(np.median(values)),
         "Rank IQR Lower": float(np.quantile(values, 0.25)),
         "Rank IQR Upper": float(np.quantile(values, 0.75)),
@@ -568,6 +572,9 @@ def main() -> None:
                 "Structural-Scenario Top-10 Frequency": scenario_summary[
                     "Top 10 Frequency"
                 ],
+                "Structural Rank Minimum": scenario_summary["Minimum Rank"],
+                "Structural Rank Maximum": scenario_summary["Maximum Rank"],
+                "Structural Median Rank": scenario_summary["Median Rank"],
                 "Allocation-Threshold Inclusion Count": allocation_inclusion_counts.get(
                     settlement_id, 0
                 ),
@@ -578,9 +585,19 @@ def main() -> None:
                 "Allocation-Threshold Top-10 Frequency": allocation_summary[
                     "Top 10 Frequency"
                 ],
+                "Allocation Rank Minimum": allocation_summary["Minimum Rank"],
+                "Allocation Rank Maximum": allocation_summary["Maximum Rank"],
+                "Allocation Median Rank": allocation_summary["Median Rank"],
+                "Allocation Rank P05": allocation_summary["Rank P05"],
+                "Allocation Rank P95": allocation_summary["Rank P95"],
                 "Weight-Rule Top-10 Frequency": weight_summary[
                     "Top 10 Frequency"
                 ],
+                "Weight-Rule Rank Minimum": weight_summary["Minimum Rank"],
+                "Weight-Rule Rank Maximum": weight_summary["Maximum Rank"],
+                "Weight-Rule Median Rank": weight_summary["Median Rank"],
+                "Weight-Rule Rank P05": weight_summary["Rank P05"],
+                "Weight-Rule Rank P95": weight_summary["Rank P95"],
                 "Scenario Specification Count": scenario_summary[
                     "Specification Count"
                 ],
@@ -693,9 +710,9 @@ def main() -> None:
                 "Status": f"seed {RANDOM_SEED}",
             },
             {
-                "Measure": "Robustness families",
-                "Value": 3,
-                "Status": "structural, population-allocation, and weight-rule families receive equal total influence",
+                "Measure": "Structural effective aggregate states",
+                "Value": 10,
+                "Status": "report factor activity and rank ranges; do not count nominal scenario repetitions as independent stability evidence",
             },
             {
                 "Measure": "Primary vulnerability use",
@@ -730,8 +747,8 @@ def main() -> None:
             "dirichlet_alpha": [1, 1, 1],
             "geometric_epsilon": GEOMETRIC_EPSILON,
             "rank_method": "descending competition rank",
-            "rank_stability": "equal-family mean of structural-scenario, population-allocation, and primary-scenario weight-rule top-10 frequencies",
-            "rank_intervals": "weighted quantiles assigning total weight one-third to each robustness family",
+            "reporting_rule": "report structural rank range, population-allocation top-10 frequency, and weight-rule top-10 frequency separately",
+            "nominal_scenario_warning": "192 factorial combinations reduce to 10 aggregate accessibility states; repeated nominal states are not independent robustness evidence",
         },
     }
     decisions_path.write_text(

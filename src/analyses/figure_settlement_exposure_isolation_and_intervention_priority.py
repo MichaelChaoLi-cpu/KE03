@@ -440,8 +440,13 @@ def main() -> None:
     )
     style_map(ax_c, bounds, districts, local_units)
     add_panel_heading(ax_c, "c", "Primary three-component priority")
-    cax_c = ax_c.inset_axes([0.055, 0.835, 0.32, 0.025])
-    cbar_c = fig.colorbar(primary_points, cax=cax_c, orientation="horizontal")
+    cbar_c = fig.colorbar(
+        primary_points,
+        ax=ax_c,
+        fraction=0.035,
+        pad=0.018,
+        shrink=0.68,
+    )
     cbar_c.set_ticks([0, 0.5, 1])
     cbar_c.ax.tick_params(labelsize=6.5, length=2, pad=1)
     cbar_c.set_label("Primary intervention priority", fontsize=7, labelpad=1.5)
@@ -484,8 +489,13 @@ def main() -> None:
     )
     style_map(ax_d, bounds, districts, local_units)
     add_panel_heading(ax_d, "d", "District vulnerability sensitivity")
-    cax_d = ax_d.inset_axes([0.055, 0.835, 0.32, 0.025])
-    cbar_d = fig.colorbar(sensitivity_points, cax=cax_d, orientation="horizontal")
+    cbar_d = fig.colorbar(
+        sensitivity_points,
+        ax=ax_d,
+        fraction=0.035,
+        pad=0.018,
+        shrink=0.68,
+    )
     cbar_d.set_ticks([0, 0.5, 1])
     cbar_d.ax.tick_params(labelsize=6.5, length=2, pad=1)
     cbar_d.set_label("Sensitivity intervention priority", fontsize=7, labelpad=1.5)

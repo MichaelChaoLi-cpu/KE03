@@ -1,9 +1,8 @@
 """Generate the Top 10 Priority Settlements table and PNG preview.
 
 Plan: provide a compact main-text decision summary for the ten highest-ranked
-settlements, separating primary priority from scenario eligibility, structural,
-population-allocation, and weighting stability, and the district-vulnerability
-sensitivity ranking.
+settlements, separating primary priority from structural rank variation,
+population-allocation sensitivity, and weighting sensitivity.
 
 Framework: AnaSOP Sections 6.2-6.5 and workflow steps 7-9. The primary score is
 the equal-weight mean of hazard, population-exposure, and accessibility
@@ -65,9 +64,9 @@ HEADERS = [
     "Accessibility\nstatus",
     "Intervention\npriority",
     "Priority\nrank",
-    "Scenario inclusion\nfrequency",
-    "Top-10 stability\nstructural / allocation / weight / balanced",
-    "Vulnerability\nsensitivity rank",
+    "Structural-scenario\nrank range",
+    "Allocation-threshold\ntop-10 frequency",
+    "Weight-rule\ntop-10 frequency",
 ]
 
 
@@ -96,13 +95,10 @@ def build_top_ten() -> pd.DataFrame:
 
     robustness_columns = [
         "OSM Settlement ID",
-        "Scenario Inclusion Frequency",
-        "Structural-Scenario Top-10 Frequency",
+        "Structural Rank Minimum",
+        "Structural Rank Maximum",
         "Allocation-Threshold Top-10 Frequency",
         "Weight-Rule Top-10 Frequency",
-        "Rank Stability",
-        "Robustness Family Count",
-        "Robustness Specification Count",
     ]
     top = primary.merge(
         robustness[robustness_columns],
@@ -111,28 +107,16 @@ def build_top_ten() -> pd.DataFrame:
         validate="one_to_one",
     )
     frequency_columns = [
-        "Scenario Inclusion Frequency",
-        "Structural-Scenario Top-10 Frequency",
         "Allocation-Threshold Top-10 Frequency",
         "Weight-Rule Top-10 Frequency",
-        "Rank Stability",
     ]
     if top[frequency_columns].isna().any().any():
         raise RuntimeError("Top-ten settlements are missing robustness diagnostics")
     for column in frequency_columns:
         if not top[column].between(0, 1).all():
             raise RuntimeError(f"{column} values fall outside [0, 1]")
-    expected_balanced = (
-        top["Structural-Scenario Top-10 Frequency"]
-        + top["Allocation-Threshold Top-10 Frequency"]
-        + top["Weight-Rule Top-10 Frequency"]
-    ) / 3
-    if not np.allclose(expected_balanced, top["Rank Stability"]):
-        raise RuntimeError("Rank Stability is not the equal-family mean")
-    if not top["Robustness Family Count"].eq(3).all():
-        raise RuntimeError("Top-ten settlements must have three robustness families")
-    if not top["Robustness Specification Count"].eq(10203).all():
-        raise RuntimeError("Unexpected robustness specification denominator")
+    if top[["Structural Rank Minimum", "Structural Rank Maximum"]].isna().any().any():
+        raise RuntimeError("Top-ten settlements are missing structural rank ranges")
     return top
 
 
@@ -164,12 +148,9 @@ def build_rows(top: pd.DataFrame) -> list[list[object]]:
                 accessibility_label(row),
                 float(row["Intervention Priority"]),
                 int(row["Priority Rank"]),
-                float(row["Scenario Inclusion Frequency"]),
-                f"{row['Structural-Scenario Top-10 Frequency']:.0%} / "
-                f"{row['Allocation-Threshold Top-10 Frequency']:.0%} / "
-                f"{row['Weight-Rule Top-10 Frequency']:.0%} / "
-                f"{row['Rank Stability']:.0%}",
-                int(row["Sensitivity Priority Rank"]),
+                f"{int(row['Structural Rank Minimum'])}\u2013{int(row['Structural Rank Maximum'])}",
+                float(row["Allocation-Threshold Top-10 Frequency"]),
+                float(row["Weight-Rule Top-10 Frequency"]),
             ]
         )
     if len(rows) != 10 or any(len(row) != 9 for row in rows):
@@ -223,8 +204,8 @@ def build_workbook(rows: list[list[object]]) -> None:
         sheet.cell(row=row_idx, column=3).number_format = "#,##0"
         sheet.cell(row=row_idx, column=5).number_format = "0.000"
         sheet.cell(row=row_idx, column=6).number_format = "0"
-        sheet.cell(row=row_idx, column=7).number_format = "0%"
-        sheet.cell(row=row_idx, column=9).number_format = "0"
+        sheet.cell(row=row_idx, column=8).number_format = "0%"
+        sheet.cell(row=row_idx, column=9).number_format = "0%"
 
         rank = int(values[5])
         if rank <= 3:
@@ -234,16 +215,13 @@ def build_workbook(rows: list[list[object]]) -> None:
             )
         status_fill = "FCE4D6" if values[3] == "Newly isolated" else "DDEBF7"
         sheet.cell(row=row_idx, column=4).fill = PatternFill("solid", fgColor=status_fill)
-        stability = float(str(values[7]).split("/")[-1].strip().rstrip("%")) / 100
-        stability_fill = (
-            "D9EAD3" if stability >= 0.9 else "FFF2CC" if stability >= 0.5 else "FCE4D6"
-        )
-        sheet.cell(row=row_idx, column=8).fill = PatternFill(
-            "solid", fgColor=stability_fill
-        )
+        for col_idx in (8, 9):
+            frequency = float(values[col_idx - 1])
+            fill = "D9EAD3" if frequency >= 0.9 else "FFF2CC" if frequency >= 0.5 else "FCE4D6"
+            sheet.cell(row=row_idx, column=col_idx).fill = PatternFill("solid", fgColor=fill)
         sheet.row_dimensions[row_idx].height = 42
 
-    widths = [36, 21, 19, 20, 17, 13, 22, 34, 20]
+    widths = [36, 21, 19, 20, 17, 13, 22, 24, 22]
     for index, width in enumerate(widths, start=1):
         sheet.column_dimensions[get_column_letter(index)].width = width
 
@@ -368,7 +346,7 @@ def main() -> None:
     validate_outputs(rows)
     print(f"Wrote {OUTPUT.relative_to(ROOT)}")
     print(f"Wrote {PREVIEW.relative_to(ROOT)}")
-    print("Validated 10 rows x 9 columns; structural, allocation, weight-rule, and family-balanced stability shown")
+    print("Validated 10 rows x 9 columns; structural rank range and active robustness families shown")
 
 
 if __name__ == "__main__":
