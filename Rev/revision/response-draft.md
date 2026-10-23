@@ -245,10 +245,27 @@ The manuscript addresses a relevant problem. However, the main findings are base
 2. The conversion of the hazard footprint into road closures is central to all subsequent results. The manuscript states that road edges are removed according to the hazard footprint and closure rule, but it does not sufficiently demonstrate how a road intersecting the footprint is classified as destroyed or closed. Since field observations of road damage were unavailable, please clarify the exact closure criteria, the treatment of bridges and partially affected road sections, and the evidence used to assign road status.
 
 **Response:**
-[Response to be completed.]
+Thank you for highlighting the need to make the closure criteria reproducible. The revised Data and Methodology sections specify the CEMS-to-OSM matching tolerances, bridge association, most-severe-grade rule, and joint conditions for removing an edge, including the treatment of partially intersecting sections. CEMS supplies the mapped damage grades; footprint intersection selects which graded edges enter each modeled closure scenario. The Results and Figure 2 caption now identify the full-edge closure units and report their extent.
 
-"[Exact revised manuscript text]"
-(Page XX, Lines XX–XX)
+In the Data section:
+
+"CEMS EMSR927 grades are linked to OSM edges in EPSG:32645 using 20 m buffers around road lines and, for OSM-tagged bridge edges, the nearest CEMS bridge point within 100 m; 700 of 706 road features and 18 of 32 bridge points match the graph."
+(Page 11, Lines 229–232)
+
+In the Methodology section:
+
+"For each scenario, an edge is removed only if it belongs to the selected topology-specific graph, intersects a raster cell meeting the hazard-class threshold under all-touched rasterization, and has a qualifying CEMS grade, taking the most severe grade when several features match. The primary rule admits Destroyed, while the broader rule also admits Possibly damaged and Damaged. Qualifying conditions close the entire edge before shortest paths are recalculated, even when only part intersects the selected footprint."
+(Pages 17–18, Lines 377–383)
+
+In the Results section:
+
+"Figure 2 maps the 2,023 primary-closed graph edges (54.79 km), of which 199 intersect the class-3 footprint only partially, alongside baseline access and post-disruption status."
+(Page 26, Lines 575–577)
+
+In the Figure 2 caption:
+
+"Panel a maps full graph edges selected for modeled closure by both CEMS Destroyed grades and class-3 footprint intersection."
+(Page 42, Lines 13–14)
 
 ## Comment 3
 

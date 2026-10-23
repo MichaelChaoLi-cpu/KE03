@@ -538,3 +538,246 @@ Panel c compares mapped and sensor evidence; the UNOSAT and study optical inputs
      - Before: ""
      - After: "; the UNOSAT and study optical inputs share a Sentinel-2 acquisition date"
 
+## reviewer-4/comment-2
+
+### part-01
+
+- Location: Study Area and Data / Settlements, Roads, Services, and Population
+- Reason: 补齐等级来源、投影、道路/桥梁匹配方向和容差及源要素覆盖；不将足迹相交自行视为Destroyed。
+- Kila decisions: KILA-D-20261023-004
+- Mode: `replace`
+- Revises prior parts: none
+- Timestamp: 2026-10-23T06:28:43Z
+- Author: Mike Li
+- Markup SHA-256 before: `2cf7c82cea5e2648b2205c8d932c661c00abd09c6e8d752f4482c7431b3fcc52`
+- Markup SHA-256 after: `ac2db10ce5a1f64d33443f3acb5188b8074d95399160fe2dbbd31fbfcd885044`
+- Revision IDs: `140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158`
+- Backup: `Rev/revision/.kila-backups/KE03.rev.markup.20261023T152843239742.reviewer-4-comment-2.part-01.docx`
+- Paragraph properties preserved: `true`
+- Run style source SHA-256: `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+- Formula verification: not applicable
+- Endnote hyperlinks preserved: `true`
+- Endnote hyperlink count: `0`
+- Endnote hyperlink XML SHA-256: `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+- Endnote relationships SHA-256: `absent`
+- Before:
+
+~~~~text
+Bridges and facility intersections are also recorded to identify locations where operating status is relevant to interpretation.
+~~~~
+
+- After:
+
+~~~~text
+CEMS EMSR927 grades are linked to OSM edges in EPSG:32645 using 20 m buffers around road lines and, for OSM-tagged bridge edges, the nearest CEMS bridge point within 100 m; 700 of 706 road features and 18 of 32 bridge points match the graph.
+~~~~
+
+- Minimal tracked fragments:
+  1. `replace`
+     - Before: "Bridges"
+     - After: "CEMS EMSR927 grades are linked to OSM edges in EPSG:32645 using 20 m buffers around road lines and, for OSM-tagged bridge edges, the nearest CEMS bridge point within 100 m; 700 of 706 road features"
+  2. `replace`
+     - Before: "facility"
+     - After: "18"
+  3. `replace`
+     - Before: "intersections"
+     - After: "of"
+  4. `replace`
+     - Before: "are"
+     - After: "32"
+  5. `replace`
+     - Before: "also"
+     - After: "bridge"
+  6. `replace`
+     - Before: "recorded"
+     - After: "points"
+  7. `replace`
+     - Before: "to"
+     - After: "match"
+  8. `replace`
+     - Before: "identify"
+     - After: "the"
+  9. `replace`
+     - Before: "locations"
+     - After: "graph"
+  10. `delete`
+     - Before: " where operating status is relevant to interpretation"
+     - After: ""
+
+### part-02
+
+- Location: Methodology / Network Disruption and Service Accessibility
+- Reason: 明确三个同时成立的闭路条件、最重等级、两套规则及部分相交仍关闭整边的处理。保留全部周边速度与访问定义。
+- Kila decisions: KILA-D-20261023-004
+- Mode: `replace`
+- Revises prior parts: none
+- Timestamp: 2026-10-23T06:28:55Z
+- Author: Mike Li
+- Markup SHA-256 before: `ac2db10ce5a1f64d33443f3acb5188b8074d95399160fe2dbbd31fbfcd885044`
+- Markup SHA-256 after: `15d74012cee47def0616e5ba9d14a63c8388a9b5c99720f8a9e24604161fe403`
+- Revision IDs: `159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190`
+- Backup: `Rev/revision/.kila-backups/KE03.rev.markup.20261023T152855911186.reviewer-4-comment-2.part-02.docx`
+- Paragraph properties preserved: `true`
+- Run style source SHA-256: `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+- Formula verification: not applicable
+- Endnote hyperlinks preserved: `true`
+- Endnote hyperlink count: `0`
+- Endnote hyperlink XML SHA-256: `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+- Endnote relationships SHA-256: `absent`
+- Before:
+
+~~~~text
+A disruption scenario removes edges that satisfy its closure rule within the selected hazard footprint and then recalculates all shortest paths.
+~~~~
+
+- After:
+
+~~~~text
+For each scenario, an edge is removed only if it belongs to the selected topology-specific graph, intersects a raster cell meeting the hazard-class threshold under all-touched rasterization, and has a qualifying CEMS grade, taking the most severe grade when several features match. The primary rule admits Destroyed, while the broader rule also admits Possibly damaged and Damaged. Qualifying conditions close the entire edge before shortest paths are recalculated, even when only part intersects the selected footprint.
+~~~~
+
+- Minimal tracked fragments:
+  1. `replace`
+     - Before: "A"
+     - After: "For"
+  2. `replace`
+     - Before: "disruption"
+     - After: "each"
+  3. `insert`
+     - Before: ""
+     - After: ","
+  4. `replace`
+     - Before: "removes"
+     - After: "an"
+  5. `replace`
+     - Before: "edges"
+     - After: "edge"
+  6. `replace`
+     - Before: "that"
+     - After: "is"
+  7. `replace`
+     - Before: "satisfy"
+     - After: "removed"
+  8. `replace`
+     - Before: "its"
+     - After: "only"
+  9. `replace`
+     - Before: "closure"
+     - After: "if"
+  10. `replace`
+     - Before: "rule"
+     - After: "it"
+  11. `replace`
+     - Before: "within"
+     - After: "belongs to"
+  12. `replace`
+     - Before: "hazard"
+     - After: "topology-specific"
+  13. `replace`
+     - Before: "footprint"
+     - After: "graph, intersects a raster cell meeting the hazard-class threshold under all-touched rasterization,"
+  14. `replace`
+     - Before: "then"
+     - After: "has"
+  15. `replace`
+     - Before: "recalculates"
+     - After: "a"
+  16. `replace`
+     - Before: "all"
+     - After: "qualifying CEMS grade, taking the most severe grade when several features match. The primary rule admits Destroyed, while the broader rule also admits Possibly damaged and Damaged. Qualifying conditions close the entire edge before"
+  17. `insert`
+     - Before: ""
+     - After: " are recalculated, even when only part intersects the selected footprint"
+
+### part-03
+
+- Location: Results / Network Disruption and Service-Access Loss / first paragraph
+- Reason: 增加新审计已验证的图边数量、完整边长度和部分相交数量；不改人口、可达性或恢复效益数值。
+- Kila decisions: KILA-D-20261023-004
+- Mode: `replace`
+- Revises prior parts: none
+- Timestamp: 2026-10-23T06:29:13Z
+- Author: Mike Li
+- Markup SHA-256 before: `15d74012cee47def0616e5ba9d14a63c8388a9b5c99720f8a9e24604161fe403`
+- Markup SHA-256 after: `a264e74bb06451eed2920c96e99d980fc91a3e5bf7a246057cdc928b0a329b9b`
+- Revision IDs: `191, 192, 193, 194, 195, 196, 197, 198`
+- Backup: `Rev/revision/.kila-backups/KE03.rev.markup.20261023T152913530244.reviewer-4-comment-2.part-03.docx`
+- Paragraph properties preserved: `true`
+- Run style source SHA-256: `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+- Formula verification: not applicable
+- Endnote hyperlinks preserved: `true`
+- Endnote hyperlink count: `0`
+- Endnote hyperlink XML SHA-256: `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+- Endnote relationships SHA-256: `absent`
+- Before:
+
+~~~~text
+Figure 2 connects the primary closed edges with baseline access and post-disruption status.
+~~~~
+
+- After:
+
+~~~~text
+Figure 2 maps the 2,023 primary-closed graph edges (54.79 km), of which 199 intersect the class-3 footprint only partially, alongside baseline access and post-disruption status.
+~~~~
+
+- Minimal tracked fragments:
+  1. `replace`
+     - Before: "connects"
+     - After: "maps"
+  2. `replace`
+     - Before: "primary"
+     - After: "2,023"
+  3. `replace`
+     - Before: "closed"
+     - After: "primary-closed graph"
+  4. `replace`
+     - Before: "with"
+     - After: "(54.79 km), of which 199 intersect the class-3 footprint only partially, alongside"
+
+### part-04
+
+- Location: Figures / Figure 2 explanatory note
+- Reason: 在图注中直接说明Destroyed等级、class-3足迹与完整图边；只改文字，不替换图像。
+- Kila decisions: KILA-D-20261023-004
+- Mode: `replace`
+- Revises prior parts: none
+- Timestamp: 2026-10-23T06:29:22Z
+- Author: Mike Li
+- Markup SHA-256 before: `a264e74bb06451eed2920c96e99d980fc91a3e5bf7a246057cdc928b0a329b9b`
+- Markup SHA-256 after: `d8cd84625b2276f3d4cec62f886bc419306a0160d54911bddeebc80dec567d7a`
+- Revision IDs: `199, 200, 201, 202, 203, 204, 205, 206`
+- Backup: `Rev/revision/.kila-backups/KE03.rev.markup.20261023T152922589566.reviewer-4-comment-2.part-04.docx`
+- Paragraph properties preserved: `true`
+- Run style source SHA-256: `c21d00426c037a67b0fba1fabff610e453e3a2a5424274c5287e40c65ce00d46`
+- Formula verification: not applicable
+- Endnote hyperlinks preserved: `true`
+- Endnote hyperlink count: `0`
+- Endnote hyperlink XML SHA-256: `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+- Endnote relationships SHA-256: `absent`
+- Before:
+
+~~~~text
+Panel a maps evidence-linked primary road closures.
+~~~~
+
+- After:
+
+~~~~text
+Panel a maps full graph edges selected for modeled closure by both CEMS Destroyed grades and class-3 footprint intersection.
+~~~~
+
+- Minimal tracked fragments:
+  1. `replace`
+     - Before: "evidence-linked"
+     - After: "full"
+  2. `replace`
+     - Before: "primary"
+     - After: "graph"
+  3. `replace`
+     - Before: "road"
+     - After: "edges"
+  4. `replace`
+     - Before: "closures"
+     - After: "selected for modeled closure by both CEMS Destroyed grades and class-3 footprint intersection"
+
