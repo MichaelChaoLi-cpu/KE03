@@ -781,3 +781,310 @@ Panel a maps full graph edges selected for modeled closure by both CEMS Destroye
      - Before: "closures"
      - After: "selected for modeled closure by both CEMS Destroyed grades and class-3 footprint intersection"
 
+## reviewer-4/comment-3
+
+### part-01
+
+- Location: Study Area and Data / Settlements, Roads, Services, and Population / population paragraph
+- Reason: 明确最近对象、同一行政单元、栅格中心和米制距离。
+- Kila decisions: KILA-D-20261023-006
+- Mode: `replace`
+- Revises prior parts: none
+- Timestamp: 2026-10-23T07:19:05Z
+- Author: Mike Li
+- Markup SHA-256 before: `d8cd84625b2276f3d4cec62f886bc419306a0160d54911bddeebc80dec567d7a`
+- Markup SHA-256 after: `58c84118664c74f9e4af6d4f41aa522a311cfbc69794f563cc525a28e4cc713d`
+- Revision IDs: `207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220`
+- Backup: `Rev/revision/.kila-backups/KE03.rev.markup.20261023T161905349299.reviewer-4-comment-3.part-01.docx`
+- Paragraph properties preserved: `true`
+- Run style source SHA-256: `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+- Formula verification: not applicable
+- Endnote hyperlinks preserved: `true`
+- Endnote hyperlink count: `0`
+- Endnote hyperlink XML SHA-256: `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+- Endnote relationships SHA-256: `absent`
+- Before:
+
+~~~~text
+Grid-cell counts are assigned to mapped settlements within each local unit using pre-specified distance thresholds.
+~~~~
+
+- After:
+
+~~~~text
+Grid-cell counts are assigned to the nearest mapped settlement in the same local unit, using cell-center distances in EPSG:32645 and a primary limit of 3 km.
+~~~~
+
+- Minimal tracked fragments:
+  1. `insert`
+     - Before: ""
+     - After: "the nearest "
+  2. `replace`
+     - Before: "settlements"
+     - After: "settlement"
+  3. `replace`
+     - Before: "within"
+     - After: "in"
+  4. `replace`
+     - Before: "each"
+     - After: "the same"
+  5. `insert`
+     - Before: ""
+     - After: ","
+  6. `replace`
+     - Before: "pre-specified"
+     - After: "cell-center"
+  7. `replace`
+     - Before: "distance"
+     - After: "distances"
+  8. `replace`
+     - Before: "thresholds"
+     - After: "in EPSG:32645 and a primary limit of 3 km"
+
+### part-02
+
+- Location: Methodology / Exposure and Population Allocation / population-allocation paragraph
+- Reason: 补充栅格行政归属、单对象、重叠不重复、实测无并列、未分配原因和独立守恒；明确阈值只筛选固定最近记录。
+- Kila decisions: KILA-D-20261023-006
+- Mode: `replace`
+- Revises prior parts: none
+- Timestamp: 2026-10-23T07:19:21Z
+- Author: Mike Li
+- Markup SHA-256 before: `58c84118664c74f9e4af6d4f41aa522a311cfbc69794f563cc525a28e4cc713d`
+- Markup SHA-256 after: `c8837a3068ddf3404cccaf67f621c47593aba353770bf4506f265d56d0640ac7`
+- Revision IDs: `221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257`
+- Backup: `Rev/revision/.kila-backups/KE03.rev.markup.20261023T161921337090.reviewer-4-comment-3.part-02.docx`
+- Paragraph properties preserved: `true`
+- Run style source SHA-256: `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+- Formula verification: not applicable
+- Endnote hyperlinks preserved: `true`
+- Endnote hyperlink count: `0`
+- Endnote hyperlink XML SHA-256: `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+- Endnote relationships SHA-256: `absent`
+- Before:
+
+~~~~text
+We estimate settlement population by assigning calibrated grid values to mapped settlements within pre-specified distance thresholds. The primary allocation uses the widest confirmed threshold, while three narrower alternatives progressively reduce the represented population.
+~~~~
+
+- After:
+
+~~~~text
+Local-unit membership follows cell-center rasterization of the administrative polygons. Each positive-population cell has one nearest-settlement record, so overlapping distance buffers do not duplicate counts; no exact nearest-distance ties occur among the 228,289 cells. Cells beyond the threshold or in units without mapped settlements remain unallocated, and assigned plus unallocated population equals the raster total within every local unit and across the study area. The primary threshold is 3 km, with 500 m, 1 km, and 2 km alternatives evaluated against the same nearest-settlement records.
+~~~~
+
+- Minimal tracked fragments:
+  1. `replace`
+     - Before: "We"
+     - After: "Local-unit"
+  2. `replace`
+     - Before: "estimate"
+     - After: "membership"
+  3. `replace`
+     - Before: "settlement"
+     - After: "follows"
+  4. `replace`
+     - Before: "population"
+     - After: "cell-center"
+  5. `replace`
+     - Before: "by"
+     - After: "rasterization"
+  6. `replace`
+     - Before: "assigning"
+     - After: "of"
+  7. `replace`
+     - Before: "calibrated"
+     - After: "the"
+  8. `replace`
+     - Before: "grid"
+     - After: "administrative"
+  9. `replace`
+     - Before: "values"
+     - After: "polygons."
+  10. `replace`
+     - Before: "to"
+     - After: "Each positive-population cell has one nearest-settlement record, so overlapping distance buffers do not duplicate counts; no exact nearest-distance ties occur among the 228,289 cells. Cells beyond the threshold or in units without"
+  11. `insert`
+     - Before: ""
+     - After: "remain unallocated, and assigned plus unallocated population equals the raster total "
+  12. `replace`
+     - Before: "pre-specified"
+     - After: "every"
+  13. `replace`
+     - Before: "distance"
+     - After: "local"
+  14. `replace`
+     - Before: "thresholds"
+     - After: "unit and across the study area"
+  15. `replace`
+     - Before: "allocation"
+     - After: "threshold"
+  16. `replace`
+     - Before: "uses"
+     - After: "is 3 km, with 500 m, 1 km, and 2 km alternatives evaluated against"
+  17. `replace`
+     - Before: "widest"
+     - After: "same"
+  18. `replace`
+     - Before: "confirmed"
+     - After: "nearest-settlement"
+  19. `replace`
+     - Before: "threshold, while three narrower alternatives progressively reduce the represented population"
+     - After: "records"
+
+### part-03
+
+- Location: Results / Network Disruption and Service-Access Loss / first paragraph, opening sentence
+- Reason: 在原开头前补互斥的已分配人口路网覆盖分解，避免90.2%被误读为访问分析覆盖率；完整保留原开头及上条Figure2修订。
+- Kila decisions: KILA-D-20261023-006
+- Mode: `replace`
+- Revises prior parts: none
+- Timestamp: 2026-10-23T07:19:31Z
+- Author: Mike Li
+- Markup SHA-256 before: `c8837a3068ddf3404cccaf67f621c47593aba353770bf4506f265d56d0640ac7`
+- Markup SHA-256 after: `deee02e89f0040218bfec0c4ef4426648660552ac928fbc8d5ba0a44ba8195b0`
+- Revision IDs: `258`
+- Backup: `Rev/revision/.kila-backups/KE03.rev.markup.20261023T161931511103.reviewer-4-comment-3.part-03.docx`
+- Paragraph properties preserved: `true`
+- Run style source SHA-256: `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+- Formula verification: not applicable
+- Endnote hyperlinks preserved: `true`
+- Endnote hyperlink count: `0`
+- Endnote hyperlink XML SHA-256: `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+- Endnote relationships SHA-256: `absent`
+- Before:
+
+~~~~text
+Evidence-linked closures produce finite delays near the southern corridor and a longer chain of newly isolated settlements toward the north.
+~~~~
+
+- After:
+
+~~~~text
+Of the 573,645 assigned people, 532,382 belong to the 610 baseline-eligible settlements, 36,182 to 110 baseline-unreachable settlements within the road-snap limit, and 5,081 to 47 settlements beyond that limit. Evidence-linked closures produce finite delays near the southern corridor and a longer chain of newly isolated settlements toward the north.
+~~~~
+
+- Minimal tracked fragments:
+  1. `insert`
+     - Before: ""
+     - After: "Of the 573,645 assigned people, 532,382 belong to the 610 baseline-eligible settlements, 36,182 to 110 baseline-unreachable settlements within the road-snap limit, and 5,081 to 47 settlements beyond that limit. "
+
+### part-04
+
+- Location: Results / Settlement Intervention Priorities / paragraph beginning Table 2 identifies
+- Reason: 给出四阈值覆盖、入组与top-ten成员变化的实际结果，把75%转为可读的三次/四次；不改主排序。
+- Kila decisions: KILA-D-20261023-006
+- Mode: `replace`
+- Revises prior parts: none
+- Timestamp: 2026-10-23T07:19:42Z
+- Author: Mike Li
+- Markup SHA-256 before: `deee02e89f0040218bfec0c4ef4426648660552ac928fbc8d5ba0a44ba8195b0`
+- Markup SHA-256 after: `2a7c2770e372c88b59891ceb6c787cb52b0c83fa67f727a876f54725a11982e6`
+- Revision IDs: `259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272`
+- Backup: `Rev/revision/.kila-backups/KE03.rev.markup.20261023T161942331045.reviewer-4-comment-3.part-04.docx`
+- Paragraph properties preserved: `true`
+- Run style source SHA-256: `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+- Formula verification: not applicable
+- Endnote hyperlinks preserved: `true`
+- Endnote hyperlink count: `0`
+- Endnote hyperlink XML SHA-256: `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+- Endnote relationships SHA-256: `absent`
+- Before:
+
+~~~~text
+Allocation persistence falls to 75% for Rasuwa Gadhi, Gerkhu, and the tenth-ranked unnamed settlement.
+~~~~
+
+- After:
+
+~~~~text
+Across the 500 m, 1 km, 2 km, and 3 km allocations, population coverage is 27.5%, 47.6%, 76.1%, and 90.2%, and ranking eligibility comprises 82, 82, 83, and 84 settlements. The 500 m allocation retains seven primary top-ten members, while the other thresholds retain all ten; Rasuwa Gadhi, Gerkhu, and the tenth-ranked unnamed settlement each persist in three of four allocations.
+~~~~
+
+- Minimal tracked fragments:
+  1. `replace`
+     - Before: "Allocation"
+     - After: "Across"
+  2. `replace`
+     - Before: "persistence"
+     - After: "the"
+  3. `replace`
+     - Before: "falls"
+     - After: "500"
+  4. `replace`
+     - Before: "to"
+     - After: "m,"
+  5. `replace`
+     - Before: "75"
+     - After: "1 km, 2 km, and 3 km allocations, population coverage is 27.5"
+  6. `insert`
+     - Before: ""
+     - After: ","
+  7. `replace`
+     - Before: "for"
+     - After: "47.6%, 76.1%, and 90.2%, and ranking eligibility comprises 82, 82, 83, and 84 settlements. The 500 m allocation retains seven primary top-ten members, while the other thresholds retain all ten;"
+  8. `insert`
+     - Before: ""
+     - After: " each persist in three of four allocations"
+
+### part-05
+
+- Location: Discussion / Limitations and Future Validation / paragraph beginning Several limitations
+- Reason: 披露边界约束的实测覆盖后果，纠正阈值改变会重分配既有栅格的含混说法；用正向范围说明替代防御性句子。
+- Kila decisions: KILA-D-20261023-006
+- Mode: `replace`
+- Revises prior parts: none
+- Timestamp: 2026-10-23T07:19:54Z
+- Author: Mike Li
+- Markup SHA-256 before: `2a7c2770e372c88b59891ceb6c787cb52b0c83fa67f727a876f54725a11982e6`
+- Markup SHA-256 after: `d9b93892c1514067d88bfc187cd852caaf04e1f266e9bf57b24c1abf17c1a96d`
+- Revision IDs: `273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289`
+- Backup: `Rev/revision/.kila-backups/KE03.rev.markup.20261023T161955092020.reviewer-4-comment-3.part-05.docx`
+- Paragraph properties preserved: `true`
+- Run style source SHA-256: `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+- Formula verification: not applicable
+- Endnote hyperlinks preserved: `true`
+- Endnote hyperlink count: `0`
+- Endnote hyperlink XML SHA-256: `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+- Endnote relationships SHA-256: `absent`
+- Before:
+
+~~~~text
+Population allocation excludes people beyond the selected distance and may redistribute represented population among nearby settlements as the threshold changes. Baseline-unreachable settlements lack an identified change in disruption, so their exclusion narrows the population represented by accessibility outcomes rather than indicating that they face no access problem.
+~~~~
+
+- After:
+
+~~~~text
+The same-local-unit rule leaves 29,133 of the unallocated people within 3 km of a settlement across a unit boundary. Changing the allocation threshold changes represented population without moving already assigned cells between settlements. Priorities therefore describe represented settlements with baseline access; unallocated and baseline-ineligible groups require a separate access-needs assessment.
+~~~~
+
+- Minimal tracked fragments:
+  1. `replace`
+     - Before: "Population"
+     - After: "The same-local-unit rule leaves 29,133 of the unallocated people within 3 km of a settlement across a unit boundary. Changing the"
+  2. `replace`
+     - Before: "excludes"
+     - After: "threshold"
+  3. `replace`
+     - Before: "people beyond the selected distance and may redistribute"
+     - After: "changes"
+  4. `replace`
+     - Before: "among"
+     - After: "without"
+  5. `replace`
+     - Before: "nearby"
+     - After: "moving already assigned cells between settlements. Priorities therefore describe represented"
+  6. `replace`
+     - Before: "as"
+     - After: "with"
+  7. `replace`
+     - Before: "the threshold changes. Baseline-unreachable settlements lack an identified change in disruption, so their exclusion narrows the population represented by accessibility outcomes rather than indicating that they face no"
+     - After: "baseline"
+  8. `insert`
+     - Before: ""
+     - After: ";"
+  9. `replace`
+     - Before: "problem"
+     - After: "unallocated and baseline-ineligible groups require a separate access-needs assessment"
+
