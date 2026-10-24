@@ -277,27 +277,27 @@ Thank you for requesting clarification of population allocation and coverage. Th
 In the Data section:
 
 "Grid-cell counts are assigned to the nearest mapped settlement in the same local unit, using cell-center distances in EPSG:32645 and a primary limit of 3 km."
-(Page 11, Lines 238–240)
+(Page 11, Lines 243–245)
 
 In the Methodology section:
 
 "Local-unit membership follows cell-center rasterization of the administrative polygons. Each positive-population cell has one nearest-settlement record, so overlapping distance buffers do not duplicate counts; no exact nearest-distance ties occur among the 228,289 cells. Cells beyond the threshold or in units without mapped settlements remain unallocated, and assigned plus unallocated population equals the raster total within every local unit and across the study area. The primary threshold is 3 km, with 500 m, 1 km, and 2 km alternatives evaluated against the same nearest-settlement records."
-(Page 17, Lines 360–367)
+(Page 17, Lines 366–373)
 
 In the Network Results section:
 
 "Of the 573,645 assigned people, 532,382 belong to the 610 baseline-eligible settlements, 36,182 to 110 baseline-unreachable settlements within the road-snap limit, and 5,081 to 47 settlements beyond that limit."
-(Page 26, Lines 578–580)
+(Page 27, Lines 601–603)
 
 In the Priority Results section:
 
-"Across the 500 m, 1 km, 2 km, and 3 km allocations, population coverage is 27.5%, 47.6%, 76.1%, and 90.2%, and ranking eligibility comprises 82, 82, 83, and 84 settlements. The 500 m allocation retains seven primary top-ten members, while the other thresholds retain all ten; Rasuwa Gadhi, Gerkhu, and the tenth-ranked unnamed settlement each persist in three of four allocations."
-(Page 29, Lines 648–653)
+"Across the 500 m, 1 km, 2 km, and 3 km allocations, population coverage is 27.5%, 47.6%, 76.1%, and 90.2%, and ranking eligibility comprises 87, 87, 88, and 89 settlements. The four thresholds retain eight, nine, nine, and ten primary top-ten members, respectively; Rasuwa Gadhi persists in three of four allocations and Gerkhu in one, while the other primary top-ten settlements persist in all four."
+(Page 31, Lines 675–680)
 
 In the Limitations section:
 
 "The same-local-unit rule leaves 29,133 of the unallocated people within 3 km of a settlement across a unit boundary. Changing the allocation threshold changes represented population without moving already assigned cells between settlements. Priorities therefore describe represented settlements with baseline access; unallocated and baseline-ineligible groups require a separate access-needs assessment."
-(Page 37, Lines 826–830)
+(Page 39, Lines 860–864)
 
 ## Comment 4
 
