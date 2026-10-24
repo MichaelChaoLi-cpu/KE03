@@ -304,10 +304,64 @@ In the Limitations section:
 4. The accessibility estimates depend on an undirected OpenStreetMap road graph, assigned road-class speeds, topology-repair connectors, settlement snapping, and the availability of 101 health or emergency service nodes. These assumptions may substantially affect the results in mountainous terrain. Please justify the selected travel speeds and the five-minute delay threshold, and test their sensitivity. Clarify whether all facilities are assumed to provide equivalent services and whether their actual operational status and capacity are known. Discuss how one-way restrictions, road capacity, congestion, informal routes, bridge damage, and facility closures could change the results. The modeled travel times should be presented as comparative estimates rather than actual emergency-response times.
 
 **Response:**
-[Response to be completed.]
+Thank you for this comment. The revised Study Area and Data, Methodology, Results, Discussion, and Appendix now specify the accessibility assumptions, test travel-speed, delay-threshold, and destination choices, and explain the effects of unobserved network and facility conditions. The destination audit removes five false-positive records and corrects the primary inventory from 101 to 97 unique service nodes; the clinical-only comparison uses 38 nodes. The mixed inventory represents access to broad health and emergency services, rather than equivalent clinical care, and facility operation and capacity remain unverified. Assigned speeds define comparative network costs, while the five-minute threshold is a reporting category. The revised results distinguish sensitivity to these choices from unchanged outcomes explained by network structure. Dependent settlement rankings, road-benefit estimates, tables, and figures use the audited primary inventory, and the restoration plateau is limited to the evaluated forward sequence. The following revised text sets out these changes.
 
-"[Exact revised manuscript text]"
-(Page XX, Lines XX–XX)
+In Study Area and Data:
+
+"An exact-tag audit of 1,255 saved facility points retains 102 records at 97 unique graph nodes, excluding five false-positive records from name/address matches, administrative or veterinary functions, and a negative shelter tag. The mixed inventory includes clinical care, pharmacies, dental and blood-bank services, police, shelters, and a fire station; a separate clinical-only sensitivity retains 39 hospital, clinic, or health-post records at 38 nodes."
+(Page 11, Lines 223–228)
+
+In Methodology:
+
+"Equation 2 records the primary hazard, closure, topology, and snapping settings; the audited destination inventory supplies the service set used in the revised analysis."
+(Page 16, Lines 337–338)
+
+"Edge time equals length divided by the assigned speed: trunk 60 (trunk-link 40), primary 50 (primary-link 35), secondary 40 (secondary-link 30), tertiary 30 (tertiary-link 25), residential or unclassified 20, service, living-street, or generic road 15, and track 10 km/h; accepted topology connectors also use 10 km/h. The assigned road-class speeds define comparative network costs; local traffic calibration and observed emergency-response times are unavailable."
+(Page 18, Lines 384–389)
+
+"Five minutes is an interpretable reporting category rather than an emergency-response target; continuous losses remain available, and reporting at strictly greater than 2, 5, or 10 minutes does not change routes or scores. We compare reference speeds with uniform 0.75 and 1.25 multipliers on all roads and connectors. A differential slower specification uses multipliers of 0.80 for trunk/primary roads and links, 0.60 for secondary/tertiary roads and links, and 0.50 for local roads, tracks, and connectors, applied equally to baseline and disrupted graphs. The audited mixed, clinical-only, and historical original inventories are each evaluated under all four speed specifications, with destinations retained or directly class-3-exposed records removed before node deduplication."
+(Page 19, Lines 405–414)
+
+In Results:
+
+"Across eligible settlements, the primary scenario newly isolates 13,906 assigned people, including communities beyond the strongest hazard footprint. Another 34,260 assigned people remain connected but experience delays longer than five minutes."
+(Page 28, Lines 611–613)
+
+"The primary scenario places 34,260 people in settlements with delays longer than five minutes and produces 762,097 person-minutes of positive finite loss. Uniform 0.75 and 1.25 speed multipliers give 1,016,129 and 609,677 person-minutes, respectively, while newly isolated population remains 13,906. Differential slower speeds give 1,436,464 person-minutes and retain nine primary top-ten members, with Pajung replacing Gerkhu. At reference speeds, the populations delayed by more than 2, 5, and 10 minutes are 38,418, 34,260, and 21,644, respectively. Restricting destinations to clinical care raises newly isolated population to 17,798 and gives 33,260 people delayed by more than five minutes, with 607 baseline-eligible settlements rather than 610. The common baseline cohort contains 607 settlements and 532,296 people; its clinical-only comparison still adds 19 newly isolated settlements. Removing directly class-3-exposed destination records leaves the settlement access vectors unchanged within all 12 destination-by-speed comparisons."
+(Pages 28–29, Lines 618–629)
+
+"Table 2 identifies Devighat as the leading settlement with an Intervention Priority of 0.943, followed by Bhainse at 0.936, Naubisephat at 0.932, and Betrawati at 0.917. All four combine class 3 evidence with complete modeled isolation, and their structural ranks remain fixed across the eligible structural scenarios. Syabru Bensi ranks fifth at 0.902, retains an invariant structural rank, and remains in the top ten under every allocation threshold and 98% of weighting specifications."
+(Pages 30–31, Lines 668–673)
+
+"The structural factorial contains 192 nominal combinations, four baseline graphs, 24 post-closure graphs, 24 settlement-vector profiles, and ten aggregate profiles. Across all 192 combinations, nine settlements always belong to the top ten, while Gerkhu and Lingling alternate at the membership boundary; two membership sets and four orderings occur."
+(Page 31, Lines 687–691)
+
+"Reopening the second, unnamed road section reconnects no isolated settlement but reduces finite delay by 55,087 person-minutes across 14 settlements with 4,415 assigned people."
+(Page 32, Lines 710–711)
+
+"Along the evaluated forward sequence, primary-scenario access benefit reaches a plateau at portfolio size K=2. Table 3 shows that K=1 reconnects 2,678 people; adding the second section preserves that reconnection and supplies 55,087 person-minutes of finite improvement. Portfolios of three and five sections repeat the same two access outcomes, giving zero marginal reconnection and zero marginal finite improvement."
+(Page 33, Lines 720–724)
+
+In Discussion:
+
+"The robustness audit distinguishes active assumptions from nominal variation. Hazard threshold, facility availability, and settlement snapping change at least one aggregate access outcome, whereas the tested road-closure rule and topology threshold leave the three population-loss aggregates unchanged. The closure contrast changes component partitions and service travel times at 101–197 graph nodes while preserving the retained settlement-to-service estimands; every eligible settlement with a finite post-disruption path retains an equally short path avoiding the extra closures. Topology repair changes graph connectivity and adds one baseline-eligible settlement with zero event-induced loss, which explains why the loss aggregates remain unchanged."
+(Page 37, Lines 818–826)
+
+"The undirected graph omits one-way restrictions, congestion, and capacity limits, while unmapped informal routes and incompletely represented bridge damage can alter connectivity. Unobserved road and facility operation may overstate modeled access loss if alternatives remained usable or understate it if additional failures occurred."
+(Page 39, Lines 856–860)
+
+In the Figure 2 caption:
+
+"Note: Panel a maps full graph edges selected for modeled closure by both CEMS Destroyed grades and class-3 footprint intersection. Panel b shows baseline modeled access to 97 unique audited health and emergency destination nodes. Panel c shows finite travel-time delays and settlements that become newly isolated under the primary disruption scenario."
+(Page 44, Lines 13–16)
+
+In Appendix A:
+
+"The 192 combinations yield two top-ten membership sets with nine common members and four orderings. Hazard threshold changes membership and order in all 64 groups; facility availability changes membership in 16 of 96 groups and order in 32; snapping changes membership in 8 of 48 groups and order in 16. Road closure and topology leave both top-ten membership and order unchanged."
+(Page 3, Lines 51–55)
+
+"The first four settlements remain fixed under structural assumptions and remain in the top ten under all allocation thresholds; weight-rule persistence is 100% for the first three and 99.85% for Betrawati."
+(Page 3, Lines 59–61)
 
 ## Comment 5
 
