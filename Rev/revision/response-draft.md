@@ -396,17 +396,17 @@ Thank you for identifying this ambiguity. The revised Methods, Results, Discussi
 The contribution statement makes the same distinction:
 
 "This audit distinguishes 24 settlement-vector profiles from ten aggregate profiles across 192 nominal combinations and separates graph activity from changes in population loss."
-(Page 7, Lines 136–138)
+(Page 7, Lines 138–140)
 
 The Methods specify the separate comparisons, holding the other four factors fixed:
 
 "For each factor, we separately compare pre-event and post-closure edge sets, connected-component partitions, retained service-node sets, baseline eligibility, settlement-level baseline and disrupted travel times, and access loss. We also count changes in the three population aggregates, top-ten membership, and top-ten order."
-(Page 22, Lines 483–486)
+(Page 23, Lines 502–505)
 
 For road closure, the additional 42, 119, and 147 removed edges change component partitions and service travel times at 101, 149, and 197 graph nodes, respectively. Nevertheless, each baseline-eligible settlement with a finite post-disruption path retains an equally short path avoiding the additional closures; already isolated settlements remain isolated. Thus graph-level changes coexist with unchanged settlement reachability and finite travel times. For topology, the connectors change connectivity and add one baseline-eligible settlement, but its baseline and post-disruption travel times are equal, so its event-induced loss is zero. The Results report:
 
-"The broader road-closure rule adds 42, 119, and 147 closures at minimum classes 3, 2, and 1, respectively, but preserves eligible-settlement reachability and finite travel times in all 96 paired groups. Topology repair includes 0, 7, 25, and 73 connectors at 0, 5, 10, and 20 m, producing four baseline graphs; at 3 km snapping, baseline-eligible settlements increase from 609 to 610."
-(Pages 27–28, Lines 607–611)
+"Paired structural comparisons show aggregate activity in all 64 hazard-threshold groups, 32 of 96 facility-availability groups, and all 48 snapping groups. Road-closure and topology changes leave the three population-loss aggregates unchanged; Appendix Table A1 and the accompanying structural audit separate graph, service, eligibility, settlement-vector, and aggregate activity."
+(Page 29, Lines 630–634)
 
 The Appendix provides the component counts and the newly eligible settlement:
 
@@ -416,7 +416,7 @@ The Appendix provides the component counts and the newly eligible settlement:
 The Discussion explains why these structural changes leave the population-loss aggregates unchanged:
 
 "The closure contrast changes component partitions and service travel times at 101–197 graph nodes while preserving the retained settlement-to-service estimands; every eligible settlement with a finite post-disruption path retains an equally short path avoiding the extra closures. Topology repair changes graph connectivity and adds one baseline-eligible settlement with zero event-induced loss, which explains why the loss aggregates remain unchanged."
-(Page 36, Lines 797–802)
+(Page 37, Lines 821–826)
 
 The revised compact Table A1 reports, for each factor, the tested levels and matched-group counts for road-graph changes, service-node changes, eligibility changes, settlement-vector changes, aggregate changes, top-ten membership changes, and top-ten order changes. The tested levels are explicit. For the hazard evidence threshold:
 
@@ -447,23 +447,23 @@ Table A1 shows road-graph changes in all 96 closure groups and all 48 topology g
 
 Top-ten membership and rank order are now reported separately. The Results state:
 
-"The structural factorial contains 192 nominal combinations, four baseline graphs, 24 post-closure graphs, 24 settlement-vector profiles, and ten aggregate profiles. Across all 192 combinations, top-ten membership is invariant, while three orderings occur."
-(Page 30, Lines 666–668)
+"The structural factorial contains 192 nominal combinations, four baseline graphs, 24 post-closure graphs, 24 settlement-vector profiles, and ten aggregate profiles. Across all 192 combinations, nine settlements always belong to the top ten, while Gerkhu and Lingling alternate at the membership boundary; two membership sets and four orderings occur."
+(Page 31, Lines 687–691)
 
-Hazard threshold changes the top-ten order in 32 of 64 matched groups, and snapping changes it in 16 of 48; the remaining factors leave top-ten order unchanged. The Methods also clarify how structural rank variability is summarized:
+Hazard threshold changes top-ten membership and order in all 64 matched groups. Facility availability changes membership in 16 of 96 groups and order in 32, while snapping changes membership in 8 of 48 groups and order in 16. Road closure and topology leave both membership and order unchanged. The Methods also clarify how structural rank variability is summarized:
 
 "Structural sensitivity is summarized differently because the factorial contains repeated aggregate outcomes: we report each settlement's minimum and maximum eligible structural rank."
-(Page 22, Lines 477–479)
+(Page 23, Lines 496–498)
 
 The road-repair Results distinguish nominal scenario coverage from a probability interpretation:
 
 "Given the repeated aggregate profiles identified in the factor audit, this percentage describes scenario coverage rather than an engineering probability."
-(Page 32, Lines 706–708)
+(Page 33, Lines 728–730)
 
 Finally, the Conclusion uses the corrected profile terminology consistently:
 
 "The 192 structural combinations produce 24 settlement-vector profiles and ten aggregate profiles; road closure and topology change graphs without changing the three population-loss aggregates."
-(Page 39, Lines 869–871)
+(Pages 40–41, Lines 897–899)
 
 ## Comment 8
 
