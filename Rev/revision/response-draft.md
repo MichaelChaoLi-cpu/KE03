@@ -235,10 +235,32 @@ The manuscript addresses a relevant problem. However, the main findings are base
 1. The hazard footprint is constructed from UNOSAT and Copernicus reference maps, Sentinel-1 VH backscatter decrease of at least 2 dB, Sentinel-2 MNDWI increase of at least 0.15, slope, and channel proximity. However, the manuscript does not establish the accuracy of these thresholds using independent validation data. The reported 29.6% versus 9.4% radar-screen comparison indicates an association with mapped affected areas, but it is not a complete accuracy assessment. Please report the spatial agreement, omission and commission errors, and sensitivity to the selected thresholds.
 
 **Response:**
-[Response to be completed.]
+Thank you for requesting a quantitative assessment of threshold sensitivity and spatial agreement. The revised Methodology defines the comparison domains, validity masks, IoU, Dice, and reference-conditioned omission and commission fractions. The Results report these comparisons and the effects of nine sensor-threshold pairs on exposure, road closures, accessibility, and settlement priorities. Independent event labels are unavailable, so the manuscript identifies the comparison with satellite-derived reference maps as conditional agreement.
 
-"[Exact revised manuscript text]"
-(Page XX, Lines XX–XX)
+In the Methodology section:
+
+"We test nine pre-specified VH-change (-1, -2, -3 dB) and MNDWI-increase (0.10, 0.15, 0.20) pairs at each minimum class, giving 27 threshold scenarios separate from the 192 structural combinations; other inputs remain fixed. Radar, optical, either-sensor, and context-filtered either-sensor screens exclude reference-map inputs and are compared separately with UNOSAT and CEMS within their analysis domains, using sensor-specific and common radar-optical valid masks. Optical thresholds are applied on the native grid before nearest-neighbor transfer, with validity transferred separately."
+(Page 16, Lines 352–358)
+
+In the Evidence Agreement and Hazard Footprint results:
+
+"At the original thresholds, common radar-optical valid domains cover 224.23 km² for UNOSAT and 26.93 km² for CEMS, with either-sensor IoU of 22.2% and 52.0%, respectively. Corresponding reference-conditioned omission fractions are 40.2% and 34.9%, and commission fractions are 73.8% and 27.8%; Appendix Table A4 reports all four screens within these different reference domains."
+(Page 26, Lines 567–571)
+
+The Physical and Population Exposure results describe downstream sensitivity, including changes in finite accessibility loss and top-ten membership:
+
+"Across the nine sensor-threshold pairs at minimum class 3, footprint area ranges from 16.49 to 24.79 km², exposed raster population from 7,472 to 8,544, and exposed road length from 84.4 to 109.3 km. Closed-edge counts vary from 1,985 to 2,074, while newly isolated population and population delayed by more than five minutes retain 13,906 and 34,260 across all 27 threshold-class scenarios. Class-3 finite loss ranges from 762,097 to 798,817 person-minutes, an increase of up to 4.8%, and ranking eligibility ranges from 89 to 93 settlements. Its top ten retains nine or ten primary members, with Lingling replacing Gerkhu at the -3 dB VH threshold; Appendix Figure A3 and Supplementary Data S1 report the parameter-specific results."
+(Page 28, Lines 609–617)
+
+The Limitations section states the remaining validation requirement:
+
+"Optical gaps and the absent flow-path layer limit process-specific evidence, while omission and commission fractions remain conditional on satellite-derived reference maps until independently labelled event observations become available."
+(Page 39, Lines 873–875)
+
+Appendix Figure A3 shows the nine threshold pairs, while Appendix Table A4 reports all four sensor screens at the original thresholds. Supplementary Data S1 and S2 provide the complete threshold scenarios and reference comparisons, including valid areas, contingency counts, and denominators. We retain the original -2 dB and 0.15 thresholds without optimizing their overlap with the reference maps. The note to Appendix Table A4 clarifies how to interpret the reported fractions:
+
+"Omission is the proportion of mapped-positive area missed by the screen; commission is the proportion of screen-positive area outside mapped-positive polygons. The two reference domains differ, and unmapped areas have no independent negative labels. Supplementary Data S2 reports the complete threshold grid, excluded areas, contingency counts, and denominators."
+(Page 12, Lines 6–8)
 
 ## Comment 2
 

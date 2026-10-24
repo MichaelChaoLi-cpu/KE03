@@ -11194,3 +11194,417 @@ Bidur, Nuwakot
      - Before: "0"
      - After: "8"
 
+## reviewer-4/comment-1
+
+### part-01
+
+- Location: Methodology / Cascading-Hazard Evidence Reconstruction / paragraph beginning The hazard surface uses nested evidence-confidence classes
+- Reason: Make the nine-pair design, independent construction of sensor screens, valid domains and overlap/disagreement denominators reproducible.
+- Kila decisions: KILA-D-20261024-006
+- Mode: `replace`
+- Revises prior parts: none
+- Timestamp: 2026-10-24T03:58:03Z
+- Author: Mike Li
+- Markup SHA-256 before: `095458bccf14a95be50f53a07a67dab0c23b3be54971a987955871b0d1eb911d`
+- Markup SHA-256 after: `f231a94c54f7eaa22d0e1198d5c14f9c120ae97eccd009f20443d54b6920771e`
+- Revision IDs: `1042`
+- Backup: `/Volumes/Extension/Research/KE03/Rev/revision/.kila-backups/KE03.rev.markup.20261024T125803374872.reviewer-4-comment-1.part-01.docx`
+- Paragraph properties preserved: `true`
+- Run style source SHA-256: `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+- Formula verification: not applicable
+- Endnote hyperlinks preserved: `true`
+- Endnote hyperlink count: `0`
+- Endnote hyperlink XML SHA-256: `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+- Endnote relationships SHA-256: `absent`
+- Before:
+
+~~~~text
+Because the classes are nested, differences in their footprints reveal dependence on the evidential threshold while preserving the conservative footprint as the primary basis for exposure.
+~~~~
+
+- After:
+
+~~~~text
+Because the classes are nested, differences in their footprints reveal dependence on the evidential threshold while preserving the conservative footprint as the primary basis for exposure. We test nine pre-specified VH-change (-1, -2, -3 dB) and MNDWI-increase (0.10, 0.15, 0.20) pairs at each minimum class, giving 27 threshold scenarios separate from the 192 structural combinations; other inputs remain fixed. Radar, optical, either-sensor, and context-filtered either-sensor screens exclude reference-map inputs and are compared separately with UNOSAT and CEMS within their analysis domains, using sensor-specific and common radar-optical valid masks. Optical thresholds are applied on the native grid before nearest-neighbor transfer, with validity transferred separately. IoU divides intersecting positive area by its union, and Dice divides twice that intersection by the summed positive areas; reference-conditioned omission is the mapped-positive share missed by a screen, while commission is the screen-positive share outside mapped-positive polygons. The original -2 dB and 0.15 pair remains primary without overlap-based optimization, and Supplementary Data S1-S2 report all scenarios, comparison domains, pixel counts, and denominators.
+~~~~
+
+- Minimal tracked fragments:
+  1. `insert`
+     - Before: ""
+     - After: " We test nine pre-specified VH-change (-1, -2, -3 dB) and MNDWI-increase (0.10, 0.15, 0.20) pairs at each minimum class, giving 27 threshold scenarios separate from the 192 structural combinations; other inputs remain fixed. Radar, optical, either-sensor, and context-filtered either-sensor screens exclude reference-map inputs and are compared separately with UNOSAT and CEMS within their analysis domains, using sensor-specific and common radar-optical valid masks. Optical thresholds are applied on the native grid before nearest-neighbor transfer, with validity transferred separately. IoU divides intersecting positive area by its union, and Dice divides twice that intersection by the summed positive areas; reference-conditioned omission is the mapped-positive share missed by a screen, while commission is the screen-positive share outside mapped-positive polygons. The original -2 dB and 0.15 pair remains primary without overlap-based optimization, and Supplementary Data S1-S2 report all scenarios, comparison domains, pixel counts, and denominators."
+
+### part-02
+
+- Location: Results / Evidence Agreement and Hazard Footprint / first paragraph beginning The event-evidence layers converge
+- Reason: Report spatial agreement and conditional omission/commission with their actual comparison areas, replacing repetitive defensive wording rather than adding another disclaimer.
+- Kila decisions: KILA-D-20261024-006
+- Mode: `replace`
+- Revises prior parts: none
+- Timestamp: 2026-10-24T03:58:09Z
+- Author: Mike Li
+- Markup SHA-256 before: `f231a94c54f7eaa22d0e1198d5c14f9c120ae97eccd009f20443d54b6920771e`
+- Markup SHA-256 after: `eae9e7da3c278ee635b1b2bcbd5c56a374827e8dd31f0d7b0e88ac7a90c2fa4a`
+- Revision IDs: `1043, 1044, 1045, 1046, 1047, 1048, 1049, 1050, 1051, 1052, 1053, 1054, 1055, 1056, 1057, 1058, 1059, 1060, 1061, 1062, 1063, 1064, 1065, 1066, 1067, 1068, 1069, 1070, 1071, 1072, 1073, 1074, 1075, 1076, 1077, 1078, 1079, 1080, 1081, 1082, 1083, 1084, 1085, 1086, 1087, 1088, 1089`
+- Backup: `/Volumes/Extension/Research/KE03/Rev/revision/.kila-backups/KE03.rev.markup.20261024T125809684558.reviewer-4-comment-1.part-02.docx`
+- Paragraph properties preserved: `true`
+- Run style source SHA-256: `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+- Formula verification: not applicable
+- Endnote hyperlinks preserved: `true`
+- Endnote hyperlink count: `0`
+- Endnote hyperlink XML SHA-256: `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+- Endnote relationships SHA-256: `absent`
+- Before:
+
+~~~~text
+Its classes express confidence in the available evidence, leaving the probability of damage and physical intensity to data that were not observed in this study or inferred from contextual layers.
+~~~~
+
+- After:
+
+~~~~text
+At the original thresholds, common radar-optical valid domains cover 224.23 km² for UNOSAT and 26.93 km² for CEMS, with either-sensor IoU of 22.2% and 52.0%, respectively. Corresponding reference-conditioned omission fractions are 40.2% and 34.9%, and commission fractions are 73.8% and 27.8%; Appendix Table A4 reports all four screens within these different reference domains.
+~~~~
+
+- Minimal tracked fragments:
+  1. `replace`
+     - Before: "Its classes express confidence in"
+     - After: "At"
+  2. `replace`
+     - Before: "available"
+     - After: "original"
+  3. `replace`
+     - Before: "evidence"
+     - After: "thresholds"
+  4. `replace`
+     - Before: "leaving"
+     - After: "common"
+  5. `replace`
+     - Before: "the"
+     - After: "radar-optical"
+  6. `replace`
+     - Before: "probability"
+     - After: "valid domains cover 224.23 km² for UNOSAT and 26.93 km² for CEMS, with either-sensor IoU"
+  7. `replace`
+     - Before: "damage"
+     - After: "22.2%"
+  8. `replace`
+     - Before: "physical"
+     - After: "52.0%,"
+  9. `replace`
+     - Before: "intensity"
+     - After: "respectively."
+  10. `replace`
+     - Before: "to"
+     - After: "Corresponding"
+  11. `replace`
+     - Before: "data"
+     - After: "reference-conditioned"
+  12. `replace`
+     - Before: "that"
+     - After: "omission"
+  13. `replace`
+     - Before: "were"
+     - After: "fractions"
+  14. `replace`
+     - Before: "not"
+     - After: "are"
+  15. `replace`
+     - Before: "observed"
+     - After: "40.2%"
+  16. `replace`
+     - Before: "in"
+     - After: "and"
+  17. `replace`
+     - Before: "this"
+     - After: "34.9%,"
+  18. `replace`
+     - Before: "study"
+     - After: "and"
+  19. `replace`
+     - Before: "or"
+     - After: "commission"
+  20. `replace`
+     - Before: "inferred"
+     - After: "fractions"
+  21. `replace`
+     - Before: "from"
+     - After: "are"
+  22. `replace`
+     - Before: "contextual"
+     - After: "73.8%"
+  23. `replace`
+     - Before: "layers"
+     - After: "and 27"
+  24. `insert`
+     - Before: ""
+     - After: "8%; Appendix Table A4 reports all four screens within these different reference domains."
+
+### part-03
+
+- Location: Results / Physical and Population Exposure / second paragraph beginning Broadening the evidence threshold
+- Reason: Show that changing thresholds changes footprints, actual closed-edge sets, finite losses and eligibility even when isolation/delay population totals remain constant; distinguish top-ten retention from complete rank stability. Broader rewrite rationale: The existing final sentences repeat exposure patterns already given numerically. Replacing that continuous block accommodates the new computational evidence without an oversized added paragraph or broad rewriting of the reported class-1/class-2 findings.
+- Kila decisions: KILA-D-20261024-006
+- Mode: `replace`
+- Revises prior parts: none
+- Timestamp: 2026-10-24T03:58:10Z
+- Author: Mike Li
+- Markup SHA-256 before: `eae9e7da3c278ee635b1b2bcbd5c56a374827e8dd31f0d7b0e88ac7a90c2fa4a`
+- Markup SHA-256 after: `9dfee20f4822768c83ca1fe668bf3bcbe39a5040fa29524379dcc4bef28d962d`
+- Revision IDs: `1090, 1091, 1092, 1093, 1094, 1095, 1096, 1097, 1098, 1099, 1100, 1101, 1102, 1103, 1104, 1105, 1106, 1107, 1108, 1109, 1110, 1111, 1112, 1113, 1114, 1115, 1116, 1117, 1118`
+- Backup: `/Volumes/Extension/Research/KE03/Rev/revision/.kila-backups/KE03.rev.markup.20261024T125810386143.reviewer-4-comment-1.part-03.docx`
+- Paragraph properties preserved: `true`
+- Run style source SHA-256: `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+- Formula verification: not applicable
+- Endnote hyperlinks preserved: `true`
+- Endnote hyperlink count: `0`
+- Endnote hyperlink XML SHA-256: `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+- Endnote relationships SHA-256: `absent`
+- Before:
+
+~~~~text
+Buildings, bridges, facilities, and settlements expand at different rates because their spatial distributions differ across the corridor. The unchanged facility count between classes 3 and 2 contrasts with increases in every other displayed dimension. The nested classes form a sensitivity envelope around the primary estimate and carry the evidence threshold directly into the network scenarios.
+~~~~
+
+- After:
+
+~~~~text
+Across the nine sensor-threshold pairs at minimum class 3, footprint area ranges from 16.49 to 24.79 km², exposed raster population from 7,472 to 8,544, and exposed road length from 84.4 to 109.3 km. Closed-edge counts vary from 1,985 to 2,074, while newly isolated population and population delayed by more than five minutes retain 13,906 and 34,260 across all 27 threshold-class scenarios. Class-3 finite loss ranges from 762,097 to 798,817 person-minutes, an increase of up to 4.8%, and ranking eligibility ranges from 89 to 93 settlements. Its top ten retains nine or ten primary members, with Lingling replacing Gerkhu at the -3 dB VH threshold; Appendix Figure A3 and Supplementary Data S1 report the parameter-specific results.
+~~~~
+
+- Minimal tracked fragments:
+  1. `replace`
+     - Before: "Buildings"
+     - After: "Across the nine sensor-threshold pairs at minimum class 3"
+  2. `replace`
+     - Before: "bridges"
+     - After: "footprint area ranges from 16.49 to 24.79 km²"
+  3. `replace`
+     - Before: "facilities"
+     - After: "exposed raster population from 7,472 to 8,544"
+  4. `insert`
+     - Before: ""
+     - After: "exposed road length from 84.4 to 109.3 km. Closed-edge counts vary from 1,985 to 2,074, while newly isolated population and population delayed by more than five minutes retain 13,906 and 34,260 across all 27 threshold-class scenarios. Class-3 finite loss ranges from 762,097 to 798,817 person-minutes, an increase of up to 4.8%, and ranking eligibility ranges from 89 to 93 "
+  5. `insert`
+     - Before: ""
+     - After: "."
+  6. `replace`
+     - Before: "expand"
+     - After: "Its top ten retains nine or ten primary members, with Lingling replacing Gerkhu"
+  7. `replace`
+     - Before: "different"
+     - After: "the"
+  8. `replace`
+     - Before: "rates"
+     - After: "-3"
+  9. `replace`
+     - Before: "because"
+     - After: "dB"
+  10. `replace`
+     - Before: "their"
+     - After: "VH"
+  11. `replace`
+     - Before: "spatial"
+     - After: "threshold;"
+  12. `replace`
+     - Before: "distributions"
+     - After: "Appendix"
+  13. `replace`
+     - Before: "differ"
+     - After: "Figure"
+  14. `replace`
+     - Before: "across"
+     - After: "A3 and Supplementary Data S1 report"
+  15. `replace`
+     - Before: "corridor"
+     - After: "parameter-specific results"
+  16. `delete`
+     - Before: " The unchanged facility count between classes 3 and 2 contrasts with increases in every other displayed dimension. The nested classes form a sensitivity envelope around the primary estimate and carry the evidence threshold directly into the network scenarios."
+     - After: ""
+
+### part-04
+
+- Location: Discussion / Limitations and Future Validation / first paragraph beginning Several limitations
+- Reason: State the remaining validation gap once, without presenting conditional map disagreement as independent field accuracy or repeating negative caveats throughout the paper.
+- Kila decisions: KILA-D-20261024-006
+- Mode: `replace`
+- Revises prior parts: none
+- Timestamp: 2026-10-24T03:58:16Z
+- Author: Mike Li
+- Markup SHA-256 before: `9dfee20f4822768c83ca1fe668bf3bcbe39a5040fa29524379dcc4bef28d962d`
+- Markup SHA-256 after: `9ab8db017f6f88b5c5b28b8f8ac670447a7d033fa74720eb9918f41d0e5013a4`
+- Revision IDs: `1119, 1120, 1121, 1122, 1123, 1124, 1125, 1126, 1127, 1128, 1129, 1130, 1131, 1132, 1133, 1134, 1135, 1136`
+- Backup: `/Volumes/Extension/Research/KE03/Rev/revision/.kila-backups/KE03.rev.markup.20261024T125816399472.reviewer-4-comment-1.part-04.docx`
+- Paragraph properties preserved: `true`
+- Run style source SHA-256: `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+- Formula verification: not applicable
+- Endnote hyperlinks preserved: `true`
+- Endnote hyperlink count: `0`
+- Endnote hyperlink XML SHA-256: `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+- Endnote relationships SHA-256: `absent`
+- Before:
+
+~~~~text
+Incomplete optical evidence may miss or unevenly represent surface change, while the absent flow-path layer limits process-specific sensitivity beyond mapped, sensor, terrain, and channel agreement.
+~~~~
+
+- After:
+
+~~~~text
+Optical gaps and the absent flow-path layer limit process-specific evidence, while omission and commission fractions remain conditional on satellite-derived reference maps until independently labelled event observations become available.
+~~~~
+
+- Minimal tracked fragments:
+  1. `replace`
+     - Before: "Incomplete"
+     - After: "Optical"
+  2. `replace`
+     - Before: "optical"
+     - After: "gaps"
+  3. `replace`
+     - Before: "evidence may miss or unevenly represent surface change, while"
+     - After: "and"
+  4. `replace`
+     - Before: "limits"
+     - After: "limit"
+  5. `replace`
+     - Before: "sensitivity beyond mapped"
+     - After: "evidence"
+  6. `replace`
+     - Before: "sensor,"
+     - After: "while"
+  7. `replace`
+     - Before: "terrain,"
+     - After: "omission"
+  8. `replace`
+     - Before: "channel"
+     - After: "commission"
+  9. `replace`
+     - Before: "agreement"
+     - After: "fractions remain conditional on satellite-derived reference maps until independently labelled event observations become available"
+
+### part-05
+
+- Location: Appendix A / Evidence Base and Validation Status / paragraph beginning Appendix Table A3 records
+- Reason: Keep the new threshold family separate from the 192 structural combinations and make the full grid and all denominators accessible.
+- Kila decisions: KILA-D-20261024-006
+- Mode: `replace`
+- Revises prior parts: none
+- Timestamp: 2026-10-24T03:58:16Z
+- Author: Mike Li
+- Markup SHA-256 before: `c4bb692a1d13690adff4b9aacbc720f4ceefdc8c20fd7240659a6556ed66c551`
+- Markup SHA-256 after: `68bfa81eb3d7a26a09c1209186011f06392d19f3a45f672a4678c5903a9cb0e4`
+- Revision IDs: `178`
+- Backup: `/Volumes/Extension/Research/KE03/Rev/revision/.kila-backups/Appendix.rev.markup.20261024T125816899132.reviewer-4-comment-1.part-05.docx`
+- Paragraph properties preserved: `true`
+- Run style source SHA-256: `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+- Formula verification: not applicable
+- Endnote hyperlinks preserved: `true`
+- Endnote hyperlink count: `0`
+- Endnote hyperlink XML SHA-256: `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+- Endnote relationships SHA-256: `absent`
+- Before:
+
+~~~~text
+The audit confirms a study base of 767 settlements, 192 structural scenarios, four population-allocation specifications, 194 road candidates, and 768 portfolio-scenario records.
+~~~~
+
+- After:
+
+~~~~text
+The audit confirms a study base of 767 settlements, 192 structural scenarios, four population-allocation specifications, 194 road candidates, and 768 portfolio-scenario records. Appendix Figure A3 presents the separate nine-pair sensor-threshold analysis at minimum class 3, and Appendix Table A4 summarizes reference-conditioned agreement at the original thresholds. Supplementary Data S1 supplies all 27 threshold-class scenarios, including eligibility and rank changes, while Supplementary Data S2 supplies all 144 reference-comparison records with valid areas, pixel counts, and agreement denominators.
+~~~~
+
+- Minimal tracked fragments:
+  1. `insert`
+     - Before: ""
+     - After: " Appendix Figure A3 presents the separate nine-pair sensor-threshold analysis at minimum class 3, and Appendix Table A4 summarizes reference-conditioned agreement at the original thresholds. Supplementary Data S1 supplies all 27 threshold-class scenarios, including eligibility and rank changes, while Supplementary Data S2 supplies all 144 reference-comparison records with valid areas, pixel counts, and agreement denominators."
+
+### part-06
+
+- Location: Appendix Figures, after the existing Appendix Figure A2 and its Note, before the Appendix Tables heading
+- Reason: Insert the exact previously approved new Appendix object, caption and note; current user authorizes the validated structural tool extension and agent execution.
+- Kila decisions: KILA-D-20261024-006
+- Mode: `insert-block`
+- Revises prior parts: none
+- Timestamp: 2026-10-24T05:55:23Z
+- Author: Mike Li
+- Markup SHA-256 before: `68bfa81eb3d7a26a09c1209186011f06392d19f3a45f672a4678c5903a9cb0e4`
+- Markup SHA-256 after: `e351fe63e3c14f8e454caf19a07419d5410509d783e6019ec270061ed529ddeb`
+- Revision IDs: `179, 180, 181, 182, 183, 184`
+- Backup: `/Volumes/Extension/Research/KE03/Rev/revision/.kila-backups/Appendix.rev.markup.20261024T145523503283.reviewer-4-comment-1.part-06.docx`
+- Paragraph properties preserved: `true`
+- Run style source SHA-256: `098d081ba7ad60b083402dd459976bbff82bde36cd1f545e888062bc7912dcf8`
+- Formula verification: not applicable
+- Endnote hyperlinks preserved: `true`
+- Endnote hyperlink count: `0`
+- Endnote hyperlink XML SHA-256: `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+- Endnote relationships SHA-256: `absent`
+- New block verification: {"kind": "figure", "source_docx": "/Volumes/Extension/Research/KE03/Rev/docs/evidence/reviewer-4-comment-1/structural-insertion-v1/Appendix_A3_A4_self_contained.docx", "source_sha256": "390bf9eaa698a583b81839db1ea5b33d49d2b22df638d67442f7fd64693d4cf6", "body_insertion_index": 30, "new_top_level_nodes": 3, "new_media_parts": ["word/media/kila-dd7cf53af68eec7daa23a125.png"], "new_relationship_ids": ["rId15"], "image_sha256": "dd7cf53af68eec7daa23a12579b04dafafb5f8044b188522bc2aea00e4e98046", "image_fit": {"original_extent_emu": [5943600, 4538749], "new_extent_emu": [5486400, 4189614], "aspect_ratio_rounding_error_emu": 0.46153846150264144, "original_png_bytes_unchanged": true}, "existing_body_nodes_byte_identical": true, "old_relationships_preserved": true, "old_package_parts_preserved_except_declared_image_registration": true, "new_paragraph_marks_tracked": 3, "new_table_rows_tracked": 0, "run_properties_preserved": true, "reject_new_block_recovers_original_nodes": true}
+- Before:
+
+~~~~text
+
+~~~~
+
+- After:
+
+~~~~text
+[PNG SHA-256: dd7cf53af68eec7daa23a12579b04dafafb5f8044b188522bc2aea00e4e98046]
+Appendix Figure A3. Sensor-threshold sensitivity at minimum evidence class 3
+Note: Panels a-d show footprint area, directly exposed raster population, finite accessibility loss, and the number of retained primary top-ten members for the nine VH-change and MNDWI-increase pairs. The orange outline identifies the original -2 dB and 0.15 pair. Population allocation, service destinations, reference speeds, topology, snapping, and the Destroyed-only closure rule remain fixed. Supplementary Data S1 contains all three minimum-class comparisons.
+~~~~
+
+- Minimal tracked fragments:
+  1. `insert-block`
+     - Before: ""
+     - After: "[PNG SHA-256: dd7cf53af68eec7daa23a12579b04dafafb5f8044b188522bc2aea00e4e98046]\nAppendix Figure A3. Sensor-threshold sensitivity at minimum evidence class 3\nNote: Panels a-d show footprint area, directly exposed raster population, finite accessibility loss, and the number of retained primary top-ten members for the nine VH-change and MNDWI-increase pairs. The orange outline identifies the original -2 dB and 0.15 pair. Population allocation, service destinations, reference speeds, topology, snapping, and the Destroyed-only closure rule remain fixed. Supplementary Data S1 contains all three minimum-class comparisons."
+
+### part-07
+
+- Location: Appendix Tables, after the complete existing Appendix Table A3 at the end of the document
+- Reason: Insert the exact previously approved new Appendix object, caption and note; current user authorizes the validated structural tool extension and agent execution.
+- Kila decisions: KILA-D-20261024-006
+- Mode: `insert-block`
+- Revises prior parts: none
+- Timestamp: 2026-10-24T05:55:29Z
+- Author: Mike Li
+- Markup SHA-256 before: `e351fe63e3c14f8e454caf19a07419d5410509d783e6019ec270061ed529ddeb`
+- Markup SHA-256 after: `f903bbd304d836eedd3ec329e098c4f92dd0194a4056db3574b0c7f5a53f40f4`
+- Revision IDs: `185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269`
+- Backup: `/Volumes/Extension/Research/KE03/Rev/revision/.kila-backups/Appendix.rev.markup.20261024T145529891409.reviewer-4-comment-1.part-07.docx`
+- Paragraph properties preserved: `true`
+- Run style source SHA-256: `eb0fd62872eed54788e1668f317c2f77cd01cf138be1293579cb4873d6565fbb`
+- Formula verification: not applicable
+- Endnote hyperlinks preserved: `true`
+- Endnote hyperlink count: `0`
+- Endnote hyperlink XML SHA-256: `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+- Endnote relationships SHA-256: `absent`
+- New block verification: {"kind": "table", "source_docx": "/Volumes/Extension/Research/KE03/Rev/docs/evidence/reviewer-4-comment-1/structural-insertion-v1/Appendix_A3_A4_self_contained.docx", "source_sha256": "390bf9eaa698a583b81839db1ea5b33d49d2b22df638d67442f7fd64693d4cf6", "body_insertion_index": 43, "new_top_level_nodes": 3, "new_media_parts": [], "new_relationship_ids": [], "image_sha256": null, "image_fit": null, "existing_body_nodes_byte_identical": true, "old_relationships_preserved": true, "old_package_parts_preserved_except_declared_image_registration": true, "new_paragraph_marks_tracked": 2, "new_table_rows_tracked": 9, "run_properties_preserved": true, "reject_new_block_recovers_original_nodes": true}
+- Before:
+
+~~~~text
+
+~~~~
+
+- After:
+
+~~~~text
+Appendix Table A4. Reference-conditioned sensor agreement at the original thresholds
+[Native table]
+Reference	Screen	Valid area (km²)	Mapped area (km²)	IoU (%)	Dice (%)	Omission (%)	Commission (%)
+UNOSAT	Radar	224.23	24.74	20.4	33.9	64.9	67.2
+UNOSAT	Optical	224.23	24.74	20.7	34.3	57.0	71.4
+UNOSAT	Either sensor	224.23	24.74	22.2	36.4	40.2	73.8
+UNOSAT	Either sensor with context	224.23	24.74	21.0	34.7	55.3	71.6
+CEMS	Radar	26.93	9.10	37.8	54.8	55.1	29.7
+CEMS	Optical	26.93	9.10	42.6	59.8	54.2	13.9
+CEMS	Either sensor	26.93	9.10	52.0	68.5	34.9	27.8
+CEMS	Either sensor with context	26.93	9.10	41.8	59.0	53.4	19.6
+Note: Values use VH change of at most -2 dB and MNDWI increase of at least 0.15, evaluated on common radar-optical valid pixels within each reference analysis domain. Mapped area is the reference-positive area. Context retains slopes of at least 30° or locations within 120 m of a mapped channel. Omission is the proportion of mapped-positive area missed by the screen; commission is the proportion of screen-positive area outside mapped-positive polygons. The two reference domains differ, and unmapped areas have no independent negative labels. Supplementary Data S2 reports the complete threshold grid, excluded areas, contingency counts, and denominators.
+~~~~
+
+- Minimal tracked fragments:
+  1. `insert-block`
+     - Before: ""
+     - After: "Appendix Table A4. Reference-conditioned sensor agreement at the original thresholds\n[Native table]\nReference\tScreen\tValid area (km²)\tMapped area (km²)\tIoU (%)\tDice (%)\tOmission (%)\tCommission (%)\nUNOSAT\tRadar\t224.23\t24.74\t20.4\t33.9\t64.9\t67.2\nUNOSAT\tOptical\t224.23\t24.74\t20.7\t34.3\t57.0\t71.4\nUNOSAT\tEither sensor\t224.23\t24.74\t22.2\t36.4\t40.2\t73.8\nUNOSAT\tEither sensor with context\t224.23\t24.74\t21.0\t34.7\t55.3\t71.6\nCEMS\tRadar\t26.93\t9.10\t37.8\t54.8\t55.1\t29.7\nCEMS\tOptical\t26.93\t9.10\t42.6\t59.8\t54.2\t13.9\nCEMS\tEither sensor\t26.93\t9.10\t52.0\t68.5\t34.9\t27.8\nCEMS\tEither sensor with context\t26.93\t9.10\t41.8\t59.0\t53.4\t19.6\nNote: Values use VH change of at most -2 dB and MNDWI increase of at least 0.15, evaluated on common radar-optical valid pixels within each reference analysis domain. Mapped area is the reference-positive area. Context retains slopes of at least 30° or locations within 120 m of a mapped channel. Omission is the proportion of mapped-positive area missed by the screen; commission is the proportion of screen-positive area outside mapped-positive polygons. The two reference domains differ, and unmapped areas have no independent negative labels. Supplementary Data S2 reports the complete threshold grid, excluded areas, contingency counts, and denominators."
+
